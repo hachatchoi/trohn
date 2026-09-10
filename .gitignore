@@ -1,0 +1,19 @@
+# Build và thư viện
+node_modules/
+dist/
+target/
+*.tsbuildinfo
+# Cấu hình riêng và bí mật
+.env
+.env.*
+!.env.example
+# IDE, hệ điều hành, nhật ký
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+# Dữ liệu local
+uploads/
+mysql-data/
+
