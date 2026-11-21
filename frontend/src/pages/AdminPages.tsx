@@ -82,7 +82,7 @@ export function AdminLayout() {
         </p>
       )}
       <aside className="admin-sidebar">
-        <Logo />
+        <Logo admin />
         <span className="admin-overline">VẬN HÀNH HỆ THỐNG</span>
         <nav>
           <NavLink end to="/admin">
@@ -97,12 +97,15 @@ export function AdminLayout() {
             <Users size={18} />
             Tài khoản
           </NavLink>
+          <Link to="/" target="_blank" rel="noopener" aria-label="Xem trang khách (mở tab mới)">
+            <ArrowUpRight size={18} />
+            Xem trang khách
+          </Link>
         </nav>
         <div className="admin-side-bottom">
           <ShieldCheck size={24} />
           <strong>Quản trị viên TROHN</strong>
           <small>Không gian làm việc nội bộ</small>
-          <Link to="/">↗ Xem website khách thuê</Link>
           <Link to="/chu-tro">↗ Giao diện chủ trọ</Link>
           <button onClick={signOut}>Đăng xuất</button>
         </div>

@@ -17,9 +17,13 @@ import type { Room } from '../types'
 import { formatPrice } from '../assets/preview'
 import { usePreview } from '../hooks/usePreview'
 
-export function Logo({ light = false }: { light?: boolean }) {
+export function Logo({ light = false, admin = false }: { light?: boolean; admin?: boolean }) {
   return (
-    <Link to="/" className={`logo ${light ? 'logo-light' : ''}`} aria-label="TROHN — Trang chủ">
+    <Link
+      to={admin ? '/admin' : '/'}
+      className={`logo ${light ? 'logo-light' : ''}`}
+      aria-label={admin ? 'TROHN — Tổng quan quản trị' : 'TROHN — Trang chủ'}
+    >
       <span className="logo-mark">
         <svg viewBox="0 0 32 32" fill="none">
           <path

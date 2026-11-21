@@ -20,8 +20,13 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' | 'forgot' }) {
   const register = mode === 'register'
   const forgot = mode === 'forgot'
   return (
-    <div className="auth-page">
-      <aside className="auth-story">
+    <div className={mode === 'login' ? 'auth-page login-page' : 'auth-page'}>
+      {mode === 'login' ? (
+        <aside className="login-room">
+          <Logo light />
+          <h2>Một nơi để ở.<br /><em>Một góc để là mình.</em></h2>
+        </aside>
+      ) : <aside className="auth-story">
         <Logo light />
         <div className="auth-story-copy">
           <span className="eyebrow">CHỐN VỀ CỦA SINH VIÊN HÀ NỘI</span>
@@ -48,7 +53,7 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' | 'forgot' }) {
           <span>✳</span>
           <span>YOUR NEXT CHAPTER</span>
         </div>
-      </aside>
+      </aside>}
       <div className="auth-main">
         <Link className="text-link auth-back" to="/">
           <ArrowLeft size={16} />
@@ -72,22 +77,22 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' | 'forgot' }) {
             </div>
           ) : (
             <>
-              <span className="eyebrow">
+              {mode !== 'login' && <span className="eyebrow">
                 {register
                   ? 'BẮT ĐẦU HÀNH TRÌNH CỦA BẠN'
                   : forgot
                     ? 'ĐỪNG LO, CHÚNG MÌNH Ở ĐÂY'
                     : 'RẤT VUI ĐƯỢC GẶP LẠI BẠN'}
-              </span>
+              </span>}
               <h1>
-                {register ? 'Tìm trọ cùng TROHN.' : forgot ? 'Quên mật khẩu?' : 'Chào bạn trở lại.'}
+                {register ? 'Tìm trọ cùng TROHN.' : forgot ? 'Quên mật khẩu?' : 'Đăng nhập'}
               </h1>
               <p className="auth-description">
                 {register
                   ? 'Tạo tài khoản để lưu phòng yêu thích và dễ dàng đặt lịch xem.'
                   : forgot
                     ? 'Liên hệ quản trị viên để được hỗ trợ.'
-                    : 'Đăng nhập để tiếp tục tìm một chốn về ưng ý.'}
+                    : 'Chào bạn trở lại với TROHN.'}
               </p>
               {!register && !forgot && params.has('registered') && (
                 <div className="form-success">
@@ -239,18 +244,10 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' | 'forgot' }) {
               </form>
               {!register && !forgot && (
                 <>
-                  <div className="auth-divider">
-                    <span>hoặc khám phá trước</span>
-                  </div>
-                  <button
-                    className="button button-outline full-width"
-                    onClick={() => {
-                      navigate('/tim-phong')
-                    }}
-                  >
-                    Trải nghiệm giao diện ngay
+                  <Link className="login-browse" to="/tim-phong">
+                    Xem phòng với tư cách khách
                     <ArrowRight size={17} />
-                  </button>
+                  </Link>
                 </>
               )}
               <p className="auth-switch">
