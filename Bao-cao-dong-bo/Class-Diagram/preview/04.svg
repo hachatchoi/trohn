@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3850" height="2770" viewBox="0 0 3850 2770">
+<defs><marker id="open" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#607D96" stroke-width="1.5"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<polyline points="610.0,333.0 610.0,600.0" fill="none" stroke="#425466" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#open)"/>
+<text x="610.0" y="458.5" font-family="Arial" font-size="16" fill="#334155">HTTP / JSON</text>
+<polyline points="1140.0,766.5 1370.0,766.5" fill="none" stroke="#425466" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#open)"/>
+<text x="1255.0" y="758.5" font-family="Arial" font-size="16" fill="#334155">gọi nghiệp vụ</text>
+<polyline points="2430.0,666.6 2550.0,666.6 2550.0,254.0 2670.0,254.0" fill="none" stroke="#425466" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#open)"/>
+<text x="2550.0" y="452.3" font-family="Arial" font-size="16" fill="#334155">sử dụng</text>
+<polyline points="2430.0,733.2 2550.0,733.2 2550.0,619.0 2670.0,619.0" fill="none" stroke="#425466" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#open)"/>
+<text x="2550.0" y="668.1" font-family="Arial" font-size="16" fill="#334155">sử dụng</text>
+<polyline points="2430.0,799.8 2550.0,799.8 2550.0,1009.0 2670.0,1009.0" fill="none" stroke="#425466" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#open)"/>
+<text x="2550.0" y="896.4" font-family="Arial" font-size="16" fill="#334155">sử dụng</text>
+<polyline points="2430.0,866.4000000000001 2550.0,866.4000000000001 2550.0,1399.0 2670.0,1399.0" fill="none" stroke="#425466" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#open)"/>
+<text x="2550.0" y="1124.7" font-family="Arial" font-size="16" fill="#334155">sử dụng</text>
+<polyline points="2430.0,923.01 2530.0,1200.0 2530.0,2450.0 2430.0,2451.5" fill="none" stroke="#425466" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#open)"/>
+<text x="2430.0" y="1679.255" font-family="Arial" font-size="16" fill="#334155">xác thực / vai trò</text>
+<polyline points="1635.0,933.0 1122.5,933.0 1122.5,1400.0 610.0,1400.0" fill="none" stroke="#425466" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#open)"/>
+<text x="1122.5" y="1158.5" font-family="Arial" font-size="16" fill="#334155">sử dụng</text>
+<polyline points="1900.0,933.0 1900.0,1400.0" fill="none" stroke="#425466" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#open)"/>
+<text x="1900.0" y="1158.5" font-family="Arial" font-size="16" fill="#334155">sử dụng</text>
+<text x="68.0" y="54.15" text-anchor="start" font-family="Arial" font-size="29.0" font-weight="700" fill="#263648">THIẾT KẾ LỚP — TIN ĐĂNG</text>
+<text x="68.0" y="102.3" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">UC04–UC05, UC12–UC14, UC17–UC19 • Dependency nét đứt: lớp nguồn sử dụng lớp đích. Các Entity tham chiếu trang 01.</text>
+<rect x="80.0" y="150.0" width="1060.0" height="183.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="80.0" y="150.0" width="1060.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="610.0" y="175.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«boundary»</text>
+<text x="610.0" y="202.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">GiaoDienReact</text>
+<rect x="80.0" y="214.0" width="1060.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="88.0" y="240.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">API client; dữ liệu biểu mẫu</text>
+<rect x="80.0" y="261.0" width="1060.0" height="72.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="88.0" y="287.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ guiYeuCau(): void</text>
+<text x="88.0" y="310.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ hienThiKetQua(): void</text>
+<rect x="80.0" y="600.0" width="1060.0" height="333.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="80.0" y="600.0" width="1060.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="610.0" y="625.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«controller»</text>
+<text x="610.0" y="652.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">TinDangController</text>
+<rect x="80.0" y="664.0" width="1060.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="88.0" y="690.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">- service: TinDangService</text>
+<rect x="80.0" y="711.0" width="1060.0" height="222.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="88.0" y="737.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ timKiem(filter: TimKiemPhongRequest): Page&lt;TinTomTat&gt;</text>
+<text x="88.0" y="760.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ xemChiTiet(id: Long): ChiTietTinResponse</text>
+<text x="88.0" y="783.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ dangTin(actor: ActorContext, req: TinDangRequest, photos: List&lt;UploadFile&gt;): TinQuanLyResponse</text>
+<text x="88.0" y="807.2" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ suaTin(actor: ActorContext, id: Long, req: SuaTinRequest, photos: List&lt;UploadFile&gt;): TinQuanLyResponse</text>
+<text x="88.0" y="830.6" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ anTinCuaChuTro(actor: ActorContext, id: Long, lyDo: String): TrangThaiTinResponse</text>
+<text x="88.0" y="854.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ duyetTin(actor: ActorContext, id: Long, version: Long): TinQuanLyResponse</text>
+<text x="88.0" y="877.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ tuChoiTin(actor: ActorContext, id: Long, version: Long, lyDo: String): TinQuanLyResponse</text>
+<text x="88.0" y="900.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ anTinViPham(actor: ActorContext, id: Long, lyDo: String): TrangThaiTinResponse</text>
+<rect x="1370.0" y="600.0" width="1060.0" height="333.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="1370.0" y="600.0" width="1060.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="1900.0" y="625.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«service»</text>
+<text x="1900.0" y="652.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">TinDangService</text>
+<rect x="1370.0" y="664.0" width="1060.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="1378.0" y="690.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">- authService: AuthService</text>
+<rect x="1370.0" y="711.0" width="1060.0" height="222.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="1378.0" y="737.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ timKiem(filter: TimKiemPhongRequest): Page&lt;TinTomTat&gt;</text>
+<text x="1378.0" y="760.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ xemChiTiet(id: Long): ChiTietTinResponse</text>
+<text x="1378.0" y="783.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ dangTin(actor: ActorContext, req: TinDangRequest, photos: List&lt;UploadFile&gt;): TinQuanLyResponse</text>
+<text x="1378.0" y="807.2" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ suaTin(actor: ActorContext, id: Long, req: SuaTinRequest, photos: List&lt;UploadFile&gt;): TinQuanLyResponse</text>
+<text x="1378.0" y="830.6" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ anTinCuaChuTro(actor: ActorContext, id: Long, lyDo: String): TrangThaiTinResponse</text>
+<text x="1378.0" y="854.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ duyetTin(actor: ActorContext, id: Long, version: Long): TinQuanLyResponse</text>
+<text x="1378.0" y="877.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ tuChoiTin(actor: ActorContext, id: Long, version: Long, lyDo: String): TinQuanLyResponse</text>
+<text x="1378.0" y="900.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ anTinViPham(actor: ActorContext, id: Long, lyDo: String): TrangThaiTinResponse</text>
+<rect x="2670.0" y="150.0" width="1080.0" height="208.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="2670.0" y="150.0" width="1080.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="3210.0" y="175.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3210.0" y="202.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">TinDangRepository</text>
+<rect x="2670.0" y="214.0" width="1080.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="2670.0" y="261.0" width="1080.0" height="97.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="2678.0" y="287.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ searchPublic(filter: TimKiemPhongRequest): Page&lt;TinDang&gt;</text>
+<text x="2678.0" y="310.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ findWithOwner(id: Long): Optional&lt;TinDang&gt;</text>
+<text x="2678.0" y="333.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ save(tin: TinDang): TinDang</text>
+<rect x="2670.0" y="540.0" width="1080.0" height="158.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="2670.0" y="540.0" width="1080.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="3210.0" y="565.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3210.0" y="592.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">LichHenRepository</text>
+<rect x="2670.0" y="604.0" width="1080.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="2670.0" y="651.0" width="1080.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="2678.0" y="677.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ cancelFutureActiveByTin(id: Long, lyDo: String, actorId: Long, now: Instant): int</text>
+<rect x="2670.0" y="930.0" width="1080.0" height="158.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="2670.0" y="930.0" width="1080.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="3210.0" y="955.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3210.0" y="982.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">NhatKyRepository</text>
+<rect x="2670.0" y="994.0" width="1080.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="2670.0" y="1041.0" width="1080.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="2678.0" y="1067.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ append(entry: NhatKyXuLy): void</text>
+<rect x="2670.0" y="1320.0" width="1080.0" height="158.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="2670.0" y="1320.0" width="1080.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="3210.0" y="1345.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3210.0" y="1372.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">CoSoTruongRepository</text>
+<rect x="2670.0" y="1384.0" width="1080.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="2670.0" y="1431.0" width="1080.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="2678.0" y="1457.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ findById(id: Long): Optional&lt;CoSoTruong&gt;</text>
+<rect x="1370.0" y="150.0" width="1060.0" height="290.0" fill="#FFF5CC" stroke="#C9AD55" stroke-width="1.5"/>
+<text x="1378.0" y="176.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">DTO SỬ DỤNG</text>
+<text x="1378.0" y="199.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">TimKiemPhongRequest {coSoTruongId: Long [0..1], banKinhMet: Double [0..1]}</text>
+<text x="1378.0" y="222.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">TinDangRequest; SuaTinRequest; TinQuanLyResponse; ChiTietTinResponse; TrangThaiTinResponse</text>
+<text x="1378.0" y="246.2" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">XuLyTinRequest {lyDo, version}</text>
+<text x="1378.0" y="269.6" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">(Danh mục kiểu dữ liệu, không phải một lớp.)</text>
+<rect x="80.0" y="2360.0" width="1060.0" height="180.0" fill="#FFF5CC" stroke="#C9AD55" stroke-width="1.5"/>
+<text x="88.0" y="2386.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">ENTITY THAM CHIẾU TRANG 01</text>
+<text x="88.0" y="2409.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">TinDang; AnhPhong; TienIch; ChiPhiPhong; TaiKhoan</text>
+<text x="88.0" y="2432.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">LichHen; NhatKyXuLy</text>
+<text x="88.0" y="2456.2" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">TruongDaiHoc; CoSoTruong</text>
+<rect x="1370.0" y="2360.0" width="1060.0" height="183.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="1370.0" y="2360.0" width="1060.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="1900.0" y="2385.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«service hỗ trợ»</text>
+<text x="1900.0" y="2412.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">AuthService</text>
+<rect x="1370.0" y="2424.0" width="1060.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="1370.0" y="2471.0" width="1060.0" height="72.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="1378.0" y="2497.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ xacThuc(sessionId: String): ActorContext</text>
+<text x="1378.0" y="2520.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ kiemTraVaiTro(actor: ActorContext, vaiTro: VaiTro): void</text>
+<rect x="2670.0" y="2200.0" width="1080.0" height="370.0" fill="#FFF5CC" stroke="#C9AD55" stroke-width="1.5"/>
+<text x="2678.0" y="2226.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">Kiểm tra chủ sở hữu và version khi sửa/duyệt.</text>
+<text x="2678.0" y="2249.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">UC13 giữ lịch cũ, chuyển tin về chờ duyệt.</text>
+<text x="2678.0" y="2272.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">UC14/19 hủy lịch tương lai trong giao dịch.</text>
+<text x="2678.0" y="2296.2" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">UC17/18/19 lưu nhật ký.</text>
+<text x="2678.0" y="2319.6" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648"></text>
+<text x="2678.0" y="2343.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">ImageStorage nằm ngoài giao dịch MySQL: cần dọn ảnh tạm/bù trừ khi lưu tin thất bại.</text>
+<text x="2678.0" y="2366.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648"></text>
+<text x="2678.0" y="2389.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">GeoService tính khoảng cách theo cơ sở trường, không cố định theo tin.</text>
+<rect x="80.0" y="2650.0" width="3650.0" height="100.0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="88.0" y="2676.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">ActorContext được backend tạo từ phiên hợp lệ/SecurityContext; client không được quyết định actorId hay vai trò.</text>
+<text x="88.0" y="2699.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">Service kiểm tra trạng thái, quyền sở hữu và giao dịch. Controller nhận request/response; Repository thao tác Entity.</text>
+<text x="88.0" y="2722.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">Các Repository lặp ở nhiều trang là cùng một interface, mỗi trang chỉ trình bày phần phương thức liên quan.</text>
+<rect x="80.0" y="1400.0" width="1060.0" height="183.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="80.0" y="1400.0" width="1060.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="610.0" y="1425.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«interface»</text>
+<text x="610.0" y="1452.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">ImageStorage</text>
+<rect x="80.0" y="1464.0" width="1060.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="80.0" y="1511.0" width="1060.0" height="72.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="88.0" y="1537.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ luu(file: UploadFile): StoredImage</text>
+<text x="88.0" y="1560.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ xoa(storageKey: String): void</text>
+<rect x="1370.0" y="1400.0" width="1060.0" height="158.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="1370.0" y="1400.0" width="1060.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="1900.0" y="1425.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«service hỗ trợ»</text>
+<text x="1900.0" y="1452.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">GeoService</text>
+<rect x="1370.0" y="1464.0" width="1060.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="1370.0" y="1511.0" width="1060.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="1378.0" y="1537.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ tinhKhoangCachMet(phong: TinDang, coSo: CoSoTruong): double</text>
+<rect x="80.0" y="1690.0" width="1060.0" height="458.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="80.0" y="1690.0" width="1060.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="610.0" y="1715.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«value object»</text>
+<text x="610.0" y="1742.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">NoiDungTin</text>
+<rect x="80.0" y="1754.0" width="1060.0" height="347.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="88.0" y="1780.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ tieuDe: String</text>
+<text x="88.0" y="1803.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ moTa: String</text>
+<text x="88.0" y="1826.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ loaiPhong: LoaiPhong</text>
+<text x="88.0" y="1850.2" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ giaThue: BigDecimal</text>
+<text x="88.0" y="1873.6" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ dienTich: BigDecimal</text>
+<text x="88.0" y="1897.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ diaChiChiTiet: String</text>
+<text x="88.0" y="1920.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ phuongXa: String</text>
+<text x="88.0" y="1943.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ quanHuyen: String [0..1]</text>
+<text x="88.0" y="1967.2" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ thanhPho: String</text>
+<text x="88.0" y="1990.6" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ viDo: Double [0..1]</text>
+<text x="88.0" y="2014.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ kinhDo: Double [0..1]</text>
+<text x="88.0" y="2037.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ tenLienHe: String</text>
+<text x="88.0" y="2060.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ soDienThoaiLienHe: String</text>
+<rect x="80.0" y="2101.0" width="1060.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="1370.0" y="1690.0" width="1060.0" height="358.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="1370.0" y="1690.0" width="1060.0" height="64.0" fill="#74AFE2" stroke="#527FA2" stroke-width="1.5"/>
+<text x="1900.0" y="1715.85" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">«value object»</text>
+<text x="1900.0" y="1742.5" text-anchor="middle" font-family="Arial" font-size="20.5" font-weight="700" fill="#263648">DuLieuNhatKy</text>
+<rect x="1370.0" y="1754.0" width="1060.0" height="247.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<text x="1378.0" y="1780.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ nguoiThucHien: TaiKhoan</text>
+<text x="1378.0" y="1803.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ tinDangMucTieu: TinDang [0..1]</text>
+<text x="1378.0" y="1826.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ taiKhoanMucTieu: TaiKhoan [0..1]</text>
+<text x="1378.0" y="1850.2" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ hanhDong: HanhDongXuLy</text>
+<text x="1378.0" y="1873.6" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ trangThaiTruoc: String</text>
+<text x="1378.0" y="1897.0" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ trangThaiSau: String</text>
+<text x="1378.0" y="1920.4" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ lyDo: String [0..1]</text>
+<text x="1378.0" y="1943.8" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ thoiDiem: Instant</text>
+<text x="1378.0" y="1967.2" text-anchor="start" font-family="Arial" font-size="18.0" font-weight="400" fill="#263648">+ phienBanDuocXuLy: Long [0..1]</text>
+<rect x="1370.0" y="2001.0" width="1060.0" height="47.0" fill="#FFFFFF" stroke="#527FA2" stroke-width="1.5"/>
+<rect x="2670.0" y="1820.0" width="1080.0" height="230.0" fill="#FFF5CC" stroke="#C9AD55" stroke-width="1.5"/>
+<text x="2678.0" y="1841.5" text-anchor="start" font-family="Arial" font-size="13.5" font-weight="400" fill="#263648">NoiDungTin là giá trị nghiệp vụ, không phải DTO HTTP. Service ánh xạ TinDangRequest sang NoiDungTin, đồng thời xử lý ảnh, tiện ích và ChiPhiPhong trong cùng nghiệp vụ.</text>
+<text x="2678.0" y="1859.05" text-anchor="start" font-family="Arial" font-size="13.5" font-weight="400" fill="#263648">DuLieuNhatKy yêu cầu đúng một mục tiêu {xor}; hai giá trị trạng thái phải thuộc enum của loại mục tiêu. Hai value object không cần bảng riêng.</text>
+</svg>

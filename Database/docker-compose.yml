@@ -1,0 +1,39 @@
+services:
+  mysql:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD in .env}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-trohn_db}
+      MYSQL_USER: ${MYSQL_USER:-trohn_user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Set MYSQL_PASSWORD in .env}
+      TZ: UTC
+    ports:
+      - "127.0.0.1:${MYSQL_PORT:-3306}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql.cnf:/etc/mysql/conf.d/custom.cnf:ro
+      - ./SQL/01_create_tables.sql:/docker-entrypoint-initdb.d/01_create_tables.sql:ro
+      - ./SQL/02_create_indexes.sql:/docker-entrypoint-initdb.d/02_create_indexes.sql:ro
+      - ./SQL/05_photo_content.sql:/docker-entrypoint-initdb.d/05_photo_content.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysqladmin ping -h 127.0.0.1 -u root --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+  phpmyadmin:
+    image: phpmyadmin:5.2
+    profiles: ["admin"]
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - "127.0.0.1:${PHPMYADMIN_PORT:-8081}:80"
+    depends_on:
+      mysql:
+        condition: service_healthy
+volumes:
+  mysql_data:
+

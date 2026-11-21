@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-14",
+  "uc_rows": 21,
+  "controller_service_operations_checked": 42,
+  "architecture_figures": 3,
+  "nfr_groups": 8,
+  "defense_questions": 15,
+  "class_copies_identical": true,
+  "class_full_signatures_match": true,
+  "sql_table_references_valid": true,
+  "runtime_tests_executed": false,
+  "scope": "21 main UC; auxiliary endpoints and Sequence messages not exhaustively verified"
+}

@@ -1,15 +1,7 @@
-# Đặc tả yêu cầu
+# Yêu cầu hệ thống TROHN
 
-Trạng thái: chưa hoàn thiện.
+Cập nhật 30/09/2026. Tài liệu chuẩn hiện nằm tại [bộ thiết kế đồng bộ](../../Bao-cao-dong-bo/Dac-ta/Dac_ta_21_UC_dong_bo.docx). Dùng Class Diagram cũ 6 trang và đặc tả 21 UC có lịch hẹn, theo quyết định người dùng.
 
-## Mục tiêu
-Web hỗ trợ sinh viên tìm phòng trọ tại Hà Nội và chủ trọ quản lý tin cho thuê.
+Frontend hiện là demo; backend chưa triển khai. Có tài liệu SQL/API không có nghĩa đã chạy database hoặc endpoint. Không dùng các ghi chú “chưa có tài liệu” của bản cũ để đánh giá tiến độ.
 
-## Vai trò
-Sinh viên, chủ trọ, quản trị viên.
-
-## Nội dung cần bổ sung
-- Use case và luồng nghiệp vụ.
-- Yêu cầu chức năng và phi chức năng.
-- Tiêu chí nghiệm thu.
-
+Xem [báo cáo kiểm tra](../../Bao-cao-dong-bo/Kiem-tra-2026-10-14/Ket_qua.md).

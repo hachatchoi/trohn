@@ -1,0 +1,831 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6100" height="6868" viewBox="0 0 6100 6868">
+<rect width="100%" height="100%" fill="white"/>
+<polyline points="1070.0,398.7 1235.0,398.7 1235.0,471.5 1400.0,471.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1070.0,719.3 1300.0,730.0 1300.0,870.0 1400.0,870.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="690.0,788.0 690.0,1060.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1070.0,1151.5 1235.0,1151.5 1235.0,1104.9 1400.0,1104.9" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="310.0,490.29999999999995 90.0,500.0 90.0,1670.0 310.0,1661.6" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="310.0,650.5999999999999 205.0,675.0 205.0,2000.0 310.0,1996.4" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1070.0,1689.5 1270.0,1700.0 1270.0,1520.0 1400.0,1535.55" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2250.0,987.45 2395.0,987.45 2395.0,1051.5 2540.0,1051.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polygon points="2250.0,987.45 2260.0,993.45 2270.0,987.45 2260.0,981.45" fill="#425466"/>
+<polyline points="2250.0,1378.95 2395.0,1378.95 2395.0,1491.5 2540.0,1491.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polygon points="2250.0,1378.95 2260.0,1384.95 2270.0,1378.95 2260.0,1372.95" fill="#425466"/>
+<polyline points="2250.0,1574.7 2395.0,1574.7 2395.0,1924.0 2540.0,1924.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2930.0,538.0 2930.0,610.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1825.0,1653.0 1825.0,2150.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1070.0,604.8 1180.0,620.0 1180.0,2290.0 1400.0,2273.2" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="956.0,788.0 950.0,950.0 1130.0,950.0 1130.0,2630.0 1825.0,2630.0 1825.0,2458.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1390.0,3316.5 1435.0,3316.5 1435.0,3612.0 1390.0,3612.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1402.0,3617.0 1390.0,3612.0 1402.0,3607.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1390.0,3612.0 1414.0,3612.0 1414.0,5357.0 1546.0,5357.0 1546.0,3354.0 1570.0,3354.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1558.0,3349.0 1570.0,3354.0 1558.0,3359.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3354.0 2914.0,3354.0 2914.0,5375.0 3046.0,5375.0 3046.0,3329.0 3070.0,3329.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,3324.0 3070.0,3329.0 3058.0,3334.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3354.0 2914.0,3354.0 2914.0,5393.0 3046.0,5393.0 3046.0,3624.5 3070.0,3624.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,3619.5 3070.0,3624.5 3058.0,3629.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3354.0 2914.0,3354.0 2914.0,5411.0 3046.0,5411.0 3046.0,3932.5 3070.0,3932.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,3927.5 3070.0,3932.5 3058.0,3937.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3354.0 2914.0,3354.0 2914.0,5429.0 3046.0,5429.0 3046.0,4265.5 3070.0,4265.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,4260.5 3070.0,4265.5 3058.0,4270.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3354.0 2914.0,3354.0 2914.0,5447.0 3046.0,5447.0 3046.0,4869.0 3070.0,4869.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,4864.0 3070.0,4869.0 3058.0,4874.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3354.0 2914.0,3354.0 2914.0,5465.0 4546.0,5465.0 4546.0,3316.5 4570.0,3316.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="4558.0,3311.5 4570.0,3316.5 4558.0,3321.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3354.0 2914.0,3354.0 2914.0,5483.0 4546.0,5483.0 4546.0,3574.5 4570.0,3574.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="4558.0,3569.5 4570.0,3574.5 4558.0,3579.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1390.0,3316.5 1435.0,3316.5 1435.0,3982.5 1390.0,3982.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1402.0,3987.5 1390.0,3982.5 1402.0,3977.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1390.0,3982.5 1414.0,3982.5 1414.0,5519.0 1546.0,5519.0 1546.0,3724.5 1570.0,3724.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1558.0,3719.5 1570.0,3724.5 1558.0,3729.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3724.5 2914.0,3724.5 2914.0,5537.0 3046.0,5537.0 3046.0,3932.5 3070.0,3932.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,3927.5 3070.0,3932.5 3058.0,3937.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3724.5 2914.0,3724.5 2914.0,5555.0 3046.0,5555.0 3046.0,4265.5 3070.0,4265.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,4260.5 3070.0,4265.5 3058.0,4270.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3724.5 2914.0,3724.5 2914.0,5573.0 3046.0,5573.0 3046.0,4869.0 3070.0,4869.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,4864.0 3070.0,4869.0 3058.0,4874.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3724.5 2914.0,3724.5 2914.0,5591.0 3046.0,5591.0 3046.0,5102.0 3070.0,5102.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,5097.0 3070.0,5102.0 3058.0,5107.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3724.5 2914.0,3724.5 2914.0,5609.0 4546.0,5609.0 4546.0,3316.5 4570.0,3316.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="4558.0,3311.5 4570.0,3316.5 4558.0,3321.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3724.5 2914.0,3724.5 2914.0,5627.0 4546.0,5627.0 4546.0,3832.5 4570.0,3832.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="4558.0,3827.5 4570.0,3832.5 4558.0,3837.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,3724.5 2914.0,3724.5 2914.0,5645.0 4546.0,5645.0 4546.0,4078.0 4570.0,4078.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="4558.0,4073.0 4570.0,4078.0 4558.0,4083.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1390.0,3316.5 1435.0,3316.5 1435.0,4328.0 1390.0,4328.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1402.0,4333.0 1390.0,4328.0 1402.0,4323.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1390.0,4328.0 1414.0,4328.0 1414.0,5681.0 1546.0,5681.0 1546.0,4070.0 1570.0,4070.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1558.0,4065.0 1570.0,4070.0 1558.0,4075.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,4070.0 2914.0,4070.0 2914.0,5699.0 3046.0,5699.0 3046.0,4598.5 3070.0,4598.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,4593.5 3070.0,4598.5 3058.0,4603.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,4070.0 2914.0,4070.0 2914.0,5717.0 3046.0,5717.0 3046.0,3932.5 3070.0,3932.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,3927.5 3070.0,3932.5 3058.0,3937.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,4070.0 2914.0,4070.0 2914.0,5735.0 4546.0,5735.0 4546.0,3316.5 4570.0,3316.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="4558.0,3311.5 4570.0,3316.5 4558.0,3321.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1390.0,3316.5 1435.0,3316.5 1435.0,4636.0 1390.0,4636.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1402.0,4641.0 1390.0,4636.0 1402.0,4631.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="1390.0,4636.0 1414.0,4636.0 1414.0,5771.0 1546.0,5771.0 1546.0,4378.0 1570.0,4378.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1558.0,4373.0 1570.0,4378.0 1558.0,4383.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,4378.0 2914.0,4378.0 2914.0,5789.0 3046.0,5789.0 3046.0,4265.5 3070.0,4265.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,4260.5 3070.0,4265.5 3058.0,4270.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,4378.0 2914.0,4378.0 2914.0,5807.0 3046.0,5807.0 3046.0,3932.5 3070.0,3932.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,3927.5 3070.0,3932.5 3058.0,3937.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,4378.0 2914.0,4378.0 2914.0,5825.0 3046.0,5825.0 3046.0,3329.0 3070.0,3329.0" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="3058.0,3324.0 3070.0,3329.0 3058.0,3334.0" fill="none" stroke="#607D96" stroke-width="2"/>
+<polyline points="2890.0,4378.0 2914.0,4378.0 2914.0,5843.0 4546.0,5843.0 4546.0,3316.5 4570.0,3316.5" fill="none" stroke="#607D96" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="4558.0,3311.5 4570.0,3316.5 4558.0,3321.5" fill="none" stroke="#607D96" stroke-width="2"/>
+<rect x="30.0" y="15.0" width="6000.0" height="65.0" fill="#17324D" stroke="#527FA2"/>
+<text x="40.0" y="55.0" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">TROHN | CLASS DIAGRAM TỔNG HỢP — 13/10/2026</text>
+<rect x="30.0" y="90.0" width="6000.0" height="48.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="122.0" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#263648">Một canvas • Hợp nhất lớp trùng tên từ 6 trang chuẩn • Giữ đầy đủ thuộc tính, phương thức và quan hệ đã thiết kế • UC01–UC21</text>
+<rect x="90.0" y="180.0" width="2700.0" height="48.0" fill="none" stroke="none"/>
+<text x="90.0" y="210.0" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#263648">TROHN — SƠ ĐỒ LỚP NGHIỆP VỤ</text>
+<rect x="90.0" y="235.0" width="2650.0" height="40.0" fill="none" stroke="none"/>
+<text x="90.0" y="253.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">Thiết kế đề xuất theo UC01–UC21 • Bổ sung trường/cơ sở và tọa độ theo yêu cầu tìm gần trường</text>
+<rect x="310.0" y="330.0" width="760.0" height="458.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="310.0" y="330.0" width="760.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="652.0" y="351.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="644.015625" y="379.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TaiKhoan</text>
+<rect x="310.0" y="394.0" width="760.0" height="297.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="318.0" y="420.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="318.0" y="444.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- hoTen: String</text>
+<text x="318.0" y="468.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- email: String {unique, normalized}</text>
+<text x="318.0" y="492.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- soDienThoai: String</text>
+<text x="318.0" y="516.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- matKhauBam: String</text>
+<text x="318.0" y="540.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- vaiTro: VaiTro</text>
+<text x="318.0" y="564.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- trangThai: TrangThaiTaiKhoan</text>
+<text x="318.0" y="588.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- lyDoKhoa: String [0..1]</text>
+<text x="318.0" y="612.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ngayTao: Instant</text>
+<text x="318.0" y="636.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ngayCapNhat: Instant</text>
+<text x="318.0" y="660.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- version: Long</text>
+<rect x="310.0" y="691.0" width="760.0" height="97.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="318.0" y="717.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangHoatDong(): boolean</text>
+<text x="318.0" y="741.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ khoa(lyDo: String): void</text>
+<text x="318.0" y="765.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ moKhoa(): void</text>
+<rect x="1400.0" y="330.0" width="850.0" height="283.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="1400.0" y="330.0" width="850.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="1787.0" y="351.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="1746.5" y="379.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">PhienDangNhap</text>
+<rect x="1400.0" y="394.0" width="850.0" height="147.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1408.0" y="420.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="1408.0" y="444.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- maPhienBam: String {unique}</text>
+<text x="1408.0" y="468.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- taoLuc: Instant</text>
+<text x="1408.0" y="492.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- hetHanLuc: Instant</text>
+<text x="1408.0" y="516.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- thuHoiLuc: Instant [0..1]</text>
+<rect x="1400.0" y="541.0" width="850.0" height="72.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1408.0" y="567.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ conHieuLuc(now: Instant): boolean</text>
+<text x="1408.0" y="591.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ thuHoi(now: Instant): void</text>
+<rect x="310.0" y="1060.0" width="760.0" height="183.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="310.0" y="1060.0" width="760.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="652.0" y="1081.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="644.515625" y="1109.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">YeuThich</text>
+<rect x="310.0" y="1124.0" width="760.0" height="72.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="318.0" y="1150.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="318.0" y="1174.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ngayLuu: Instant</text>
+<rect x="310.0" y="1196.0" width="760.0" height="47.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="310.0" y="1550.0" width="760.0" height="558.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="310.0" y="1550.0" width="760.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="652.0" y="1571.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="650.5" y="1599.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">LichHen</text>
+<rect x="310.0" y="1614.0" width="760.0" height="322.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="318.0" y="1640.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="318.0" y="1664.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- thoiDiemHen: Instant</text>
+<text x="318.0" y="1688.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- soDienThoaiLienHe: String</text>
+<text x="318.0" y="1712.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ghiChu: String [0..1]</text>
+<text x="318.0" y="1736.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- trangThai: TrangThaiLichHen</text>
+<text x="318.0" y="1760.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- lyDoTuChoi: String [0..1]</text>
+<text x="318.0" y="1784.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- lyDoHuy: String [0..1]</text>
+<text x="318.0" y="1808.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- nguonHuy: NguonHuy [0..1]</text>
+<text x="318.0" y="1832.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- huyLuc: Instant [0..1]</text>
+<text x="318.0" y="1856.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ngayTao: Instant</text>
+<text x="318.0" y="1880.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ngayCapNhat: Instant</text>
+<text x="318.0" y="1904.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- version: Long</text>
+<rect x="310.0" y="1936.0" width="760.0" height="172.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="318.0" y="1962.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangHoatDong(): boolean</text>
+<text x="318.0" y="1986.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ coTheHuy(now: Instant): boolean</text>
+<text x="318.0" y="2010.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xacNhan(): void</text>
+<text x="318.0" y="2034.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tuChoi(lyDo: String): void</text>
+<text x="318.0" y="2058.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ huy(lyDo: String, nguon: NguonHuy,</text>
+<text x="318.0" y="2082.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">nguoiHuy: TaiKhoan [0..1], now: Instant): void</text>
+<rect x="1400.0" y="870.0" width="850.0" height="783.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="1400.0" y="870.0" width="850.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="1787.0" y="891.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="1784.5078125" y="919.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TinDang</text>
+<rect x="1400.0" y="934.0" width="850.0" height="497.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1408.0" y="960.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="1408.0" y="984.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- tieuDe: String</text>
+<text x="1408.0" y="1008.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- moTa: String</text>
+<text x="1408.0" y="1032.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- loaiPhong: LoaiPhong</text>
+<text x="1408.0" y="1056.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- giaThue: BigDecimal</text>
+<text x="1408.0" y="1080.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- dienTich: BigDecimal</text>
+<text x="1408.0" y="1104.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- diaChiChiTiet: String</text>
+<text x="1408.0" y="1128.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- phuongXa: String</text>
+<text x="1408.0" y="1152.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- quanHuyen: String [0..1]</text>
+<text x="1408.0" y="1176.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- thanhPho: String</text>
+<text x="1408.0" y="1200.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- viDo: Double [0..1]</text>
+<text x="1408.0" y="1224.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- kinhDo: Double [0..1]</text>
+<text x="1408.0" y="1248.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- tenLienHe: String</text>
+<text x="1408.0" y="1272.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- soDienThoaiLienHe: String</text>
+<text x="1408.0" y="1296.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- trangThai: TrangThaiTinDang</text>
+<text x="1408.0" y="1320.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- lyDoXuLy: String [0..1]</text>
+<text x="1408.0" y="1344.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ngayTao: Instant</text>
+<text x="1408.0" y="1368.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ngayCapNhat: Instant</text>
+<text x="1408.0" y="1392.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- version: Long</text>
+<rect x="1400.0" y="1431.0" width="850.0" height="222.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1408.0" y="1457.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ congKhai(): boolean</text>
+<text x="1408.0" y="1481.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ capNhatNoiDung(noiDung: NoiDungTin): void</text>
+<text x="1408.0" y="1505.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ guiDuyetLai(): void</text>
+<text x="1408.0" y="1529.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ duyet(): void</text>
+<text x="1408.0" y="1553.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tuChoi(lyDo: String): void</text>
+<text x="1408.0" y="1577.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ anBoiChuTro(lyDo: String): void</text>
+<text x="1408.0" y="1601.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ anBoiAdmin(lyDo: String): void</text>
+<text x="1408.0" y="1625.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ anDoKhoaTaiKhoan(): void</text>
+<rect x="2540.0" y="910.0" width="780.0" height="283.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="2540.0" y="910.0" width="780.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="2892.0" y="931.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="2880.0" y="959.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">AnhPhong</text>
+<rect x="2540.0" y="974.0" width="780.0" height="172.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="2548.0" y="1000.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="2548.0" y="1024.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- khoaLuuTru: String</text>
+<text x="2548.0" y="1048.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- tenTep: String</text>
+<text x="2548.0" y="1072.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- loaiTep: String</text>
+<text x="2548.0" y="1096.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- dungLuong: Long</text>
+<text x="2548.0" y="1120.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- thuTu: Integer</text>
+<rect x="2540.0" y="1146.0" width="780.0" height="47.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="2548.0" y="1172.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ doiThuTu(thuTu: Integer): void</text>
+<rect x="2540.0" y="1820.0" width="780.0" height="208.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="2540.0" y="1820.0" width="780.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="2892.0" y="1841.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="2894.5078125" y="1869.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TienIch</text>
+<rect x="2540.0" y="1884.0" width="780.0" height="97.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="2548.0" y="1910.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="2548.0" y="1934.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ten: String</text>
+<text x="2548.0" y="1958.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- maBieuTuong: String [0..1]</text>
+<rect x="2540.0" y="1981.0" width="780.0" height="47.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="2540.0" y="330.0" width="780.0" height="208.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="2540.0" y="330.0" width="780.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="2892.0" y="351.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="2861.0078125" y="379.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TruongDaiHoc</text>
+<rect x="2540.0" y="394.0" width="780.0" height="97.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="2548.0" y="420.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="2548.0" y="444.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- tenTruong: String</text>
+<text x="2548.0" y="468.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- tenVietTat: String [0..1]</text>
+<rect x="2540.0" y="491.0" width="780.0" height="47.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="2540.0" y="610.0" width="780.0" height="258.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="2540.0" y="610.0" width="780.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="2892.0" y="631.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="2869.5078125" y="659.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">CoSoTruong</text>
+<rect x="2540.0" y="674.0" width="780.0" height="147.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="2548.0" y="700.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="2548.0" y="724.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- tenCoSo: String</text>
+<text x="2548.0" y="748.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- diaChi: String</text>
+<text x="2548.0" y="772.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- viDo: Double</text>
+<text x="2548.0" y="796.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- kinhDo: Double</text>
+<rect x="2540.0" y="821.0" width="780.0" height="47.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="1400.0" y="2150.0" width="850.0" height="308.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="1400.0" y="2150.0" width="850.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="1787.0" y="2171.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="1765.5078125" y="2199.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">NhatKyXuLy</text>
+<rect x="1400.0" y="2214.0" width="850.0" height="197.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1408.0" y="2240.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="1408.0" y="2264.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- hanhDong: HanhDongXuLy</text>
+<text x="1408.0" y="2288.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- trangThaiTruoc: String</text>
+<text x="1408.0" y="2312.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- trangThaiSau: String</text>
+<text x="1408.0" y="2336.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- lyDo: String [0..1]</text>
+<text x="1408.0" y="2360.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- thoiDiem: Instant</text>
+<text x="1408.0" y="2384.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- phienBanDuocXuLy: Long [0..1]</text>
+<rect x="1400.0" y="2411.0" width="850.0" height="47.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1408.0" y="2437.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ NhatKyXuLy(duLieu: DuLieuNhatKy)</text>
+<rect x="1370.0" y="2570.0" width="300.0" height="50.0" fill="#FFFFFF" stroke="none"/>
+<text x="1382.0" y="2600.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">taiKhoanMucTieu</text>
+<rect x="2540.0" y="2160.0" width="780.0" height="320.0" fill="#FFF5CC" stroke="#C9AD55"/>
+<text x="2552.0" y="2190.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">RÀNG BUỘC</text>
+<text x="2552.0" y="2214.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">• Chủ tin: CHU_TRO; người đặt/lưu: KHACH_THUE.</text>
+<text x="2552.0" y="2238.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">• Tin công khai = DANG_HIEN_THI và chủ hoạt động.</text>
+<text x="2552.0" y="2262.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">• {unique} khách thuê – tin trong YeuThich.</text>
+<text x="2552.0" y="2286.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">• NhatKyXuLy có đúng một mục tiêu {xor}: tinDangMucTieu hoặc taiKhoanMucTieu.</text>
+<text x="2552.0" y="2310.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">• 1..* ảnh: áp dụng khi tin đã được lưu/gửi duyệt.</text>
+<text x="2552.0" y="2334.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">• soTien ≥ 0; tenChiPhi không trùng trong một tin.</text>
+<text x="2552.0" y="2358.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">• Không xóa tin/lịch khi ẩn, hủy hay khóa tài khoản.</text>
+<rect x="2540.0" y="2530.0" width="780.0" height="250.0" fill="#FFF5CC" stroke="#C9AD55"/>
+<text x="2552.0" y="2560.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">ĐỊA CHỈ VÀ TRƯỜNG HỌC</text>
+<text x="2552.0" y="2584.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">Địa chỉ chi tiết, phường/xã, thành phố tách riêng. quanHuyen là khu vực tìm kiếm tùy chọn;</text>
+<text x="2552.0" y="2608.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">chuẩn hóa theo dữ liệu địa chỉ sử dụng.</text>
+<text x="2552.0" y="2632.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">Tọa độ phải có đủ cặp hoặc cùng trống. Thiếu tọa độ thì không ghim/tính khoảng cách.</text>
+<text x="2552.0" y="2656.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">Khoảng cách đến CoSoTruong là kết quả tính, không phải chuỗi cố định của tin.</text>
+<rect x="2540.0" y="1350.0" width="780.0" height="283.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="2540.0" y="1350.0" width="780.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="2892.0" y="1371.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«entity»</text>
+<text x="2867.5" y="1399.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">ChiPhiPhong</text>
+<rect x="2540.0" y="1414.0" width="780.0" height="147.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="2548.0" y="1440.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- id: Long</text>
+<text x="2548.0" y="1464.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- tenChiPhi: String</text>
+<text x="2548.0" y="1488.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- soTien: BigDecimal</text>
+<text x="2548.0" y="1512.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- donViTinh: DonViTinhChiPhi</text>
+<text x="2548.0" y="1536.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- ghiChu: String [0..1]</text>
+<rect x="2540.0" y="1561.0" width="780.0" height="72.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="2548.0" y="1587.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ capNhat(soTien: BigDecimal,</text>
+<text x="2548.0" y="1611.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">donViTinh: DonViTinhChiPhi): void</text>
+<rect x="1082.0" y="406.7" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1105.0" y="424.7" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="1332.0" y="479.5" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1346.5" y="497.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="1082.0" y="727.3" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1105.0" y="745.3" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="1408.0" y="832.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1422.5" y="850.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="698.0" y="796.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="721.0" y="814.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="698.0" y="1022.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="712.5" y="1040.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="1082.0" y="1159.5" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1096.5" y="1177.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="1332.0" y="1112.9" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1355.0" y="1130.9" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="242.0" y="498.29999999999995" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="265.0" y="516.3" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="242.0" y="1669.6" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="256.5" y="1687.6" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="95.0" y="1340.0" width="200.0" height="50.0" fill="#FFFFFF" stroke="none"/>
+<text x="107.0" y="1370.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">khachThue</text>
+<rect x="242.0" y="658.5999999999999" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="255.0" y="676.5999999999999" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..1</text>
+<rect x="242.0" y="2004.4" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="256.5" y="2022.4" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="90.0" y="1450.0" width="200.0" height="50.0" fill="#FFFFFF" stroke="none"/>
+<text x="102.0" y="1480.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">nguoiHuy</text>
+<rect x="1082.0" y="1697.5" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1096.5" y="1715.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="1332.0" y="1543.55" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1355.0" y="1561.55" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="2262.0" y="995.45" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="2285.0" y="1013.45" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="2472.0" y="1059.5" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="2486.5" y="1077.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1..*</text>
+<rect x="2262.0" y="1386.95" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="2285.0" y="1404.95" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="2472.0" y="1499.5" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="2486.5" y="1517.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="2262.0" y="1582.7" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="2276.5" y="1600.7" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="2472.0" y="1932.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="2486.5" y="1950.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="2938.0" y="546.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="2961.0" y="564.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="2938.0" y="572.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="2952.5" y="590.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1..*</text>
+<rect x="1833.0" y="1661.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1846.0" y="1679.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..1</text>
+<rect x="1833.0" y="2112.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1847.5" y="2130.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="1082.0" y="612.8" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1105.0" y="630.8" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">1</text>
+<rect x="1332.0" y="2281.2" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1346.5" y="2299.2" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="964.0" y="796.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="977.0" y="814.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..1</text>
+<rect x="1833.0" y="2466.0" width="56.0" height="26.0" fill="#FFFFFF" stroke="none"/>
+<text x="1847.5" y="2484.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">0..*</text>
+<rect x="1185.0" y="2200.0" width="205.0" height="50.0" fill="#FFFFFF" stroke="none"/>
+<text x="1197.0" y="2230.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">nguoiThucHien</text>
+<rect x="310.0" y="2910.0" width="3000.0" height="105.0" fill="#FFFFFF" stroke="none"/>
+<text x="322.0" y="2940.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">− thuộc tính riêng; + phương thức công khai; [0..1] tùy chọn; hình thoi đen = composition.</text>
+<text x="322.0" y="2964.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">Các vai trò trên association là thuộc tính tham chiếu (không tạo thêm bản sao khóa ngoại). nguoiHuy được biểu diễn bằng association.</text>
+<text x="322.0" y="2988.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">NoiDungTin và DuLieuNhatKy được định nghĩa trong khu vực value object bên phải. Sơ đồ có 11 Entity; phần mở rộng trường/cơ sở phục vụ yêu cầu tìm gần trường.</text>
+<rect x="3630.0" y="180.0" width="2320.0" height="48.0" fill="none" stroke="none"/>
+<text x="3630.0" y="210.0" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#263648">TROHN — ENUM VÀ QUY TẮC TRẠNG THÁI</text>
+<rect x="3640.0" y="290.0" width="700.0" height="201.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3640.0" y="290.0" width="700.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="3918.0" y="311.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«enumeration»</text>
+<text x="3958.515625" y="339.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">VaiTro</text>
+<rect x="3640.0" y="354.0" width="700.0" height="97.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3648.0" y="380.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">KHACH_THUE</text>
+<text x="3648.0" y="404.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">CHU_TRO</text>
+<text x="3648.0" y="428.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">ADMIN</text>
+<rect x="3640.0" y="451.0" width="700.0" height="40.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3648.0" y="477.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648"></text>
+<rect x="4430.0" y="290.0" width="700.0" height="174.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="4430.0" y="290.0" width="700.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="4708.0" y="311.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«enumeration»</text>
+<text x="4685.0234375" y="339.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TrangThaiTaiKhoan</text>
+<rect x="4430.0" y="354.0" width="700.0" height="70.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4438.0" y="380.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">HOAT_DONG</text>
+<text x="4438.0" y="404.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">BI_KHOA</text>
+<rect x="4430.0" y="424.0" width="700.0" height="40.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4438.0" y="450.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648"></text>
+<rect x="5220.0" y="290.0" width="700.0" height="282.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="5220.0" y="290.0" width="700.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="5498.0" y="311.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«enumeration»</text>
+<text x="5480.515625" y="339.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TrangThaiTinDang</text>
+<rect x="5220.0" y="354.0" width="700.0" height="178.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="5228.0" y="380.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">CHO_DUYET</text>
+<text x="5228.0" y="404.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">DANG_HIEN_THI</text>
+<text x="5228.0" y="428.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">BI_TU_CHOI</text>
+<text x="5228.0" y="452.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">CHU_TRO_AN</text>
+<text x="5228.0" y="476.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">ADMIN_AN</text>
+<text x="5228.0" y="500.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">AN_DO_KHOA_TAI_KHOAN</text>
+<rect x="5220.0" y="532.0" width="700.0" height="40.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="5228.0" y="558.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648"></text>
+<rect x="3640.0" y="710.0" width="700.0" height="228.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3640.0" y="710.0" width="700.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="3918.0" y="731.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«enumeration»</text>
+<text x="3901.5078125" y="759.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TrangThaiLichHen</text>
+<rect x="3640.0" y="774.0" width="700.0" height="124.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3648.0" y="800.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">CHO_XAC_NHAN</text>
+<text x="3648.0" y="824.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">DA_XAC_NHAN</text>
+<text x="3648.0" y="848.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">BI_TU_CHOI</text>
+<text x="3648.0" y="872.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">DA_HUY</text>
+<rect x="3640.0" y="898.0" width="700.0" height="40.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3648.0" y="924.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648"></text>
+<rect x="4430.0" y="710.0" width="700.0" height="201.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="4430.0" y="710.0" width="700.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="4708.0" y="731.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«enumeration»</text>
+<text x="4728.5" y="759.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">LoaiPhong</text>
+<rect x="4430.0" y="774.0" width="700.0" height="97.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4438.0" y="800.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">PHONG_TRO</text>
+<text x="4438.0" y="824.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">STUDIO</text>
+<text x="4438.0" y="848.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">CHUNG_CU_MINI</text>
+<rect x="4430.0" y="871.0" width="700.0" height="40.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4438.0" y="897.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648"></text>
+<rect x="5220.0" y="710.0" width="700.0" height="174.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="5220.0" y="710.0" width="700.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="5498.0" y="731.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«enumeration»</text>
+<text x="5519.5" y="759.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">NguonHuy</text>
+<rect x="5220.0" y="774.0" width="700.0" height="70.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="5228.0" y="800.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">KHACH_THUE</text>
+<text x="5228.0" y="824.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">HE_THONG</text>
+<rect x="5220.0" y="844.0" width="700.0" height="40.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="5228.0" y="870.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648"></text>
+<rect x="3640.0" y="1130.0" width="700.0" height="255.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3640.0" y="1130.0" width="700.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="3918.0" y="1151.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«enumeration»</text>
+<text x="3914.5078125" y="1179.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">HanhDongXuLy</text>
+<rect x="3640.0" y="1194.0" width="700.0" height="151.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3648.0" y="1220.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">DUYET_TIN</text>
+<text x="3648.0" y="1244.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">TU_CHOI_TIN</text>
+<text x="3648.0" y="1268.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">AN_TIN</text>
+<text x="3648.0" y="1292.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">KHOA_TAI_KHOAN</text>
+<text x="3648.0" y="1316.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">MO_KHOA_TAI_KHOAN</text>
+<rect x="3640.0" y="1345.0" width="700.0" height="40.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3648.0" y="1371.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648"></text>
+<rect x="4430.0" y="1130.0" width="1490.0" height="300.0" fill="#FFF5CC" stroke="#C9AD55"/>
+<text x="4444.0" y="1162.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">QUY TẮC BÁM ĐẶC TẢ</text>
+<text x="4444.0" y="1186.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">UC13: sửa tin → CHO_DUYET; giữ lịch đã có.</text>
+<text x="4444.0" y="1210.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">UC14/19: ẩn tin → hủy lịch tương lai còn hoạt động.</text>
+<text x="4444.0" y="1234.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">UC20: khóa tài khoản, thu hồi phiên, hủy lịch tương lai; chỉ ẩn các tin đang hiển thị nếu mục tiêu là chủ trọ.</text>
+<text x="4444.0" y="1258.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">UC21: không khôi phục phiên, lịch hoặc công khai tin.</text>
+<text x="4444.0" y="1282.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">UC15: kiểm tra trùng THỜI ĐIỂM của chủ trọ; chưa có thời lượng lịch hẹn.</text>
+<text x="4444.0" y="1306.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">Lịch hoạt động = CHO_XAC_NHAN hoặc DA_XAC_NHAN.</text>
+<rect x="4430.0" y="1550.0" width="1490.0" height="280.0" fill="#FFF5CC" stroke="#C9AD55"/>
+<text x="4442.0" y="1580.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">Quy tắc áp dụng cho bản chỉnh sửa UC14: CHO_DUYET/DANG_HIEN_THI → CHU_TRO_AN.</text>
+<text x="4442.0" y="1604.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">CHU_TRO_AN: trả kết quả hiện có. Trạng thái khác: từ chối thay đổi.</text>
+<text x="4442.0" y="1628.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">Mỗi tài khoản có một vai trò. nguoiHuy có thể trống khi hệ thống tự động hủy; nếu thao tác người dùng gây hủy thì ghi người đó.</text>
+<text x="4442.0" y="1652.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">DonViTinhChiPhi dùng cho điện/nước/dịch vụ/gửi xe; không gộp số tiền và đơn vị thành chuỗi.</text>
+<rect x="3640.0" y="1550.0" width="700.0" height="283.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3640.0" y="1550.0" width="700.0" height="64.0" fill="#74AFE2" stroke="#527FA2"/>
+<text x="3918.0" y="1571.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«enumeration»</text>
+<text x="3908.5078125" y="1599.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">DonViTinhChiPhi</text>
+<rect x="3640.0" y="1614.0" width="700.0" height="172.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3648.0" y="1640.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">KWH</text>
+<text x="3648.0" y="1664.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">M3</text>
+<text x="3648.0" y="1688.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">NGUOI_THANG</text>
+<text x="3648.0" y="1712.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">PHONG_THANG</text>
+<text x="3648.0" y="1736.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">XE_THANG</text>
+<text x="3648.0" y="1760.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">LAN</text>
+<rect x="3640.0" y="1786.0" width="700.0" height="47.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3580.0" y="2100.0" width="1100.0" height="468.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3580.0" y="2100.0" width="1100.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="3590.0" y="2131.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«value object»</text>
+<text x="3590.0" y="2159.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">NoiDungTin</text>
+<rect x="3580.0" y="2170.0" width="1100.0" height="349.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3590.0" y="2198.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tieuDe: String</text>
+<text x="3590.0" y="2222.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ moTa: String</text>
+<text x="3590.0" y="2246.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ loaiPhong: LoaiPhong</text>
+<text x="3590.0" y="2270.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ giaThue: BigDecimal</text>
+<text x="3590.0" y="2294.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dienTich: BigDecimal</text>
+<text x="3590.0" y="2318.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ diaChiChiTiet: String</text>
+<text x="3590.0" y="2342.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ phuongXa: String</text>
+<text x="3590.0" y="2366.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ quanHuyen: String [0..1]</text>
+<text x="3590.0" y="2390.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ thanhPho: String</text>
+<text x="3590.0" y="2414.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ viDo: Double [0..1]</text>
+<text x="3590.0" y="2438.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ kinhDo: Double [0..1]</text>
+<text x="3590.0" y="2462.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tenLienHe: String</text>
+<text x="3590.0" y="2486.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ soDienThoaiLienHe: String</text>
+<rect x="3580.0" y="2519.0" width="1100.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3590.0" y="2547.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo phương thức riêng)</text>
+<rect x="4770.0" y="2100.0" width="1250.0" height="368.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="4770.0" y="2100.0" width="1250.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="4780.0" y="2131.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«value object»</text>
+<text x="4780.0" y="2159.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">DuLieuNhatKy</text>
+<rect x="4770.0" y="2170.0" width="1250.0" height="249.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4780.0" y="2198.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ nguoiThucHien: TaiKhoan</text>
+<text x="4780.0" y="2222.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tinDangMucTieu: TinDang [0..1]</text>
+<text x="4780.0" y="2246.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ taiKhoanMucTieu: TaiKhoan [0..1]</text>
+<text x="4780.0" y="2270.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ hanhDong: HanhDongXuLy</text>
+<text x="4780.0" y="2294.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ trangThaiTruoc: String</text>
+<text x="4780.0" y="2318.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ trangThaiSau: String</text>
+<text x="4780.0" y="2342.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ lyDo: String [0..1]</text>
+<text x="4780.0" y="2366.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ thoiDiem: Instant</text>
+<text x="4780.0" y="2390.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ phienBanDuocXuLy: Long [0..1]</text>
+<rect x="4770.0" y="2419.0" width="1250.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4780.0" y="2447.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo phương thức riêng)</text>
+<rect x="30.0" y="3110.0" width="5990.0" height="60.0" fill="#E7F0F8" stroke="#527FA2"/>
+<text x="40.0" y="3145.0" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#263648">CÁC TẦNG ỨNG DỤNG — mỗi lớp/interface chỉ xuất hiện một lần; phương thức được hợp nhất theo tên lớp</text>
+<rect x="70.0" y="3220.0" width="1320.0" height="193.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="70.0" y="3220.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="80.0" y="3251.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«boundary»</text>
+<text x="80.0" y="3279.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">GiaoDienReact</text>
+<rect x="70.0" y="3290.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="3318.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">API client; dữ liệu biểu mẫu</text>
+<rect x="70.0" y="3339.0" width="1320.0" height="74.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="3367.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ guiYeuCau(): void</text>
+<text x="80.0" y="3391.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ hienThiKetQua(): void</text>
+<rect x="70.0" y="3478.0" width="1320.0" height="268.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="70.0" y="3478.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="80.0" y="3509.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«controller»</text>
+<text x="80.0" y="3537.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TaiKhoanController</text>
+<rect x="70.0" y="3548.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="3576.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- service: TaiKhoanService</text>
+<rect x="70.0" y="3597.0" width="1320.0" height="149.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="3625.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangKy(req: DangKyRequest): TaiKhoanResponse</text>
+<text x="80.0" y="3649.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangNhap(req: DangNhapRequest): DangNhapResponse</text>
+<text x="80.0" y="3673.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangXuat(sessionId: String): void</text>
+<text x="80.0" y="3697.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ khoaTaiKhoan(actor: ActorContext, id: Long, lyDo: String): void</text>
+<text x="80.0" y="3721.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ moKhoaTaiKhoan(actor: ActorContext, id: Long, lyDo: String): void</text>
+<rect x="70.0" y="3811.0" width="1320.0" height="343.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="70.0" y="3811.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="80.0" y="3842.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«controller»</text>
+<text x="80.0" y="3870.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TinDangController</text>
+<rect x="70.0" y="3881.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="3909.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- service: TinDangService</text>
+<rect x="70.0" y="3930.0" width="1320.0" height="224.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="3958.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ timKiem(filter: TimKiemPhongRequest): Page&lt;TinDangResponse&gt;</text>
+<text x="80.0" y="3982.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xemChiTiet(id: Long): ChiTietTinResponse</text>
+<text x="80.0" y="4006.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangTin(actor: ActorContext, req: TinDangRequest): TinDangResponse</text>
+<text x="80.0" y="4030.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ suaTin(actor: ActorContext, id: Long, version: Long, req: TinDangRequest): TinDangResponse</text>
+<text x="80.0" y="4054.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ anTinCuaChuTro(actor: ActorContext, id: Long, lyDo: String): void</text>
+<text x="80.0" y="4078.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ duyetTin(actor: ActorContext, id: Long, version: Long): void</text>
+<text x="80.0" y="4102.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tuChoiTin(actor: ActorContext, id: Long, version: Long, lyDo: String): void</text>
+<text x="80.0" y="4126.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ anTinViPham(actor: ActorContext, id: Long, lyDo: String): void</text>
+<rect x="70.0" y="4219.0" width="1320.0" height="218.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="70.0" y="4219.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="80.0" y="4250.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«controller»</text>
+<text x="80.0" y="4278.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">YeuThichController</text>
+<rect x="70.0" y="4289.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="4317.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- service: YeuThichService</text>
+<rect x="70.0" y="4338.0" width="1320.0" height="99.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="4366.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ themYeuThich(actor: ActorContext, tinId: Long): YeuThichResponse</text>
+<text x="80.0" y="4390.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ boYeuThich(actor: ActorContext, tinId: Long): void</text>
+<text x="80.0" y="4414.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xemDanhSach(actor: ActorContext): List&lt;YeuThichResponse&gt;</text>
+<rect x="70.0" y="4502.0" width="1320.0" height="268.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="70.0" y="4502.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="80.0" y="4533.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«controller»</text>
+<text x="80.0" y="4561.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">LichHenController</text>
+<rect x="70.0" y="4572.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="4600.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- service: LichHenService</text>
+<rect x="70.0" y="4621.0" width="1320.0" height="149.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="80.0" y="4649.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ datLich(actor: ActorContext, req: DatLichRequest): LichHenResponse</text>
+<text x="80.0" y="4673.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ huyLich(actor: ActorContext, id: Long, lyDo: String): void</text>
+<text x="80.0" y="4697.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xemDanhSach(actor: ActorContext, filter: LocLichRequest): Page&lt;LichHenResponse&gt;</text>
+<text x="80.0" y="4721.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xacNhanLich(actor: ActorContext, id: Long, version: Long): void</text>
+<text x="80.0" y="4745.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tuChoiLich(actor: ActorContext, id: Long, lyDo: String): void</text>
+<rect x="1570.0" y="3220.0" width="1320.0" height="268.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="1570.0" y="3220.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="1580.0" y="3251.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«service»</text>
+<text x="1580.0" y="3279.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TaiKhoanService</text>
+<rect x="1570.0" y="3290.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1580.0" y="3318.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- authService: AuthService</text>
+<rect x="1570.0" y="3339.0" width="1320.0" height="149.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1580.0" y="3367.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangKy(req: DangKyRequest): TaiKhoanResponse</text>
+<text x="1580.0" y="3391.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangNhap(req: DangNhapRequest): DangNhapResponse</text>
+<text x="1580.0" y="3415.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangXuat(sessionId: String): void</text>
+<text x="1580.0" y="3439.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ khoaTaiKhoan(actor: ActorContext, id: Long, lyDo: String): void</text>
+<text x="1580.0" y="3463.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ moKhoaTaiKhoan(actor: ActorContext, id: Long, lyDo: String): void</text>
+<rect x="1570.0" y="3553.0" width="1320.0" height="343.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="1570.0" y="3553.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="1580.0" y="3584.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«service»</text>
+<text x="1580.0" y="3612.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TinDangService</text>
+<rect x="1570.0" y="3623.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1580.0" y="3651.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- authService: AuthService</text>
+<rect x="1570.0" y="3672.0" width="1320.0" height="224.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1580.0" y="3700.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ timKiem(filter: TimKiemPhongRequest): Page&lt;TinDangResponse&gt;</text>
+<text x="1580.0" y="3724.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xemChiTiet(id: Long): ChiTietTinResponse</text>
+<text x="1580.0" y="3748.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ dangTin(actor: ActorContext, req: TinDangRequest): TinDangResponse</text>
+<text x="1580.0" y="3772.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ suaTin(actor: ActorContext, id: Long, version: Long, req: TinDangRequest): TinDangResponse</text>
+<text x="1580.0" y="3796.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ anTinCuaChuTro(actor: ActorContext, id: Long, lyDo: String): void</text>
+<text x="1580.0" y="3820.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ duyetTin(actor: ActorContext, id: Long, version: Long): void</text>
+<text x="1580.0" y="3844.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tuChoiTin(actor: ActorContext, id: Long, version: Long, lyDo: String): void</text>
+<text x="1580.0" y="3868.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ anTinViPham(actor: ActorContext, id: Long, lyDo: String): void</text>
+<rect x="1570.0" y="3961.0" width="1320.0" height="218.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="1570.0" y="3961.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="1580.0" y="3992.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«service»</text>
+<text x="1580.0" y="4020.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">YeuThichService</text>
+<rect x="1570.0" y="4031.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1580.0" y="4059.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- authService: AuthService</text>
+<rect x="1570.0" y="4080.0" width="1320.0" height="99.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1580.0" y="4108.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ themYeuThich(actor: ActorContext, tinId: Long): YeuThichResponse</text>
+<text x="1580.0" y="4132.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ boYeuThich(actor: ActorContext, tinId: Long): void</text>
+<text x="1580.0" y="4156.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xemDanhSach(actor: ActorContext): List&lt;YeuThichResponse&gt;</text>
+<rect x="1570.0" y="4244.0" width="1320.0" height="268.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="1570.0" y="4244.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="1580.0" y="4275.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«service»</text>
+<text x="1580.0" y="4303.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">LichHenService</text>
+<rect x="1570.0" y="4314.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1580.0" y="4342.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">- authService: AuthService</text>
+<rect x="1570.0" y="4363.0" width="1320.0" height="149.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="1580.0" y="4391.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ datLich(actor: ActorContext, req: DatLichRequest): LichHenResponse</text>
+<text x="1580.0" y="4415.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ huyLich(actor: ActorContext, id: Long, lyDo: String): void</text>
+<text x="1580.0" y="4439.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xemDanhSach(actor: ActorContext, filter: LocLichRequest): Page&lt;LichHenResponse&gt;</text>
+<text x="1580.0" y="4463.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xacNhanLich(actor: ActorContext, id: Long, version: Long): void</text>
+<text x="1580.0" y="4487.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tuChoiLich(actor: ActorContext, id: Long, lyDo: String): void</text>
+<rect x="3070.0" y="3220.0" width="1320.0" height="218.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3070.0" y="3220.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="3080.0" y="3251.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3080.0" y="3279.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TaiKhoanRepository</text>
+<rect x="3070.0" y="3290.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="3318.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="3070.0" y="3339.0" width="1320.0" height="99.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="3367.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ findByEmail(email: String): Optional&lt;TaiKhoan&gt;</text>
+<text x="3080.0" y="3391.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ findById(id: Long): Optional&lt;TaiKhoan&gt;</text>
+<text x="3080.0" y="3415.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ save(taiKhoan: TaiKhoan): TaiKhoan</text>
+<rect x="3070.0" y="3503.0" width="1320.0" height="243.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3070.0" y="3503.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="3080.0" y="3534.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3080.0" y="3562.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">SessionRepository</text>
+<rect x="3070.0" y="3573.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="3601.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="3070.0" y="3622.0" width="1320.0" height="124.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="3650.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ findSession(sessionId: String): Optional&lt;PhienDangNhap&gt;</text>
+<text x="3080.0" y="3674.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ save(phien: PhienDangNhap): PhienDangNhap</text>
+<text x="3080.0" y="3698.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ revokeAllByTaiKhoan(id: Long): int</text>
+<text x="3080.0" y="3722.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ revokeCurrent(sessionId: String): void</text>
+<rect x="3070.0" y="3811.0" width="1320.0" height="243.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3070.0" y="3811.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="3080.0" y="3842.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3080.0" y="3870.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">TinDangRepository</text>
+<rect x="3070.0" y="3881.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="3909.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="3070.0" y="3930.0" width="1320.0" height="124.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="3958.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ hidePublishedByOwner(id: Long): int</text>
+<text x="3080.0" y="3982.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ searchPublic(filter: TimKiemPhongRequest): Page&lt;TinDang&gt;</text>
+<text x="3080.0" y="4006.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ findWithOwner(id: Long): Optional&lt;TinDang&gt;</text>
+<text x="3080.0" y="4030.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ save(tin: TinDang): TinDang</text>
+<rect x="3070.0" y="4119.0" width="1320.0" height="293.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3070.0" y="4119.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="3080.0" y="4150.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3080.0" y="4178.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">LichHenRepository</text>
+<rect x="3070.0" y="4189.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="4217.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="3070.0" y="4238.0" width="1320.0" height="174.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="4266.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ cancelFutureActiveByTaiKhoan(id: Long, lyDo: String, actorId: Long, now: Instant): int</text>
+<text x="3080.0" y="4290.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ cancelFutureActiveByTin(id: Long, lyDo: String, actorId: Long, now: Instant): int</text>
+<text x="3080.0" y="4314.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ findWithTinAndOwner(id: Long): Optional&lt;LichHen&gt;</text>
+<text x="3080.0" y="4338.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ findActiveDuplicate(khachId: Long, tinId: Long, gio: Instant): Optional&lt;LichHen&gt;</text>
+<text x="3080.0" y="4362.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ existsConfirmedByOwnerAndTime(chuId: Long, gio: Instant): boolean</text>
+<text x="3080.0" y="4386.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ save(lich: LichHen): LichHen</text>
+<rect x="3070.0" y="4477.0" width="1320.0" height="243.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3070.0" y="4477.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="3080.0" y="4508.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3080.0" y="4536.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">YeuThichRepository</text>
+<rect x="3070.0" y="4547.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="4575.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="3070.0" y="4596.0" width="1320.0" height="124.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="4624.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ findByUserAndTin(userId: Long, tinId: Long): Optional&lt;YeuThich&gt;</text>
+<text x="3080.0" y="4648.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ findAllWithTinAndOwner(userId: Long): List&lt;YeuThich&gt;</text>
+<text x="3080.0" y="4672.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ save(yeuThich: YeuThich): YeuThich</text>
+<text x="3080.0" y="4696.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ deleteByUserAndTin(userId: Long, tinId: Long): int</text>
+<rect x="3070.0" y="4785.0" width="1320.0" height="168.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3070.0" y="4785.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="3080.0" y="4816.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3080.0" y="4844.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">NhatKyRepository</text>
+<rect x="3070.0" y="4855.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="4883.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="3070.0" y="4904.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="4932.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ append(entry: NhatKyXuLy): void</text>
+<rect x="3070.0" y="5018.0" width="1320.0" height="168.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="3070.0" y="5018.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="3080.0" y="5049.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«interface, repository»</text>
+<text x="3080.0" y="5077.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">CoSoTruongRepository</text>
+<rect x="3070.0" y="5088.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="5116.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="3070.0" y="5137.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="3080.0" y="5165.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ findById(id: Long): Optional&lt;CoSoTruong&gt;</text>
+<rect x="4570.0" y="3220.0" width="1320.0" height="193.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="4570.0" y="3220.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="4580.0" y="3251.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«service hỗ trợ»</text>
+<text x="4580.0" y="3279.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">AuthService</text>
+<rect x="4570.0" y="3290.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4580.0" y="3318.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="4570.0" y="3339.0" width="1320.0" height="74.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4580.0" y="3367.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xacThuc(sessionId: String): ActorContext</text>
+<text x="4580.0" y="3391.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ kiemTraVaiTro(actor: ActorContext, vaiTro: VaiTro): void</text>
+<rect x="4570.0" y="3478.0" width="1320.0" height="193.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="4570.0" y="3478.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="4580.0" y="3509.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«interface»</text>
+<text x="4580.0" y="3537.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">PasswordHasher</text>
+<rect x="4570.0" y="3548.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4580.0" y="3576.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="4570.0" y="3597.0" width="1320.0" height="74.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4580.0" y="3625.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ hash(rawPassword: String): String</text>
+<text x="4580.0" y="3649.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ matches(rawPassword: String, hash: String): boolean</text>
+<rect x="4570.0" y="3736.0" width="1320.0" height="193.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="4570.0" y="3736.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="4580.0" y="3767.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«interface»</text>
+<text x="4580.0" y="3795.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">ImageStorage</text>
+<rect x="4570.0" y="3806.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4580.0" y="3834.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="4570.0" y="3855.0" width="1320.0" height="74.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4580.0" y="3883.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ luu(file: UploadFile): StoredImage</text>
+<text x="4580.0" y="3907.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ xoa(storageKey: String): void</text>
+<rect x="4570.0" y="3994.0" width="1320.0" height="168.0" fill="#FFFFFF" stroke="#527FA2"/>
+<rect x="4570.0" y="3994.0" width="1320.0" height="70.0" fill="#D7E9FA" stroke="#527FA2"/>
+<text x="4580.0" y="4025.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">«service hỗ trợ»</text>
+<text x="4580.0" y="4053.0" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#263648">GeoService</text>
+<rect x="4570.0" y="4064.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4580.0" y="4092.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">(không khai báo thuộc tính riêng)</text>
+<rect x="4570.0" y="4113.0" width="1320.0" height="49.0" fill="#FFFFFF" stroke="#527FA2"/>
+<text x="4580.0" y="4141.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">+ tinhKhoangCachMet(phong: TinDang, coSo: CoSoTruong): double</text>
+<rect x="30.0" y="5923.0" width="6000.0" height="55.0" fill="#E7F0F8" stroke="#527FA2"/>
+<text x="40.0" y="5957.0" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#263648">BẢNG TRA QUAN HỆ PHỤ THUỘC (Dxx trên đường nét đứt)</text>
+<rect x="30.0" y="5993.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6021.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D01 GiaoDienReact → TaiKhoanController: HTTP / JSON</text>
+<rect x="2040.0" y="5993.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6021.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D02 TaiKhoanController → TaiKhoanService: gọi nghiệp vụ</text>
+<rect x="4050.0" y="5993.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="4060.0" y="6021.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D03 TaiKhoanService → TaiKhoanRepository: sử dụng</text>
+<rect x="30.0" y="6057.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6085.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D04 TaiKhoanService → SessionRepository: sử dụng</text>
+<rect x="2040.0" y="6057.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6085.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D05 TaiKhoanService → TinDangRepository: sử dụng</text>
+<rect x="4050.0" y="6057.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="4060.0" y="6085.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D06 TaiKhoanService → LichHenRepository: sử dụng</text>
+<rect x="30.0" y="6121.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6149.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D07 TaiKhoanService → NhatKyRepository: sử dụng</text>
+<rect x="2040.0" y="6121.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6149.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D08 TaiKhoanService → AuthService: xác thực / vai trò</text>
+<rect x="4050.0" y="6121.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="4060.0" y="6149.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D09 TaiKhoanService → PasswordHasher: sử dụng</text>
+<rect x="30.0" y="6185.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6213.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D10 GiaoDienReact → TinDangController: HTTP / JSON</text>
+<rect x="2040.0" y="6185.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6213.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D11 TinDangController → TinDangService: gọi nghiệp vụ</text>
+<rect x="4050.0" y="6185.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="4060.0" y="6213.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D12 TinDangService → TinDangRepository: sử dụng</text>
+<rect x="30.0" y="6249.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6277.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D13 TinDangService → LichHenRepository: sử dụng</text>
+<rect x="2040.0" y="6249.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6277.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D14 TinDangService → NhatKyRepository: sử dụng</text>
+<rect x="4050.0" y="6249.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="4060.0" y="6277.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D15 TinDangService → CoSoTruongRepository: sử dụng</text>
+<rect x="30.0" y="6313.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6341.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D16 TinDangService → AuthService: xác thực / vai trò</text>
+<rect x="2040.0" y="6313.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6341.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D17 TinDangService → ImageStorage: sử dụng</text>
+<rect x="4050.0" y="6313.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="4060.0" y="6341.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D18 TinDangService → GeoService: sử dụng</text>
+<rect x="30.0" y="6377.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6405.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D19 GiaoDienReact → YeuThichController: HTTP / JSON</text>
+<rect x="2040.0" y="6377.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6405.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D20 YeuThichController → YeuThichService: gọi nghiệp vụ</text>
+<rect x="4050.0" y="6377.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="4060.0" y="6405.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D21 YeuThichService → YeuThichRepository: sử dụng</text>
+<rect x="30.0" y="6441.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6469.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D22 YeuThichService → TinDangRepository: sử dụng</text>
+<rect x="2040.0" y="6441.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6469.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D23 YeuThichService → AuthService: xác thực / vai trò</text>
+<rect x="4050.0" y="6441.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="4060.0" y="6469.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D24 GiaoDienReact → LichHenController: HTTP / JSON</text>
+<rect x="30.0" y="6505.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6533.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D25 LichHenController → LichHenService: gọi nghiệp vụ</text>
+<rect x="2040.0" y="6505.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6533.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D26 LichHenService → LichHenRepository: sử dụng</text>
+<rect x="4050.0" y="6505.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="4060.0" y="6533.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D27 LichHenService → TinDangRepository: sử dụng</text>
+<rect x="30.0" y="6569.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="40.0" y="6597.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D28 LichHenService → TaiKhoanRepository: sử dụng</text>
+<rect x="2040.0" y="6569.0" width="1990.0" height="62.0" fill="#FFFFFF" stroke="none"/>
+<text x="2050.0" y="6597.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#263648">D29 LichHenService → AuthService: xác thực / vai trò</text>
+<rect x="30.0" y="6663.0" width="6000.0" height="155.0" fill="#FFF5CC" stroke="#527FA2"/>
+<text x="40.0" y="6693.0" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#263648">PHẠM VI BẢN TỔNG: toàn bộ 41 lớp/interface/enum/value object được khai báo trong bộ 6 trang; không tự thêm getter/setter hoặc phương thức JPA sinh sẵn.</text>
+<text x="40.0" y="6720.0" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#263648">DTO Request/Response, ActorContext, Page, UploadFile, StoredImage là kiểu hỗ trợ trong chữ ký; hợp đồng HTTP xem API/API_DESIGN.md. Chưa phải mô hình mọi lớp mã nguồn backend.</text>
+<text x="40.0" y="6747.0" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#263648">Đường liền: association; hình thoi đen: composition; nét đứt: dependency. Các enum được dùng qua kiểu thuộc tính; entity được dùng qua kiểu tham số/trả về.</text>
+<text x="40.0" y="6774.0" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#263648">Các phương thức cùng tên lớp được gộp, không lược bỏ overload. Phương thức constructor không có kiểu trả về. Giữ thiết kế gốc, không suy diễn backend đã triển khai.</text>
+<rect x="1101.5" y="374.7" width="102.0" height="25" fill="white"/>
+<text x="1104.5" y="392.7" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">sở hữu phiên</text>
+<rect x="1127.5" y="700.65" width="115.0" height="25" fill="white"/>
+<text x="1130.5" y="718.65" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">chủ trọ đăng tin</text>
+<rect x="634.0" y="900.0" width="112.0" height="25" fill="white"/>
+<text x="637.0" y="918.0" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">khách thuê lưu</text>
+<rect x="1105.5" y="1127.5" width="94.0" height="25" fill="white"/>
+<text x="1108.5" y="1145.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">tin được lưu</text>
+<rect x="1126.0" y="1670.75" width="88.0" height="25" fill="white"/>
+<text x="1129.0" y="1688.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">hẹn xem tin</text>
+<rect x="2288.5" y="963.45" width="68.0" height="25" fill="white"/>
+<text x="2291.5" y="981.45" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">gồm ảnh</text>
+<rect x="2278.5" y="1354.95" width="88.0" height="25" fill="white"/>
+<text x="2281.5" y="1372.95" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">gồm chi phí</text>
+<rect x="2366.5" y="1725.35" width="57.0" height="25" fill="white"/>
+<text x="2369.5" y="1743.35" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">tiện ích</text>
+<rect x="2906.0" y="550.0" width="48.0" height="25" fill="white"/>
+<text x="2909.0" y="568.0" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">cơ sở</text>
+<rect x="1763.0" y="1877.5" width="124.0" height="25" fill="white"/>
+<text x="1766.0" y="1895.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">tinDangMucTieu</text>
+<rect x="1417.0" y="3440.25" width="36.0" height="25" fill="white"/>
+<text x="1420.0" y="3458.25" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D01</text>
+<rect x="1528.0" y="4331.5" width="36.0" height="25" fill="white"/>
+<text x="1531.0" y="4349.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D02</text>
+<rect x="3028.0" y="4328.0" width="36.0" height="25" fill="white"/>
+<text x="3031.0" y="4346.0" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D03</text>
+<rect x="2896.0" y="4349.5" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4367.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D04</text>
+<rect x="2896.0" y="4358.5" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4376.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D05</text>
+<rect x="2896.0" y="4367.5" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4385.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D06</text>
+<rect x="2896.0" y="4376.5" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4394.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D07</text>
+<rect x="4528.0" y="4366.75" width="36.0" height="25" fill="white"/>
+<text x="4531.0" y="4384.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D08</text>
+<rect x="2896.0" y="4394.5" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4412.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D09</text>
+<rect x="1417.0" y="3625.5" width="36.0" height="25" fill="white"/>
+<text x="1420.0" y="3643.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D10</text>
+<rect x="1528.0078125" y="4597.75" width="35.984375" height="25" fill="white"/>
+<text x="1531.0078125" y="4615.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D11</text>
+<rect x="2896.0" y="4606.75" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4624.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D12</text>
+<rect x="2896.0" y="4615.75" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4633.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D13</text>
+<rect x="2896.0" y="4624.75" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4642.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D14</text>
+<rect x="2896.0" y="4633.75" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4651.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D15</text>
+<rect x="4528.0" y="4438.75" width="36.0" height="25" fill="white"/>
+<text x="4531.0" y="4456.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D16</text>
+<rect x="2896.0" y="4651.75" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4669.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D17</text>
+<rect x="2896.0" y="4660.75" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4678.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D18</text>
+<rect x="1417.0" y="3798.25" width="36.0" height="25" fill="white"/>
+<text x="1420.0" y="3816.25" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D19</text>
+<rect x="1528.0" y="4851.5" width="36.0" height="25" fill="white"/>
+<text x="1531.0" y="4869.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D20</text>
+<rect x="2896.0" y="4860.5" width="36.0" height="25" fill="white"/>
+<text x="2899.0" y="4878.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D21</text>
+<rect x="3028.0" y="4800.75" width="36.0" height="25" fill="white"/>
+<text x="3031.0" y="4818.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D22</text>
+<rect x="4528.0" y="4501.75" width="36.0" height="25" fill="white"/>
+<text x="4531.0" y="4519.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D23</text>
+<rect x="1417.0" y="3952.25" width="36.0" height="25" fill="white"/>
+<text x="1420.0" y="3970.25" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D24</text>
+<rect x="1528.0" y="5050.5" width="36.0" height="25" fill="white"/>
+<text x="1531.0" y="5068.5" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D25</text>
+<rect x="3028.0" y="5003.25" width="36.0" height="25" fill="white"/>
+<text x="3031.0" y="5021.25" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D26</text>
+<rect x="3028.0" y="4845.75" width="36.0" height="25" fill="white"/>
+<text x="3031.0" y="4863.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D27</text>
+<rect x="3028.0" y="4553.0" width="36.0" height="25" fill="white"/>
+<text x="3031.0" y="4571.0" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D28</text>
+<rect x="4528.0" y="4555.75" width="36.0" height="25" fill="white"/>
+<text x="4531.0" y="4573.75" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#263648">D29</text>
+</svg>

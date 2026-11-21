@@ -1,0 +1,1622 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="erd" name="ERD chân chim">
+    <mxGraphModel dx="2106" dy="1369" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4320" pageHeight="3160" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" parent="1" style="text;html=0;fontSize=36;fontStyle=1;align=left;" value="TROHN  —  ERD CHÂN CHIM  |  12 BẢNG · 15 KHÓA NGOẠI" vertex="1">
+          <mxGeometry height="55" width="4220" x="80" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="text;html=0;fontSize=25;align=left;" value="PK gạch chân  •  FK chỉ cột tham chiếu  •  || đúng một  •  o| không hoặc một  •  o&lt; không hoặc nhiều" vertex="1">
+          <mxGeometry height="44" width="4220" x="80" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fk1" data-child-cardinality="0..*" data-fk="PhienDangNhap.taiKhoanId" data-parent-cardinality="1" edge="1" parent="1" source="TaiKhoan" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.16;entryX=0;entryY=0.4;" target="PhienDangNhap" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="300" />
+              <mxPoint x="980" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk2" data-child-cardinality="0..*" data-fk="TinDang.chuTroId" data-parent-cardinality="1" edge="1" parent="1" source="TaiKhoan" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.28;entryX=0;entryY=0.13953488372093023;" target="TinDang" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="360" />
+              <mxPoint x="980" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk3" data-child-cardinality="0..*" data-fk="AnhPhong.tinDangId" data-parent-cardinality="1" edge="1" parent="1" source="TinDang" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=0;exitY=0.09302325581395349;entryX=1;entryY=0.35294117647058826;" target="AnhPhong" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="1240" />
+              <mxPoint x="1160" y="2620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk4" data-child-cardinality="0..*" data-fk="ChiPhiPhong.tinDangId" data-parent-cardinality="1" edge="1" parent="1" source="TinDang" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.16279069767441862;entryX=1;entryY=0.4;" target="ChiPhiPhong" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2080" y="1300" />
+              <mxPoint x="2080" y="2620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk5" data-child-cardinality="0..*" data-fk="TinDang_TienIch.tinDangId" data-parent-cardinality="1" edge="1" parent="1" source="TinDang" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.23255813953488372;entryX=0;entryY=0.5714285714285714;" target="TinDang_TienIch" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2240" y="1360" />
+              <mxPoint x="2240" y="2580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk6" data-child-cardinality="0..*" data-fk="TinDang_TienIch.tienIchId" data-parent-cardinality="1" edge="1" parent="1" source="TienIch" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=0;exitY=0.4444444444444444;entryX=1;entryY=0.8571428571428571;" target="TinDang_TienIch" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3180" y="2580" />
+              <mxPoint x="3180" y="2620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk7" data-child-cardinality="0..*" data-fk="YeuThich.khachThueId" data-parent-cardinality="1" edge="1" parent="1" source="TaiKhoan" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=0;exitY=0.4;entryX=0;entryY=0.5454545454545454;" target="YeuThich" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="420" />
+              <mxPoint x="40" y="1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk8" data-child-cardinality="0..*" data-fk="YeuThich.tinDangId" data-parent-cardinality="1" edge="1" parent="1" source="TinDang" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=0;exitY=0.3023255813953488;entryX=1;entryY=0.7272727272727273;" target="YeuThich" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="1420" />
+              <mxPoint x="980" y="1500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk9" data-child-cardinality="0..*" data-fk="LichHen.khachThueId" data-parent-cardinality="1" edge="1" parent="1" source="TaiKhoan" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.52;entryX=0;entryY=0.17142857142857143;" target="LichHen" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="480" />
+              <mxPoint x="1160" y="1120" />
+              <mxPoint x="2240" y="1120" />
+              <mxPoint x="2240" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk10" data-child-cardinality="0..*" data-fk="LichHen.tinDangId" data-parent-cardinality="1" edge="1" parent="1" source="TinDang" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.37209302325581395;entryX=0;entryY=0.22857142857142856;" target="LichHen" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2220" y="1480" />
+              <mxPoint x="2220" y="1320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk11" data-child-cardinality="0..*" data-fk="LichHen.nguoiHuyId" data-parent-cardinality="0..1" edge="1" parent="1" source="TaiKhoan" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.64;entryX=0;entryY=0.6857142857142857;" target="LichHen" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="540" />
+              <mxPoint x="1140" y="1100" />
+              <mxPoint x="2260" y="1100" />
+              <mxPoint x="2260" y="1640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk12" data-child-cardinality="0..*" data-fk="CoSoTruong.truongDaiHocId" data-parent-cardinality="1" edge="1" parent="1" source="TruongDaiHoc" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.4444444444444444;entryX=0;entryY=0.4;" target="CoSoTruong" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3180" y="300" />
+              <mxPoint x="3180" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk13" data-child-cardinality="0..*" data-fk="NhatKyXuLy.nguoiThucHienId" data-parent-cardinality="1" edge="1" parent="1" source="TaiKhoan" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.76;entryX=0;entryY=0.2608695652173913;" target="NhatKyXuLy" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3340" y="600" />
+              <mxPoint x="3340" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk14" data-child-cardinality="0..*" data-fk="NhatKyXuLy.tinDangMucTieuId" data-parent-cardinality="0..1" edge="1" parent="1" source="TinDang" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.4418604651162791;entryX=0;entryY=0.34782608695652173;" target="NhatKyXuLy" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2060" y="1540" />
+              <mxPoint x="2060" y="1080" />
+              <mxPoint x="3320" y="1080" />
+              <mxPoint x="3320" y="1320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk15" data-child-cardinality="0..*" data-fk="NhatKyXuLy.taiKhoanMucTieuId" data-parent-cardinality="0..1" edge="1" parent="1" source="TaiKhoan" style="endArrow=none;startArrow=none;rounded=0;strokeColor=#34495E;strokeWidth=2;exitX=1;exitY=0.88;entryX=0;entryY=0.43478260869565216;" target="NhatKyXuLy" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3300" y="660" />
+              <mxPoint x="3300" y="1360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TaiKhoan" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="500" width="820" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="TaiKhoan" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="TaiKhoan" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" x="1" y="61" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;perimeterSpacing=0;fillColor=none;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="hoTen" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(255)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="email" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(255)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="soDienThoai" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(20)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="matKhauBam" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(255)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="vaiTro" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(20)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="trangThai" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(20)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="lyDoKhoa" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(1000) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ngayTao" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ngayCapNhat" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" parent="TaiKhoan" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="version" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" parent="TaiKhoan" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" parent="TaiKhoan" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" parent="TaiKhoan" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="440" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m349" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="68" as="sourcePoint" />
+            <mxPoint x="832" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m350" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852" y="68" as="sourcePoint" />
+            <mxPoint x="852" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m355" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="128" as="sourcePoint" />
+            <mxPoint x="832" y="152" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m356" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852" y="128" as="sourcePoint" />
+            <mxPoint x="852" y="152" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m385" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-12" y="188" as="sourcePoint" />
+            <mxPoint x="-12" y="212" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m386" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-32" y="188" as="sourcePoint" />
+            <mxPoint x="-32" y="212" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m397" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="248" as="sourcePoint" />
+            <mxPoint x="832" y="272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m398" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852" y="248" as="sourcePoint" />
+            <mxPoint x="852" y="272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m409" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="308" as="sourcePoint" />
+            <mxPoint x="832" y="332" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c343" parent="TaiKhoan" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="853" y="313" as="geometry" />
+        </mxCell>
+        <mxCell id="m421" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="368" as="sourcePoint" />
+            <mxPoint x="832" y="392" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m422" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852" y="368" as="sourcePoint" />
+            <mxPoint x="852" y="392" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m433" edge="1" parent="TaiKhoan" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="428" as="sourcePoint" />
+            <mxPoint x="832" y="452" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c349" parent="TaiKhoan" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="853" y="433" as="geometry" />
+        </mxCell>
+        <mxCell id="PhienDangNhap" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="300" width="820" x="1200" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" parent="PhienDangNhap" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="PhienDangNhap" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" parent="PhienDangNhap" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" parent="PhienDangNhap" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="taiKhoanId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" parent="PhienDangNhap" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="maPhienBam" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="CHAR(64)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" parent="PhienDangNhap" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="taoLuc" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" parent="PhienDangNhap" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="hetHanLuc" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" parent="PhienDangNhap" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="thuHoiLuc" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c59" parent="PhienDangNhap" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c60" parent="PhienDangNhap" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c61" parent="PhienDangNhap" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="240" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m351" edge="1" parent="PhienDangNhap" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="108" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m352" edge="1" parent="PhienDangNhap" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m353" edge="1" parent="PhienDangNhap" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="132" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c333" parent="PhienDangNhap" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="TinDang" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="860" width="820" x="1200" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="c63" parent="TinDang" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="TinDang" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c64" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c65" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c66" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c67" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c68" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="chuTroId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c69" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c70" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c71" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tieuDe" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c72" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(255)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c73" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c74" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="moTa" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c75" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="TEXT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c76" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c77" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="loaiPhong" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c78" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(20)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c79" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c80" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="giaThue" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c81" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DECIMAL(12,2)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c82" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c83" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="dienTich" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c84" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DECIMAL(10,2)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c85" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c86" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="diaChiChiTiet" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c87" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(255)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c88" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c89" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="phuongXa" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c90" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(100)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c91" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c92" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="quanHuyen" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c93" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(100) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c94" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c95" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="thanhPho" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c96" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(100)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c97" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c98" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="viDo" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c99" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DECIMAL(10,7) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c100" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="c101" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="kinhDo" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="c102" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DECIMAL(10,7) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="c103" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="c104" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tenLienHe" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="c105" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(255)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="c106" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="c107" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="soDienThoaiLienHe" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="c108" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(20)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="c109" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="c110" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="trangThai" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="c111" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(32)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="c112" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="c113" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="lyDoXuLy" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="c114" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(1000) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="c115" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c116" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ngayTao" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c117" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c118" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="c119" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ngayCapNhat" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="c120" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="c121" parent="TinDang" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c122" parent="TinDang" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="version" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c123" parent="TinDang" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c124" parent="TinDang" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c125" parent="TinDang" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="800" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m357" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="108" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m358" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m359" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="132" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c334" parent="TinDang" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="m361" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-12" y="68" as="sourcePoint" />
+            <mxPoint x="-12" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m362" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-32" y="68" as="sourcePoint" />
+            <mxPoint x="-32" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m367" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="128" as="sourcePoint" />
+            <mxPoint x="832" y="152" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m368" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852" y="128" as="sourcePoint" />
+            <mxPoint x="852" y="152" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m373" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="188" as="sourcePoint" />
+            <mxPoint x="832" y="212" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m374" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852" y="188" as="sourcePoint" />
+            <mxPoint x="852" y="212" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m391" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-12" y="248" as="sourcePoint" />
+            <mxPoint x="-12" y="272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m392" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-32" y="248" as="sourcePoint" />
+            <mxPoint x="-32" y="272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m403" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="308" as="sourcePoint" />
+            <mxPoint x="832" y="332" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m404" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852" y="308" as="sourcePoint" />
+            <mxPoint x="852" y="332" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m427" edge="1" parent="TinDang" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="368" as="sourcePoint" />
+            <mxPoint x="832" y="392" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c347" parent="TinDang" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="853" y="373" as="geometry" />
+        </mxCell>
+        <mxCell id="AnhPhong" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="340" width="820" x="100" y="2500" as="geometry" />
+        </mxCell>
+        <mxCell id="c127" parent="AnhPhong" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="AnhPhong" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c128" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c129" parent="AnhPhong" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c130" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c131" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c132" parent="AnhPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tinDangId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c133" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c134" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c135" parent="AnhPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="khoaLuuTru" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c136" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(255)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c137" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c138" parent="AnhPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tenTep" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c139" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(255)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c140" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c141" parent="AnhPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="loaiTep" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c142" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(50)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c143" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c144" parent="AnhPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="dungLuong" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c145" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c146" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c147" parent="AnhPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="thuTu" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c148" parent="AnhPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="INT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c149" parent="AnhPhong" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c150" parent="AnhPhong" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="280" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m363" edge="1" parent="AnhPhong" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="108" as="sourcePoint" />
+            <mxPoint x="844" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m364" edge="1" parent="AnhPhong" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="120" as="sourcePoint" />
+            <mxPoint x="844" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m365" edge="1" parent="AnhPhong" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="132" as="sourcePoint" />
+            <mxPoint x="844" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c335" parent="AnhPhong" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="853" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="ChiPhiPhong" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="300" width="820" x="1200" y="2500" as="geometry" />
+        </mxCell>
+        <mxCell id="c152" parent="ChiPhiPhong" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ChiPhiPhong" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c153" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c154" parent="ChiPhiPhong" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c155" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c156" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c157" parent="ChiPhiPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tinDangId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c158" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c159" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c160" parent="ChiPhiPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tenChiPhi" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c161" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(100)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c162" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c163" parent="ChiPhiPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="soTien" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c164" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DECIMAL(12,2)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c165" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c166" parent="ChiPhiPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="donViTinh" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c167" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(20)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c168" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c169" parent="ChiPhiPhong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ghiChu" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c170" parent="ChiPhiPhong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(1000) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c171" parent="ChiPhiPhong" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c172" parent="ChiPhiPhong" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="240" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m369" edge="1" parent="ChiPhiPhong" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="108" as="sourcePoint" />
+            <mxPoint x="844" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m370" edge="1" parent="ChiPhiPhong" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="120" as="sourcePoint" />
+            <mxPoint x="844" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m371" edge="1" parent="ChiPhiPhong" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="132" as="sourcePoint" />
+            <mxPoint x="844" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c336" parent="ChiPhiPhong" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="853" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="TienIch" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="180" width="820" x="3400" y="2500" as="geometry" />
+        </mxCell>
+        <mxCell id="c174" parent="TienIch" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="TienIch" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c175" parent="TienIch" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c176" parent="TienIch" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c177" parent="TienIch" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c178" parent="TienIch" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c179" parent="TienIch" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ten" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c180" parent="TienIch" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(100)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c181" parent="TienIch" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c182" parent="TienIch" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="maBieuTuong" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c183" parent="TienIch" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(100) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c184" parent="TienIch" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c185" parent="TienIch" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="120" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m379" edge="1" parent="TienIch" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-12" y="68" as="sourcePoint" />
+            <mxPoint x="-12" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m380" edge="1" parent="TienIch" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-32" y="68" as="sourcePoint" />
+            <mxPoint x="-32" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TinDang_TienIch" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="140" width="820" x="2300" y="2500" as="geometry" />
+        </mxCell>
+        <mxCell id="c187" parent="TinDang_TienIch" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="TinDang_TienIch" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c188" parent="TinDang_TienIch" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK/FK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c189" parent="TinDang_TienIch" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="tinDangId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c190" parent="TinDang_TienIch" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c191" parent="TinDang_TienIch" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK/FK" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c192" parent="TinDang_TienIch" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="tienIchId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c193" parent="TinDang_TienIch" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c194" parent="TinDang_TienIch" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c195" parent="TinDang_TienIch" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="80" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m375" edge="1" parent="TinDang_TienIch" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="68" as="sourcePoint" />
+            <mxPoint x="-24" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m376" edge="1" parent="TinDang_TienIch" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="80" as="sourcePoint" />
+            <mxPoint x="-24" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m377" edge="1" parent="TinDang_TienIch" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="92" as="sourcePoint" />
+            <mxPoint x="-24" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c337" parent="TinDang_TienIch" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="m381" edge="1" parent="TinDang_TienIch" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="108" as="sourcePoint" />
+            <mxPoint x="844" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m382" edge="1" parent="TinDang_TienIch" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="120" as="sourcePoint" />
+            <mxPoint x="844" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m383" edge="1" parent="TinDang_TienIch" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="132" as="sourcePoint" />
+            <mxPoint x="844" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c338" parent="TinDang_TienIch" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="853" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="YeuThich" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="220" width="820" x="120" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="c197" parent="YeuThich" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="YeuThich" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c198" parent="YeuThich" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c199" parent="YeuThich" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c200" parent="YeuThich" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c201" parent="YeuThich" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c202" parent="YeuThich" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="khachThueId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c203" parent="YeuThich" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c204" parent="YeuThich" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c205" parent="YeuThich" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tinDangId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c206" parent="YeuThich" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c207" parent="YeuThich" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c208" parent="YeuThich" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ngayLuu" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c209" parent="YeuThich" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c210" parent="YeuThich" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c211" parent="YeuThich" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="160" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m387" edge="1" parent="YeuThich" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="108" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m388" edge="1" parent="YeuThich" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m389" edge="1" parent="YeuThich" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="132" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c339" parent="YeuThich" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="m393" edge="1" parent="YeuThich" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="148" as="sourcePoint" />
+            <mxPoint x="844" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m394" edge="1" parent="YeuThich" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="160" as="sourcePoint" />
+            <mxPoint x="844" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m395" edge="1" parent="YeuThich" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="172" as="sourcePoint" />
+            <mxPoint x="844" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c340" parent="YeuThich" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="853" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="LichHen" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="700" width="820" x="2300" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="c213" parent="LichHen" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="LichHen" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c214" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c215" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c216" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c217" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c218" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="khachThueId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c219" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c220" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c221" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tinDangId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c222" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c223" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c224" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="thoiDiemHen" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c225" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c226" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c227" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="soDienThoaiLienHe" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c228" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(20)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c229" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c230" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ghiChu" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c231" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(1000) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c232" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c233" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="trangThai" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c234" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(20)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c235" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c236" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="lyDoTuChoi" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c237" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(1000) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c238" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c239" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="lyDoHuy" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c240" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(1000) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c241" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c242" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="nguonHuy" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c243" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(20) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c244" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c245" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="nguoiHuyId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c246" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c247" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c248" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="huyLuc" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c249" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c250" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="c251" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ngayTao" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="c252" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="c253" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="c254" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="ngayCapNhat" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="c255" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="c256" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="c257" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="version" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="c258" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="c259" parent="LichHen" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="c260" parent="LichHen" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="dangHoatDong" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="c261" parent="LichHen" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="TINYINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="c262" parent="LichHen" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c263" parent="LichHen" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="640" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m399" edge="1" parent="LichHen" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="108" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m400" edge="1" parent="LichHen" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m401" edge="1" parent="LichHen" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="132" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c341" parent="LichHen" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="m405" edge="1" parent="LichHen" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="148" as="sourcePoint" />
+            <mxPoint x="-24" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m406" edge="1" parent="LichHen" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="160" as="sourcePoint" />
+            <mxPoint x="-24" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m407" edge="1" parent="LichHen" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="172" as="sourcePoint" />
+            <mxPoint x="-24" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c342" parent="LichHen" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="m411" edge="1" parent="LichHen" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="468" as="sourcePoint" />
+            <mxPoint x="-24" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m412" edge="1" parent="LichHen" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="480" as="sourcePoint" />
+            <mxPoint x="-24" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m413" edge="1" parent="LichHen" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="492" as="sourcePoint" />
+            <mxPoint x="-24" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c344" parent="LichHen" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="473" as="geometry" />
+        </mxCell>
+        <mxCell id="TruongDaiHoc" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="180" width="820" x="2300" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c265" parent="TruongDaiHoc" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="TruongDaiHoc" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c266" parent="TruongDaiHoc" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c267" parent="TruongDaiHoc" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c268" parent="TruongDaiHoc" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c269" parent="TruongDaiHoc" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c270" parent="TruongDaiHoc" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tenTruong" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c271" parent="TruongDaiHoc" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(200)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c272" parent="TruongDaiHoc" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c273" parent="TruongDaiHoc" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tenVietTat" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c274" parent="TruongDaiHoc" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(50) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c275" parent="TruongDaiHoc" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c276" parent="TruongDaiHoc" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="120" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m415" edge="1" parent="TruongDaiHoc" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="68" as="sourcePoint" />
+            <mxPoint x="832" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m416" edge="1" parent="TruongDaiHoc" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852" y="68" as="sourcePoint" />
+            <mxPoint x="852" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CoSoTruong" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="300" width="820" x="3400" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c278" parent="CoSoTruong" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="CoSoTruong" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c279" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c280" parent="CoSoTruong" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c281" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c282" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c283" parent="CoSoTruong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="truongDaiHocId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c284" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c285" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c286" parent="CoSoTruong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tenCoSo" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c287" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(200)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c288" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c289" parent="CoSoTruong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="diaChi" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c290" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(500)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c291" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c292" parent="CoSoTruong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="viDo" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c293" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DECIMAL(10,7)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c294" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c295" parent="CoSoTruong" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="kinhDo" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c296" parent="CoSoTruong" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DECIMAL(10,7)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c297" parent="CoSoTruong" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c298" parent="CoSoTruong" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="240" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m417" edge="1" parent="CoSoTruong" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="108" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m418" edge="1" parent="CoSoTruong" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m419" edge="1" parent="CoSoTruong" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="132" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c345" parent="CoSoTruong" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="NhatKyXuLy" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#17212B;" value="" vertex="1">
+          <mxGeometry height="460" width="820" x="3400" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="c300" parent="NhatKyXuLy" style="html=0;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="NhatKyXuLy" vertex="1">
+          <mxGeometry height="60" width="820" as="geometry" />
+        </mxCell>
+        <mxCell id="c301" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="40" width="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c302" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=4;align=left;spacingLeft=15;verticalAlign=middle;" value="id" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c303" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c304" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c305" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="nguoiThucHienId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c306" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c307" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c308" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="tinDangMucTieuId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c309" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c310" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="40" width="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c311" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="taiKhoanMucTieuId" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c312" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c313" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c314" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="hanhDong" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c315" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(32)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c316" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c317" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="trangThaiTruoc" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c318" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(32)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c319" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c320" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="trangThaiSau" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c321" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(32)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c322" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c323" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="lyDo" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c324" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="VARCHAR(1000) NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c325" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c326" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="thoiDiem" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c327" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="DATETIME(6)" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c328" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;spacingLeft=12;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="40" width="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c329" parent="NhatKyXuLy" style="text;html=0;fontSize=22;fontStyle=0;align=left;spacingLeft=15;verticalAlign=middle;" value="phienBanDuocXuLy" vertex="1">
+          <mxGeometry height="40" width="370" x="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c330" parent="NhatKyXuLy" style="text;html=0;fontSize=20;align=left;verticalAlign=middle;" value="BIGINT NULL" vertex="1">
+          <mxGeometry height="40" width="350" x="470" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c331" parent="NhatKyXuLy" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c332" parent="NhatKyXuLy" style="fillColor=#17212B;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="400" width="1" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m423" edge="1" parent="NhatKyXuLy" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="108" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m424" edge="1" parent="NhatKyXuLy" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m425" edge="1" parent="NhatKyXuLy" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="132" as="sourcePoint" />
+            <mxPoint x="-24" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c346" parent="NhatKyXuLy" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="m429" edge="1" parent="NhatKyXuLy" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="148" as="sourcePoint" />
+            <mxPoint x="-24" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m430" edge="1" parent="NhatKyXuLy" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="160" as="sourcePoint" />
+            <mxPoint x="-24" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m431" edge="1" parent="NhatKyXuLy" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="172" as="sourcePoint" />
+            <mxPoint x="-24" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c348" parent="NhatKyXuLy" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="m435" edge="1" parent="NhatKyXuLy" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="188" as="sourcePoint" />
+            <mxPoint x="-24" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m436" edge="1" parent="NhatKyXuLy" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="200" as="sourcePoint" />
+            <mxPoint x="-24" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m437" edge="1" parent="NhatKyXuLy" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#34495E;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="212" as="sourcePoint" />
+            <mxPoint x="-24" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c350" parent="NhatKyXuLy" style="ellipse;fillColor=#FFFFFF;strokeColor=#34495E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="-47" y="193" as="geometry" />
+        </mxCell>
+        <mxCell id="c351" parent="1" style="text;html=0;fontSize=24;align=left;" value="Mô hình vật lý: đầu nhiều là 0..*. Ít nhất một ảnh của tin đã lưu do Service bảo đảm. Nhật ký: đúng một FK mục tiêu khác NULL." vertex="1">
+          <mxGeometry height="60" width="4220" x="80" y="3050" as="geometry" />
+        </mxCell>
+      <mxCell id="pk_separator_c5" parent="TaiKhoan" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c42" parent="PhienDangNhap" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c64" parent="TinDang" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c128" parent="AnhPhong" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c153" parent="ChiPhiPhong" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c175" parent="TienIch" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c188" parent="TinDang_TienIch" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c191" parent="TinDang_TienIch" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="140.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c198" parent="YeuThich" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c214" parent="LichHen" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c266" parent="TruongDaiHoc" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c279" parent="CoSoTruong" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell><mxCell id="pk_separator_c301" parent="NhatKyXuLy" vertex="1" value="" style="shape=line;strokeColor=#17212B;strokeWidth=2;fillColor=none;"><mxGeometry x="0" y="100.0" width="820.0" height="0" as="geometry" /></mxCell></root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

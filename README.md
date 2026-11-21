@@ -1,61 +1,61 @@
 # TROHN — Web cho thuê trọ dành cho sinh viên Hà Nội
 
-Repository đồ án, hiện chỉ có cấu trúc thư mục và tài liệu định hướng, chưa triển khai mã nguồn.
+React và TypeScript hiển thị dữ liệu từ API Spring Boot. Backend dùng JDBC với MySQL 8. Trang công khai chỉ liệt kê tin đã duyệt của chủ trọ đang hoạt động. Người dùng mới có thể đăng ký làm khách thuê hoặc chủ trọ tại `/dang-ky`.
 
-## Công nghệ dự kiến
-- Frontend: React + TypeScript.
-- Backend: Java + Spring Boot, Maven, Spring Security, Spring Data JPA.
-- Database: MySQL; Flyway quản lý migration.
-- Môi trường: Docker Compose (sẽ cấu hình khi triển khai).
+## Chạy bản chính trên máy Windows (25 phòng, 125 ảnh)
 
-## Cấu trúc thư mục
-```
-trohn/
-├── README.md
-├── .gitignore
-├── .env.example
-├── backend/
-│   └── src/
-│       ├── main/
-│       │   ├── java/vn/trohn/
-│       │   │   ├── config/
-│       │   │   ├── security/
-│       │   │   ├── common/
-│       │   │   ├── model/
-│       │   │   ├── controller/
-│       │   │   ├── repository/
-│       │   │   ├── service/
-│       │   │   └── dto/
-│       │   └── resources/db/migration/
-│       └── test/java/vn/trohn/
-├── frontend/
-│   ├── public/
-│   └── src/
-│       ├── assets/
-│       ├── components/
-│       ├── pages/
-│       ├── layouts/
-│       ├── routes/
-│       ├── services/
-│       ├── hooks/
-│       ├── types/
-│       └── styles/
-└── docs/
-    ├── requirements.md
-    ├── architecture.md
-    ├── database.md
-    ├── api.md
-    └── plan.md
+Database `trohn` dùng cổng 33317. Dữ liệu nằm trong `backend/mysql-data`. MySQL trên Windows dùng liên kết `%LOCALAPPDATA%\TrohnMySQLData` để đọc được đường dẫn có dấu. Khi khởi động lại máy, chạy lần lượt trong ba cửa sổ PowerShell, bắt đầu từ thư mục `trohn`.
+
+1. Khởi động MySQL đã khởi tạo trên máy này.
+
+   ```powershell
+   & 'C:/Program Files/MySQL/MySQL Server 8.0/bin/mysqld.exe' --no-defaults "--datadir=$env:LOCALAPPDATA/TrohnMySQLData" --bind-address=127.0.0.1 --port=33317 --mysqlx=OFF --console
+   ```
+
+2. Khởi động API bằng Java 17 trở lên từ thư mục backend. Khi đổi mã Java, chạy `mvn package` trước.
+
+   ```powershell
+   cd backend
+   java -jar target/trohn-api-1.0.0.jar
+   ```
+
+3. Chạy giao diện bằng Node 22 trở lên. Trên máy mới, chạy `pnpm install` trước.
+
+   ```powershell
+   cd frontend
+   pnpm dev --port 5176 --strictPort
+   ```
+
+Mở [Trohn](http://127.0.0.1:5176/). Vite chuyển yêu cầu `/api` tới cổng 18087. Có thể kiểm tra kết nối bằng [API dữ liệu](http://127.0.0.1:5176/api/state).
+
+## Chạy bản demo bằng Docker Compose
+
+Bật Docker Desktop ở chế độ Linux containers. Mở terminal tại thư mục chứa `compose.yaml` rồi chạy:
+
+```powershell
+docker compose up -d --build
 ```
 
-Các file `.gitkeep` giữ thư mục trống trong Git. Chưa có `pom.xml`, `package.json`, ứng dụng hoặc cấu hình chạy; các file này sẽ được tạo khi bắt đầu lập trình.
+Mở [website](http://127.0.0.1:5175/) sau khi API khởi động. Xem nhật ký bằng `docker compose logs --tail=50 db api web`.
 
-## Phạm vi dự kiến
-Backend tổ chức theo tầng: Controller nhận request, Service xử lý nghiệp vụ, Repository truy cập MySQL. Model chứa các Entity ánh xạ bảng; DTO chứa dữ liệu request/response. Các thư mục config, security và common chứa cấu hình, bảo mật và thành phần dùng chung.
+Lần khởi tạo đầu tiên, MySQL nạp schema, 25 tin phòng và 125 ảnh từ `Database/SQL`. Đăng ký tài khoản mới tại `/dang-ky` để đăng nhập. Dữ liệu phát sinh lưu trong volume riêng của Docker trên từng máy. Dùng `docker compose down` để dừng và giữ dữ liệu, rồi `docker compose up -d` để chạy lại.
 
-- Sinh viên: tìm/lọc phòng, xem chi tiết, lưu yêu thích, gửi yêu cầu liên hệ.
-- Chủ trọ: đăng và quản lý tin, cập nhật tình trạng phòng.
-- Quản trị viên: duyệt tin, quản lý tài khoản, xử lý báo cáo.
+Khi chia sẻ qua Git, giữ cùng cấp `compose.yaml`, `backend/`, `frontend/` và `Database/SQL/`. Các tệp SQL tái tạo bộ dữ liệu mẫu trên máy của bạn học. Dữ liệu của bản chạy Windows và volume Docker hiện tại nằm riêng trên máy người dùng.
 
-## Thành viên
-Sẽ bổ sung họ tên, mã sinh viên, lớp và phân công theo yêu cầu môn học.
+## Cấu hình MySQL khác
+
+Trên schema trống, chạy các script `01_create_tables.sql`, `02_create_indexes.sql` và `05_photo_content.sql` trong thư mục `Database/SQL` của workspace. Script `03_sample_data.sql` dành riêng cho minh họa. Backend đọc `DB_URL`, `DB_USER` và `DB_PASSWORD` từ môi trường hoặc `backend/.env`. Tài khoản ứng dụng cần SELECT, INSERT, UPDATE, DELETE trên schema. File cấu hình cục bộ và dữ liệu MySQL được Git bỏ qua.
+
+## Tài khoản và tin đầu tiên
+
+- Người dùng đăng ký trên web và đăng nhập bằng email. Mật khẩu dùng BCrypt. API kiểm tra quyền theo phiên lưu trong MySQL.
+- Để cấp quyền quản trị lần đầu, đăng ký **một tài khoản khách thuê mới dành riêng cho quản trị**. Người vận hành kết nối đúng schema bằng tài khoản quản trị database, kiểm tra ID và email rồi thực hiện câu lệnh bên dưới với email thực. Đăng xuất và đăng nhập lại để mở trang quản trị. Website không cấp quyền admin qua biểu mẫu đăng ký.
+
+  ```sql
+  UPDATE TaiKhoan SET vaiTro='ADMIN', version=version+1
+  WHERE email='<email quản trị đã xác minh>' AND vaiTro='KHACH_THUE';
+  ```
+
+- Chủ trọ đăng tin kèm ảnh từ `/chu-tro/tin-dang/them`. Tin chờ duyệt nằm tại `/admin/tin-dang`. Sau khi duyệt, khách thuê có thể xem phòng, lưu yêu thích và đặt lịch. Tọa độ là tùy chọn. Bản đồ chỉ ghim những phòng có tọa độ.
+- Bản Docker dựng từ repository có sẵn danh mục phòng và cơ sở trường. Khi có bản ghi cơ sở với tọa độ, giao diện tính khoảng cách đường chim bay để lọc phòng gần trường.
+

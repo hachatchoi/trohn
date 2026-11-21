@@ -1,19 +1,7 @@
-# Kiến trúc hệ thống dự kiến
+# Kiến trúc hệ thống TROHN
 
-React → REST API Spring Boot → MySQL.
+Cập nhật 30/09/2026. Tài liệu chuẩn hiện nằm tại [bộ thiết kế đồng bộ](../../Architecture/SYSTEM_ARCHITECTURE.docx). Dùng Class Diagram cũ 6 trang và đặc tả 21 UC có lịch hẹn, theo quyết định người dùng.
 
-Backend tổ chức theo tầng:
+Frontend hiện là demo; backend chưa triển khai. Có tài liệu SQL/API không có nghĩa đã chạy database hoặc endpoint. Không dùng các ghi chú “chưa có tài liệu” của bản cũ để đánh giá tiến độ.
 
-- `controller/`: nhận HTTP request, kiểm tra dữ liệu đầu vào và trả response.
-- `service/`: xử lý nghiệp vụ, giao dịch và kiểm tra quyền theo nghiệp vụ.
-- `repository/`: truy vấn cơ sở dữ liệu qua Spring Data JPA.
-- `model/`: các Entity ánh xạ bảng MySQL, ví dụ User và Listing khi triển khai.
-- `dto/`: dữ liệu request/response của API.
-- `config/`: cấu hình ứng dụng.
-- `security/`: xác thực và phân quyền.
-- `common/`: thành phần dùng chung.
-
-Luồng xử lý: React → Controller → Service → Repository → MySQL.
-Repository làm việc với Entity trong model; API dùng DTO để trao đổi dữ liệu.
-
-Chưa có mã nguồn hoặc cấu hình hoạt động.
+Xem [báo cáo kiểm tra](../../Bao-cao-dong-bo/Kiem-tra-2026-10-14/Ket_qua.md).

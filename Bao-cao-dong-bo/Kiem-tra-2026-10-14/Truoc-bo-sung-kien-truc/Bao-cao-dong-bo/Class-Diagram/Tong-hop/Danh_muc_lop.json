@@ -1,0 +1,635 @@
+{
+  "TaiKhoan": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- hoTen: String",
+      "- email: String {unique, normalized}",
+      "- soDienThoai: String",
+      "- matKhauBam: String",
+      "- vaiTro: VaiTro",
+      "- trangThai: TrangThaiTaiKhoan",
+      "- lyDoKhoa: String [0..1]",
+      "- ngayTao: Instant",
+      "- ngayCapNhat: Instant",
+      "- version: Long"
+    ],
+    "methods": [
+      "+ dangHoatDong(): boolean",
+      "+ khoa(lyDo: String): void",
+      "+ moKhoa(): void"
+    ],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "PhienDangNhap": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- maPhienBam: String {unique}",
+      "- taoLuc: Instant",
+      "- hetHanLuc: Instant",
+      "- thuHoiLuc: Instant [0..1]"
+    ],
+    "methods": [
+      "+ conHieuLuc(now: Instant): boolean",
+      "+ thuHoi(now: Instant): void"
+    ],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "YeuThich": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- ngayLuu: Instant"
+    ],
+    "methods": [],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "LichHen": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- thoiDiemHen: Instant",
+      "- soDienThoaiLienHe: String",
+      "- ghiChu: String [0..1]",
+      "- trangThai: TrangThaiLichHen",
+      "- lyDoTuChoi: String [0..1]",
+      "- lyDoHuy: String [0..1]",
+      "- nguonHuy: NguonHuy [0..1]",
+      "- huyLuc: Instant [0..1]",
+      "- ngayTao: Instant",
+      "- ngayCapNhat: Instant",
+      "- version: Long"
+    ],
+    "methods": [
+      "+ dangHoatDong(): boolean",
+      "+ coTheHuy(now: Instant): boolean",
+      "+ xacNhan(): void",
+      "+ tuChoi(lyDo: String): void",
+      "+ huy(lyDo: String, nguon: NguonHuy, nguoiHuy: TaiKhoan [0..1], now: Instant): void"
+    ],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "TinDang": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- tieuDe: String",
+      "- moTa: String",
+      "- loaiPhong: LoaiPhong",
+      "- giaThue: BigDecimal",
+      "- dienTich: BigDecimal",
+      "- diaChiChiTiet: String",
+      "- phuongXa: String",
+      "- quanHuyen: String [0..1]",
+      "- thanhPho: String",
+      "- viDo: Double [0..1]",
+      "- kinhDo: Double [0..1]",
+      "- tenLienHe: String",
+      "- soDienThoaiLienHe: String",
+      "- trangThai: TrangThaiTinDang",
+      "- lyDoXuLy: String [0..1]",
+      "- ngayTao: Instant",
+      "- ngayCapNhat: Instant",
+      "- version: Long"
+    ],
+    "methods": [
+      "+ congKhai(): boolean",
+      "+ capNhatNoiDung(noiDung: NoiDungTin): void",
+      "+ guiDuyetLai(): void",
+      "+ duyet(): void",
+      "+ tuChoi(lyDo: String): void",
+      "+ anBoiChuTro(lyDo: String): void",
+      "+ anBoiAdmin(lyDo: String): void",
+      "+ anDoKhoaTaiKhoan(): void"
+    ],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "AnhPhong": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- khoaLuuTru: String",
+      "- tenTep: String",
+      "- loaiTep: String",
+      "- dungLuong: Long",
+      "- thuTu: Integer"
+    ],
+    "methods": [
+      "+ doiThuTu(thuTu: Integer): void"
+    ],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "TienIch": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- ten: String",
+      "- maBieuTuong: String [0..1]"
+    ],
+    "methods": [],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "TruongDaiHoc": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- tenTruong: String",
+      "- tenVietTat: String [0..1]"
+    ],
+    "methods": [],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "CoSoTruong": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- tenCoSo: String",
+      "- diaChi: String",
+      "- viDo: Double",
+      "- kinhDo: Double"
+    ],
+    "methods": [],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "NhatKyXuLy": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- hanhDong: HanhDongXuLy",
+      "- trangThaiTruoc: String",
+      "- trangThaiSau: String",
+      "- lyDo: String [0..1]",
+      "- thoiDiem: Instant",
+      "- phienBanDuocXuLy: Long [0..1]"
+    ],
+    "methods": [
+      "+ NhatKyXuLy(duLieu: DuLieuNhatKy)"
+    ],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "ChiPhiPhong": {
+    "kind": "«entity»",
+    "attrs": [
+      "- id: Long",
+      "- tenChiPhi: String",
+      "- soTien: BigDecimal",
+      "- donViTinh: DonViTinhChiPhi",
+      "- ghiChu: String [0..1]"
+    ],
+    "methods": [
+      "+ capNhat(soTien: BigDecimal, donViTinh: DonViTinhChiPhi): void"
+    ],
+    "pages": [
+      "01 - Lop nghiep vu"
+    ]
+  },
+  "VaiTro": {
+    "kind": "«enumeration»",
+    "attrs": [
+      "KHACH_THUE",
+      "CHU_TRO",
+      "ADMIN"
+    ],
+    "methods": [],
+    "pages": [
+      "02 - Trang thai va quy tac"
+    ]
+  },
+  "TrangThaiTaiKhoan": {
+    "kind": "«enumeration»",
+    "attrs": [
+      "HOAT_DONG",
+      "BI_KHOA"
+    ],
+    "methods": [],
+    "pages": [
+      "02 - Trang thai va quy tac"
+    ]
+  },
+  "TrangThaiTinDang": {
+    "kind": "«enumeration»",
+    "attrs": [
+      "CHO_DUYET",
+      "DANG_HIEN_THI",
+      "BI_TU_CHOI",
+      "CHU_TRO_AN",
+      "ADMIN_AN",
+      "AN_DO_KHOA_TAI_KHOAN"
+    ],
+    "methods": [],
+    "pages": [
+      "02 - Trang thai va quy tac"
+    ]
+  },
+  "TrangThaiLichHen": {
+    "kind": "«enumeration»",
+    "attrs": [
+      "CHO_XAC_NHAN",
+      "DA_XAC_NHAN",
+      "BI_TU_CHOI",
+      "DA_HUY"
+    ],
+    "methods": [],
+    "pages": [
+      "02 - Trang thai va quy tac"
+    ]
+  },
+  "LoaiPhong": {
+    "kind": "«enumeration»",
+    "attrs": [
+      "PHONG_TRO",
+      "STUDIO",
+      "CHUNG_CU_MINI"
+    ],
+    "methods": [],
+    "pages": [
+      "02 - Trang thai va quy tac"
+    ]
+  },
+  "NguonHuy": {
+    "kind": "«enumeration»",
+    "attrs": [
+      "KHACH_THUE",
+      "HE_THONG"
+    ],
+    "methods": [],
+    "pages": [
+      "02 - Trang thai va quy tac"
+    ]
+  },
+  "HanhDongXuLy": {
+    "kind": "«enumeration»",
+    "attrs": [
+      "DUYET_TIN",
+      "TU_CHOI_TIN",
+      "AN_TIN",
+      "KHOA_TAI_KHOAN",
+      "MO_KHOA_TAI_KHOAN"
+    ],
+    "methods": [],
+    "pages": [
+      "02 - Trang thai va quy tac"
+    ]
+  },
+  "DonViTinhChiPhi": {
+    "kind": "«enumeration»",
+    "attrs": [
+      "KWH",
+      "M3",
+      "NGUOI_THANG",
+      "PHONG_THANG",
+      "XE_THANG",
+      "LAN"
+    ],
+    "methods": [],
+    "pages": [
+      "02 - Trang thai va quy tac"
+    ]
+  },
+  "GiaoDienReact": {
+    "kind": "«boundary»",
+    "attrs": [
+      "API client; dữ liệu biểu mẫu"
+    ],
+    "methods": [
+      "+ guiYeuCau(): void",
+      "+ hienThiKetQua(): void"
+    ],
+    "pages": [
+      "03 - Tai khoan",
+      "04 - Tin dang",
+      "05 - Yeu thich",
+      "06 - Lich hen"
+    ]
+  },
+  "TaiKhoanController": {
+    "kind": "«controller»",
+    "attrs": [
+      "- service: TaiKhoanService"
+    ],
+    "methods": [
+      "+ dangKy(req: DangKyRequest): TaiKhoanResponse",
+      "+ dangNhap(req: DangNhapRequest): DangNhapResponse",
+      "+ dangXuat(sessionId: String): void",
+      "+ khoaTaiKhoan(actor: ActorContext, id: Long, lyDo: String): void",
+      "+ moKhoaTaiKhoan(actor: ActorContext, id: Long, lyDo: String): void"
+    ],
+    "pages": [
+      "03 - Tai khoan"
+    ]
+  },
+  "TaiKhoanService": {
+    "kind": "«service»",
+    "attrs": [
+      "- authService: AuthService"
+    ],
+    "methods": [
+      "+ dangKy(req: DangKyRequest): TaiKhoanResponse",
+      "+ dangNhap(req: DangNhapRequest): DangNhapResponse",
+      "+ dangXuat(sessionId: String): void",
+      "+ khoaTaiKhoan(actor: ActorContext, id: Long, lyDo: String): void",
+      "+ moKhoaTaiKhoan(actor: ActorContext, id: Long, lyDo: String): void"
+    ],
+    "pages": [
+      "03 - Tai khoan"
+    ]
+  },
+  "TaiKhoanRepository": {
+    "kind": "«interface, repository»",
+    "attrs": [],
+    "methods": [
+      "+ findByEmail(email: String): Optional<TaiKhoan>",
+      "+ findById(id: Long): Optional<TaiKhoan>",
+      "+ save(taiKhoan: TaiKhoan): TaiKhoan"
+    ],
+    "pages": [
+      "03 - Tai khoan",
+      "06 - Lich hen"
+    ]
+  },
+  "SessionRepository": {
+    "kind": "«interface, repository»",
+    "attrs": [],
+    "methods": [
+      "+ findSession(sessionId: String): Optional<PhienDangNhap>",
+      "+ save(phien: PhienDangNhap): PhienDangNhap",
+      "+ revokeAllByTaiKhoan(id: Long): int",
+      "+ revokeCurrent(sessionId: String): void"
+    ],
+    "pages": [
+      "03 - Tai khoan"
+    ]
+  },
+  "TinDangRepository": {
+    "kind": "«interface, repository»",
+    "attrs": [],
+    "methods": [
+      "+ hidePublishedByOwner(id: Long): int",
+      "+ searchPublic(filter: TimKiemPhongRequest): Page<TinDang>",
+      "+ findWithOwner(id: Long): Optional<TinDang>",
+      "+ save(tin: TinDang): TinDang"
+    ],
+    "pages": [
+      "03 - Tai khoan",
+      "04 - Tin dang",
+      "05 - Yeu thich",
+      "06 - Lich hen"
+    ]
+  },
+  "LichHenRepository": {
+    "kind": "«interface, repository»",
+    "attrs": [],
+    "methods": [
+      "+ cancelFutureActiveByTaiKhoan(id: Long, lyDo: String, actorId: Long, now: Instant): int",
+      "+ cancelFutureActiveByTin(id: Long, lyDo: String, actorId: Long, now: Instant): int",
+      "+ findWithTinAndOwner(id: Long): Optional<LichHen>",
+      "+ findActiveDuplicate(khachId: Long, tinId: Long, gio: Instant): Optional<LichHen>",
+      "+ existsConfirmedByOwnerAndTime(chuId: Long, gio: Instant): boolean",
+      "+ save(lich: LichHen): LichHen"
+    ],
+    "pages": [
+      "03 - Tai khoan",
+      "04 - Tin dang",
+      "06 - Lich hen"
+    ]
+  },
+  "AuthService": {
+    "kind": "«service hỗ trợ»",
+    "attrs": [],
+    "methods": [
+      "+ xacThuc(sessionId: String): ActorContext",
+      "+ kiemTraVaiTro(actor: ActorContext, vaiTro: VaiTro): void"
+    ],
+    "pages": [
+      "03 - Tai khoan",
+      "04 - Tin dang",
+      "05 - Yeu thich",
+      "06 - Lich hen"
+    ]
+  },
+  "PasswordHasher": {
+    "kind": "«interface»",
+    "attrs": [],
+    "methods": [
+      "+ hash(rawPassword: String): String",
+      "+ matches(rawPassword: String, hash: String): boolean"
+    ],
+    "pages": [
+      "03 - Tai khoan"
+    ]
+  },
+  "NhatKyRepository": {
+    "kind": "«interface, repository»",
+    "attrs": [],
+    "methods": [
+      "+ append(entry: NhatKyXuLy): void"
+    ],
+    "pages": [
+      "03 - Tai khoan",
+      "04 - Tin dang"
+    ]
+  },
+  "TinDangController": {
+    "kind": "«controller»",
+    "attrs": [
+      "- service: TinDangService"
+    ],
+    "methods": [
+      "+ timKiem(filter: TimKiemPhongRequest): Page<TinDangResponse>",
+      "+ xemChiTiet(id: Long): ChiTietTinResponse",
+      "+ dangTin(actor: ActorContext, req: TinDangRequest): TinDangResponse",
+      "+ suaTin(actor: ActorContext, id: Long, version: Long, req: TinDangRequest): TinDangResponse",
+      "+ anTinCuaChuTro(actor: ActorContext, id: Long, lyDo: String): void",
+      "+ duyetTin(actor: ActorContext, id: Long, version: Long): void",
+      "+ tuChoiTin(actor: ActorContext, id: Long, version: Long, lyDo: String): void",
+      "+ anTinViPham(actor: ActorContext, id: Long, lyDo: String): void"
+    ],
+    "pages": [
+      "04 - Tin dang"
+    ]
+  },
+  "TinDangService": {
+    "kind": "«service»",
+    "attrs": [
+      "- authService: AuthService"
+    ],
+    "methods": [
+      "+ timKiem(filter: TimKiemPhongRequest): Page<TinDangResponse>",
+      "+ xemChiTiet(id: Long): ChiTietTinResponse",
+      "+ dangTin(actor: ActorContext, req: TinDangRequest): TinDangResponse",
+      "+ suaTin(actor: ActorContext, id: Long, version: Long, req: TinDangRequest): TinDangResponse",
+      "+ anTinCuaChuTro(actor: ActorContext, id: Long, lyDo: String): void",
+      "+ duyetTin(actor: ActorContext, id: Long, version: Long): void",
+      "+ tuChoiTin(actor: ActorContext, id: Long, version: Long, lyDo: String): void",
+      "+ anTinViPham(actor: ActorContext, id: Long, lyDo: String): void"
+    ],
+    "pages": [
+      "04 - Tin dang"
+    ]
+  },
+  "CoSoTruongRepository": {
+    "kind": "«interface, repository»",
+    "attrs": [],
+    "methods": [
+      "+ findById(id: Long): Optional<CoSoTruong>"
+    ],
+    "pages": [
+      "04 - Tin dang"
+    ]
+  },
+  "ImageStorage": {
+    "kind": "«interface»",
+    "attrs": [],
+    "methods": [
+      "+ luu(file: UploadFile): StoredImage",
+      "+ xoa(storageKey: String): void"
+    ],
+    "pages": [
+      "04 - Tin dang"
+    ]
+  },
+  "GeoService": {
+    "kind": "«service hỗ trợ»",
+    "attrs": [],
+    "methods": [
+      "+ tinhKhoangCachMet(phong: TinDang, coSo: CoSoTruong): double"
+    ],
+    "pages": [
+      "04 - Tin dang"
+    ]
+  },
+  "NoiDungTin": {
+    "kind": "«value object»",
+    "attrs": [
+      "+ tieuDe: String",
+      "+ moTa: String",
+      "+ loaiPhong: LoaiPhong",
+      "+ giaThue: BigDecimal",
+      "+ dienTich: BigDecimal",
+      "+ diaChiChiTiet: String",
+      "+ phuongXa: String",
+      "+ quanHuyen: String [0..1]",
+      "+ thanhPho: String",
+      "+ viDo: Double [0..1]",
+      "+ kinhDo: Double [0..1]",
+      "+ tenLienHe: String",
+      "+ soDienThoaiLienHe: String"
+    ],
+    "methods": [],
+    "pages": [
+      "04 - Tin dang"
+    ]
+  },
+  "DuLieuNhatKy": {
+    "kind": "«value object»",
+    "attrs": [
+      "+ nguoiThucHien: TaiKhoan",
+      "+ tinDangMucTieu: TinDang [0..1]",
+      "+ taiKhoanMucTieu: TaiKhoan [0..1]",
+      "+ hanhDong: HanhDongXuLy",
+      "+ trangThaiTruoc: String",
+      "+ trangThaiSau: String",
+      "+ lyDo: String [0..1]",
+      "+ thoiDiem: Instant",
+      "+ phienBanDuocXuLy: Long [0..1]"
+    ],
+    "methods": [],
+    "pages": [
+      "04 - Tin dang"
+    ]
+  },
+  "YeuThichController": {
+    "kind": "«controller»",
+    "attrs": [
+      "- service: YeuThichService"
+    ],
+    "methods": [
+      "+ themYeuThich(actor: ActorContext, tinId: Long): YeuThichResponse",
+      "+ boYeuThich(actor: ActorContext, tinId: Long): void",
+      "+ xemDanhSach(actor: ActorContext): List<YeuThichResponse>"
+    ],
+    "pages": [
+      "05 - Yeu thich"
+    ]
+  },
+  "YeuThichService": {
+    "kind": "«service»",
+    "attrs": [
+      "- authService: AuthService"
+    ],
+    "methods": [
+      "+ themYeuThich(actor: ActorContext, tinId: Long): YeuThichResponse",
+      "+ boYeuThich(actor: ActorContext, tinId: Long): void",
+      "+ xemDanhSach(actor: ActorContext): List<YeuThichResponse>"
+    ],
+    "pages": [
+      "05 - Yeu thich"
+    ]
+  },
+  "YeuThichRepository": {
+    "kind": "«interface, repository»",
+    "attrs": [],
+    "methods": [
+      "+ findByUserAndTin(userId: Long, tinId: Long): Optional<YeuThich>",
+      "+ findAllWithTinAndOwner(userId: Long): List<YeuThich>",
+      "+ save(yeuThich: YeuThich): YeuThich",
+      "+ deleteByUserAndTin(userId: Long, tinId: Long): int"
+    ],
+    "pages": [
+      "05 - Yeu thich"
+    ]
+  },
+  "LichHenController": {
+    "kind": "«controller»",
+    "attrs": [
+      "- service: LichHenService"
+    ],
+    "methods": [
+      "+ datLich(actor: ActorContext, req: DatLichRequest): LichHenResponse",
+      "+ huyLich(actor: ActorContext, id: Long, lyDo: String): void",
+      "+ xemDanhSach(actor: ActorContext, filter: LocLichRequest): Page<LichHenResponse>",
+      "+ xacNhanLich(actor: ActorContext, id: Long, version: Long): void",
+      "+ tuChoiLich(actor: ActorContext, id: Long, lyDo: String): void"
+    ],
+    "pages": [
+      "06 - Lich hen"
+    ]
+  },
+  "LichHenService": {
+    "kind": "«service»",
+    "attrs": [
+      "- authService: AuthService"
+    ],
+    "methods": [
+      "+ datLich(actor: ActorContext, req: DatLichRequest): LichHenResponse",
+      "+ huyLich(actor: ActorContext, id: Long, lyDo: String): void",
+      "+ xemDanhSach(actor: ActorContext, filter: LocLichRequest): Page<LichHenResponse>",
+      "+ xacNhanLich(actor: ActorContext, id: Long, version: Long): void",
+      "+ tuChoiLich(actor: ActorContext, id: Long, lyDo: String): void"
+    ],
+    "pages": [
+      "06 - Lich hen"
+    ]
+  }
+}

@@ -1,4 +1,7 @@
-# Đặc tả API
+# Thiết kế API TROHN
 
-Chưa triển khai endpoint. Sẽ bổ sung method, đường dẫn, phân quyền, request, response và mã lỗi khi chốt nghiệp vụ.
+Cập nhật 30/09/2026. Tài liệu chuẩn hiện nằm tại [bộ thiết kế đồng bộ](../../API/API_DESIGN.md). Dùng Class Diagram cũ 6 trang và đặc tả 21 UC có lịch hẹn, theo quyết định người dùng.
 
+Frontend hiện là demo; backend chưa triển khai. Có tài liệu SQL/API không có nghĩa đã chạy database hoặc endpoint. Không dùng các ghi chú “chưa có tài liệu” của bản cũ để đánh giá tiến độ.
+
+Xem [báo cáo kiểm tra](../../Bao-cao-dong-bo/Kiem-tra-2026-10-14/Ket_qua.md).

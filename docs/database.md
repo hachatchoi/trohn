@@ -1,6 +1,7 @@
-# Thiết kế cơ sở dữ liệu
+# Thiết kế database TROHN
 
-Hệ quản trị dự kiến: MySQL.
+Cập nhật 30/09/2026. Tài liệu chuẩn hiện nằm tại [bộ thiết kế đồng bộ](../../Database/README.md). Dùng Class Diagram cũ 6 trang và đặc tả 21 UC có lịch hẹn, theo quyết định người dùng.
 
-Chưa tạo bảng hoặc viết migration. Sẽ bổ sung ERD, bảng dữ liệu, khóa ngoại và ràng buộc.
+Frontend hiện là demo; backend chưa triển khai. Có tài liệu SQL/API không có nghĩa đã chạy database hoặc endpoint. Không dùng các ghi chú “chưa có tài liệu” của bản cũ để đánh giá tiến độ.
 
+Xem [báo cáo kiểm tra](../../Bao-cao-dong-bo/Kiem-tra-2026-10-14/Ket_qua.md).

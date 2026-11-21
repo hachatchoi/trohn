@@ -1,0 +1,39 @@
+name: trohn-demo
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: trohn
+      MYSQL_USER: trohn_app
+      MYSQL_PASSWORD: ${TROHN_DEMO_DB_PASSWORD:-trohn-local-demo}
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./Database/SQL/01_create_tables.sql:/docker-entrypoint-initdb.d/01.sql:ro
+      - ./Database/SQL/02_create_indexes.sql:/docker-entrypoint-initdb.d/02.sql:ro
+      - ./Database/SQL/06_demo_catalog.sql.gz:/docker-entrypoint-initdb.d/06.sql.gz:ro
+      - ./Database/SQL/05_photo_content.sql:/docker-entrypoint-initdb.d/05.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_PASSWORD mysql --protocol=tcp -h 127.0.0.1 -u $$MYSQL_USER trohn -e 'SELECT 1 FROM NoiDungAnh LIMIT 1'"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+  api:
+    build: ./backend
+    environment:
+      SERVER_ADDRESS: 0.0.0.0
+      DB_URL: jdbc:mysql://db:3306/trohn?connectionTimeZone=UTC&forceConnectionTimeZoneToSession=true&allowPublicKeyRetrieval=true&sslMode=DISABLED
+      DB_USER: trohn_app
+      DB_PASSWORD: ${TROHN_DEMO_DB_PASSWORD:-trohn-local-demo}
+    depends_on:
+      db:
+        condition: service_healthy
+  web:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:5175:80"
+    depends_on:
+      - api
+volumes:
+  mysql-data:

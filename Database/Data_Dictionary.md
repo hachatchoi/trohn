@@ -1,0 +1,239 @@
+# Từ điển dữ liệu TROHN
+Ngày 30/09/2026. Chuẩn: bộ Class Diagram 6 trang và đặc tả 21 UC đồng bộ.
+12 bảng = 11 entity + TinDang_TienIch. NoiDungTin và DuLieuNhatKy là value object, không tạo bảng. Địa chỉ của tin nằm trong các cột; không có bảng DiaChi.
+BIGINT ↔ Long; DECIMAL ↔ BigDecimal (tọa độ có thể ánh xạ Double); DATETIME(6) ↔ Instant theo UTC. Tất cả FK mặc định RESTRICT/NO ACTION để giữ lịch sử. Xóa quan hệ yêu thích/tiện ích và thay ảnh/chi phí là thao tác con có kiểm soát; không xóa tài khoản/tin/lịch qua API.
+Ràng buộc liên bảng, ít nhất một ảnh/cơ sở trường, vai trò chủ/khách, địa chỉ Hà Nội, không trùng lịch đã xác nhận của chủ và giao dịch xem [TRANSACTIONS.md](TRANSACTIONS.md).
+
+## TaiKhoan
+Phục vụ UC01–03, UC20–21.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| hoTen | `VARCHAR(255) NOT NULL` | Họ tên |
+| email | `VARCHAR(255) NOT NULL` | Email trim/lowercase trước khi lưu |
+| soDienThoai | `VARCHAR(20) NOT NULL` | Số liên hệ tài khoản |
+| matKhauBam | `VARCHAR(255) NOT NULL` | Băm mật khẩu BCrypt; không trả qua API |
+| vaiTro | `VARCHAR(20) NOT NULL` | KHACH_THUE CHU_TRO ADMIN |
+| trangThai | `VARCHAR(20) NOT NULL DEFAULT 'HOAT_DONG'` | HOAT_DONG hoặc BI_KHOA |
+| lyDoKhoa | `VARCHAR(1000) NULL` | Lý do khóa hiện tại; lịch sử ở nhật ký |
+| ngayTao | `DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)` | Thời điểm tạo UTC |
+| ngayCapNhat | `DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)` | Thời điểm cập nhật UTC |
+| version | `BIGINT NOT NULL DEFAULT 0` | Phiên bản; ứng dụng tăng khi ghi, kể cả bulk update |
+
+Ràng buộc:
+- `UNIQUE KEY uk_email (email)`
+- `CHECK (vaiTro IN ('KHACH_THUE','CHU_TRO','ADMIN'))`
+- `CHECK (trangThai IN ('HOAT_DONG','BI_KHOA'))`
+- `CHECK (version >= 0)`
+- `CHECK (trangThai <> 'BI_KHOA' OR (lyDoKhoa IS NOT NULL AND CHAR_LENGTH(TRIM(lyDoKhoa)) > 0))`
+
+## PhienDangNhap
+Phục vụ UC02–03, UC20.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| taiKhoanId | `BIGINT NOT NULL` | Tài khoản sở hữu phiên |
+| maPhienBam | `CHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL` | SHA-256 của mã phiên ngẫu nhiên; không lưu mã thô |
+| taoLuc | `DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)` | Thời điểm tạo UTC |
+| hetHanLuc | `DATETIME(6) NOT NULL` | Hạn phiên UTC |
+| thuHoiLuc | `DATETIME(6) NULL` | Khác NULL nghĩa là đã thu hồi |
+
+Ràng buộc:
+- `FOREIGN KEY (taiKhoanId) REFERENCES TaiKhoan(id)`
+- `UNIQUE KEY uk_ma_phien_bam (maPhienBam)`
+- `CHECK (hetHanLuc > taoLuc)`
+- `CHECK (thuHoiLuc IS NULL OR thuHoiLuc >= taoLuc)`
+
+## TinDang
+Phục vụ UC04–05, UC12–14, UC17–20.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| chuTroId | `BIGINT NOT NULL` | Chủ trọ, không đổi chủ trong phạm vi này |
+| tieuDe | `VARCHAR(255) NOT NULL` | Tiêu đề |
+| moTa | `TEXT NOT NULL` | Mô tả |
+| loaiPhong | `VARCHAR(20) NOT NULL` | PHONG_TRO / STUDIO / CHUNG_CU_MINI |
+| giaThue | `DECIMAL(12,2) NOT NULL` | VND/tháng |
+| dienTich | `DECIMAL(10,2) NOT NULL` | m² |
+| diaChiChiTiet | `VARCHAR(255) NOT NULL` | Địa chỉ chi tiết |
+| phuongXa | `VARCHAR(100) NOT NULL` | Phường/xã theo dữ liệu địa chỉ dùng trong dự án |
+| quanHuyen | `VARCHAR(100) NULL` | Khu vực tìm kiếm tùy chọn |
+| thanhPho | `VARCHAR(100) NOT NULL` | Hà Nội; API chuẩn hóa và kiểm tra |
+| viDo | `DECIMAL(10,7) NULL` | Vĩ độ; có cặp với kinh độ |
+| kinhDo | `DECIMAL(10,7) NULL` | Kinh độ |
+| tenLienHe | `VARCHAR(255) NOT NULL` | Tên liên hệ công khai |
+| soDienThoaiLienHe | `VARCHAR(20) NOT NULL` | Số liên hệ công khai |
+| trangThai | `VARCHAR(32) NOT NULL DEFAULT 'CHO_DUYET'` | CHO_DUYET DANG_HIEN_THI BI_TU_CHOI CHU_TRO_AN ADMIN_AN AN_DO_KHOA_TAI_KHOAN |
+| lyDoXuLy | `VARCHAR(1000) NULL` | Lý do từ chối/ẩn gần nhất |
+| ngayTao | `DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)` | Thời điểm tạo UTC |
+| ngayCapNhat | `DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)` | Thời điểm cập nhật UTC |
+| version | `BIGINT NOT NULL DEFAULT 0` | Phiên bản; ứng dụng tăng khi ghi, kể cả bulk update |
+
+Ràng buộc:
+- `FOREIGN KEY (chuTroId) REFERENCES TaiKhoan(id)`
+- `CHECK (loaiPhong IN ('PHONG_TRO','STUDIO','CHUNG_CU_MINI'))`
+- `CHECK (trangThai IN ('CHO_DUYET','DANG_HIEN_THI','BI_TU_CHOI','CHU_TRO_AN','ADMIN_AN','AN_DO_KHOA_TAI_KHOAN'))`
+- `CHECK (giaThue > 0 AND dienTich > 0)`
+- `CHECK (version >= 0)`
+- `CHECK ((viDo IS NULL AND kinhDo IS NULL) OR (viDo IS NOT NULL AND kinhDo IS NOT NULL))`
+- `CHECK (viDo BETWEEN -90 AND 90)`
+- `CHECK (kinhDo BETWEEN -180 AND 180)`
+
+## AnhPhong
+Phục vụ UC05, UC12–13.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| tinDangId | `BIGINT NOT NULL` | Tin sở hữu ảnh |
+| khoaLuuTru | `VARCHAR(255) NOT NULL` | Khóa nội bộ, URL cấp qua API có kiểm tra quyền |
+| tenTep | `VARCHAR(255) NOT NULL` | Tên tệp để hiển thị, không dùng làm đường dẫn |
+| loaiTep | `VARCHAR(50) NOT NULL` | MIME thực đã kiểm tra |
+| dungLuong | `BIGINT NOT NULL` | Số byte |
+| thuTu | `INT NOT NULL` | Thứ tự bắt đầu từ 0 |
+
+Ràng buộc:
+- `FOREIGN KEY (tinDangId) REFERENCES TinDang(id)`
+- `UNIQUE KEY uk_storage (khoaLuuTru)`
+- `UNIQUE KEY uk_anh_thu_tu (tinDangId, thuTu)`
+- `CHECK (dungLuong > 0 AND thuTu >= 0)`
+
+## ChiPhiPhong
+Phục vụ UC05, UC12–13.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| tinDangId | `BIGINT NOT NULL` | Tin sở hữu chi phí |
+| tenChiPhi | `VARCHAR(100) NOT NULL` | Tên trim, không trùng trong cùng tin |
+| soTien | `DECIMAL(12,2) NOT NULL` | Đơn giá theo đơn vị, không tự là tổng phí tháng |
+| donViTinh | `VARCHAR(20) NOT NULL` | KWH M3 NGUOI_THANG PHONG_THANG XE_THANG LAN |
+| ghiChu | `VARCHAR(1000) NULL` | Ghi chú |
+
+Ràng buộc:
+- `FOREIGN KEY (tinDangId) REFERENCES TinDang(id)`
+- `UNIQUE KEY uk_tin_ten_phi (tinDangId, tenChiPhi)`
+- `CHECK (soTien >= 0)`
+- `CHECK (donViTinh IN ('KWH','M3','NGUOI_THANG','PHONG_THANG','XE_THANG','LAN'))`
+
+## TienIch
+Phục vụ UC04–05, UC12–13.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| ten | `VARCHAR(100) NOT NULL` | Tên tiện ích |
+| maBieuTuong | `VARCHAR(100) NULL` | Mã icon giao diện |
+
+Ràng buộc:
+- `UNIQUE KEY uk_tien_ich_ten (ten)`
+
+## TinDang_TienIch
+Phục vụ UC04–05, UC12–13.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| tinDangId | `BIGINT NOT NULL` | Tin đăng |
+| tienIchId | `BIGINT NOT NULL` | Tiện ích |
+
+Ràng buộc:
+- `PRIMARY KEY (tinDangId, tienIchId)`
+- `FOREIGN KEY (tinDangId) REFERENCES TinDang(id)`
+- `FOREIGN KEY (tienIchId) REFERENCES TienIch(id)`
+
+## YeuThich
+Phục vụ UC06–08.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| khachThueId | `BIGINT NOT NULL` | Khách thuê lưu tin |
+| tinDangId | `BIGINT NOT NULL` | Tin được lưu |
+| ngayLuu | `DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)` | Thời điểm lưu UTC |
+
+Ràng buộc:
+- `FOREIGN KEY (khachThueId) REFERENCES TaiKhoan(id)`
+- `FOREIGN KEY (tinDangId) REFERENCES TinDang(id)`
+- `UNIQUE KEY uk_yeu_thich (khachThueId, tinDangId)`
+
+## LichHen
+Phục vụ UC09–11, UC14–16, UC19–20.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| khachThueId | `BIGINT NOT NULL` | Khách đặt lịch |
+| tinDangId | `BIGINT NOT NULL` | Tin được hẹn xem |
+| thoiDiemHen | `DATETIME(6) NOT NULL` | Giờ hẹn UTC, API nhận RFC3339 có offset |
+| soDienThoaiLienHe | `VARCHAR(20) NOT NULL` | Số liên hệ lúc đặt lịch |
+| ghiChu | `VARCHAR(1000) NULL` | Ghi chú |
+| trangThai | `VARCHAR(20) NOT NULL DEFAULT 'CHO_XAC_NHAN'` | CHO_XAC_NHAN DA_XAC_NHAN BI_TU_CHOI DA_HUY |
+| lyDoTuChoi | `VARCHAR(1000) NULL` | Lý do từ chối |
+| lyDoHuy | `VARCHAR(1000) NULL` | Lý do hủy |
+| nguonHuy | `VARCHAR(20) NULL` | KHACH_THUE / HE_THONG |
+| nguoiHuyId | `BIGINT NULL` | Người thao tác gốc khi hủy; hệ thống tự động có thể NULL |
+| huyLuc | `DATETIME(6) NULL` | Thời điểm hủy UTC |
+| ngayTao | `DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)` | Thời điểm tạo UTC |
+| ngayCapNhat | `DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)` | Thời điểm cập nhật UTC |
+| version | `BIGINT NOT NULL DEFAULT 0` | Phiên bản; ứng dụng tăng khi ghi, kể cả bulk update |
+| dangHoatDong | `TINYINT GENERATED ALWAYS AS (CASE WHEN trangThai IN ('CHO_XAC_NHAN','DA_XAC_NHAN') THEN 1 ELSE NULL END) STORED` | Cột kỹ thuật; không thêm entity/DTO; UNIQUE cho lịch còn hoạt động |
+
+Ràng buộc:
+- `FOREIGN KEY (khachThueId) REFERENCES TaiKhoan(id)`
+- `FOREIGN KEY (tinDangId) REFERENCES TinDang(id)`
+- `FOREIGN KEY (nguoiHuyId) REFERENCES TaiKhoan(id)`
+- `CHECK (trangThai IN ('CHO_XAC_NHAN','DA_XAC_NHAN','BI_TU_CHOI','DA_HUY'))`
+- `CHECK (nguonHuy IN ('KHACH_THUE','HE_THONG'))`
+- `UNIQUE KEY uk_lich_active (khachThueId, tinDangId, thoiDiemHen, dangHoatDong)`
+- `CHECK (version >= 0)`
+- `CHECK ((trangThai = 'DA_HUY' AND lyDoHuy IS NOT NULL AND CHAR_LENGTH(TRIM(lyDoHuy)) > 0 AND nguonHuy IS NOT NULL AND huyLuc IS NOT NULL) OR (trangThai <> 'DA_HUY' AND lyDoHuy IS NULL AND nguonHuy IS NULL AND huyLuc IS NULL AND nguoiHuyId IS NULL))`
+- `CHECK (trangThai <> 'BI_TU_CHOI' OR (lyDoTuChoi IS NOT NULL AND CHAR_LENGTH(TRIM(lyDoTuChoi)) > 0))`
+
+## TruongDaiHoc
+Phục vụ UC04.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| tenTruong | `VARCHAR(200) NOT NULL` | Tên trường |
+| tenVietTat | `VARCHAR(50) NULL` | Tên viết tắt |
+
+Ràng buộc:
+- `UNIQUE KEY uk_truong_ten (tenTruong)`
+
+## CoSoTruong
+Phục vụ UC04.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| truongDaiHocId | `BIGINT NOT NULL` | Trường sở hữu cơ sở |
+| tenCoSo | `VARCHAR(200) NOT NULL` | Tên cơ sở |
+| diaChi | `VARCHAR(500) NOT NULL` | Địa chỉ cơ sở |
+| viDo | `DECIMAL(10,7) NOT NULL` | Vĩ độ |
+| kinhDo | `DECIMAL(10,7) NOT NULL` | Kinh độ |
+
+Ràng buộc:
+- `FOREIGN KEY (truongDaiHocId) REFERENCES TruongDaiHoc(id)`
+- `UNIQUE KEY uk_co_so (truongDaiHocId, tenCoSo)`
+- `CHECK (viDo BETWEEN -90 AND 90)`
+- `CHECK (kinhDo BETWEEN -180 AND 180)`
+
+## NhatKyXuLy
+Phục vụ UC14, UC17–21.
+| Cột | Khai báo SQL | Ý nghĩa |
+|---|---|---|
+| id | `BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY` | Định danh; Java Long |
+| nguoiThucHienId | `BIGINT NOT NULL` | Tài khoản thao tác |
+| tinDangMucTieuId | `BIGINT NULL` | Mục tiêu tin; XOR với mục tiêu tài khoản |
+| taiKhoanMucTieuId | `BIGINT NULL` | Mục tiêu tài khoản |
+| hanhDong | `VARCHAR(32) NOT NULL` | DUYET_TIN / TU_CHOI_TIN / AN_TIN / KHOA_TAI_KHOAN / MO_KHOA_TAI_KHOAN |
+| trangThaiTruoc | `VARCHAR(32) NOT NULL` | Trạng thái trước thay đổi |
+| trangThaiSau | `VARCHAR(32) NOT NULL` | Trạng thái sau thay đổi |
+| lyDo | `VARCHAR(1000) NULL` | Lý do xử lý |
+| thoiDiem | `DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)` | Thời điểm xử lý UTC |
+| phienBanDuocXuLy | `BIGINT NULL` | Version trước thay đổi |
+
+Ràng buộc:
+- `FOREIGN KEY (nguoiThucHienId) REFERENCES TaiKhoan(id)`
+- `FOREIGN KEY (tinDangMucTieuId) REFERENCES TinDang(id)`
+- `FOREIGN KEY (taiKhoanMucTieuId) REFERENCES TaiKhoan(id)`
+- `CHECK ((tinDangMucTieuId IS NOT NULL AND taiKhoanMucTieuId IS NULL) OR (tinDangMucTieuId IS NULL AND taiKhoanMucTieuId IS NOT NULL))`
+- `CHECK (hanhDong IN ('DUYET_TIN','TU_CHOI_TIN','AN_TIN','KHOA_TAI_KHOAN','MO_KHOA_TAI_KHOAN'))`
+
+
+## Bội số trường đại học và cơ sở trường
+
+Quy tắc nghiệp vụ: mỗi TruongDaiHoc phải có ít nhất một CoSoTruong (1..* trong Class Diagram). ERD vật lý ghi 0..* vì FK chỉ buộc mỗi cơ sở tham chiếu một trường tồn tại, không buộc trường phải có bản ghi con. Khi nạp/cập nhật danh mục, cần kiểm tra điều kiện này trước khi hoàn tất giao dịch, không để thao tác xóa hoặc chuyển cơ sở làm trường mất cơ sở cuối cùng. Truy vấn truong_thieu_co_so trong SQL/04_verify_data.sql phải trả về 0 dòng; đây là kiểm tra phát hiện vi phạm, không phải ràng buộc tự chặn mọi lần ghi.

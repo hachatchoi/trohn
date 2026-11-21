@@ -1,0 +1,1179 @@
+/* Tenant interface: quiet surfaces, readable listings, restrained accents. */
+.tenant-shell,
+.auth-page {
+  --ink: #202b36;
+  --green: #245b82;
+  --green-dark: #194563;
+  --cream: #f5f7f9;
+  --orange: #245b82;
+  --muted: #65717e;
+  --line: #e1e6eb;
+  --pale: #edf3f8;
+  color: var(--ink);
+  background: white;
+}
+.tenant-shell .container {
+  max-width: 1280px;
+}
+.tenant-shell h1,
+.tenant-shell h2,
+.auth-page h1 {
+  letter-spacing: -0.6px;
+  font-weight: 650;
+}
+.tenant-shell .eyebrow {
+  color: #687583;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+.tenant-shell .button,
+.auth-page .button {
+  border-radius: 7px;
+  font-size: 13px;
+  box-shadow: none;
+}
+.tenant-shell .button-primary,
+.auth-page .button-primary {
+  background: #245b82;
+  color: white;
+}
+.tenant-shell .button-primary:hover,
+.auth-page .button-primary:hover {
+  background: #194563;
+}
+.tenant-shell .button-outline {
+  border-color: #d4dde5;
+  background: white;
+  color: #344354;
+}
+.tenant-shell .text-link {
+  color: #245b82;
+  font-size: 13px;
+}
+.tenant-shell .site-header {
+  background: #fff;
+  border-bottom: 1px solid #e3e8ed;
+  box-shadow: none;
+}
+.tenant-shell .desktop-nav {
+  gap: 28px;
+}
+.tenant-shell .desktop-nav > a {
+  font-size: 14px;
+  color: #52606d;
+}
+.tenant-shell .desktop-nav > a.active {
+  color: #245b82;
+}
+.tenant-shell .desktop-nav > a.active:after {
+  background: #245b82;
+}
+.tenant-shell .logo {
+  color: #245b82;
+}
+.tenant-shell .logo-dot {
+  color: #245b82;
+}
+.tenant-shell .logo-mark i {
+  background: #245b82;
+}
+.tenant-shell .hero {
+  background: #f5f7f9;
+  padding: 42px 0 62px;
+}
+.tenant-shell .hero-grid {
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.tenant-shell .hero-copy {
+  padding: 0;
+}
+.tenant-shell .hero h1 {
+  font-size: 43px;
+  line-height: 1.25;
+  letter-spacing: -1.2px;
+  margin: 20px 0;
+}
+.tenant-shell .hero h1 > span {
+  color: #245b82;
+}
+.tenant-shell .hero-kicker {
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  color: #647180;
+}
+.tenant-shell .hero-kicker > span {
+  background: #245b82;
+}
+.tenant-shell .hero-copy > p {
+  font-size: 15px;
+  color: #5f6d7b;
+  line-height: 1.85;
+}
+.tenant-shell .hero-checks {
+  font-size: 12px;
+  color: #526475;
+  gap: 20px;
+}
+.tenant-shell .hero-checks svg {
+  color: #245b82;
+}
+.tenant-shell .hero-visual {
+  height: 310px;
+  padding: 0;
+}
+.tenant-shell .hero-image {
+  position: static;
+  inset: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: none;
+}
+.tenant-shell
+  :is(
+    .hero-underline,
+    .hero-backdrop,
+    .hero-mini,
+    .hero-spark,
+    .hero-caption,
+    .hero-label,
+    .hero-explore,
+    .search-emblem,
+    .banner-sticker,
+    .cta-decoration,
+    .footer-spark
+  ) {
+  display: none;
+}
+.tenant-shell .search-lift {
+  margin-top: -28px;
+}
+.tenant-shell .search-spotlight {
+  background: white;
+  color: #202b36;
+  padding: 25px;
+  border: 1px solid #dce4eb;
+  border-radius: 10px;
+  box-shadow: 0 5px 18px #182c4210;
+}
+.tenant-shell .search-spotlight-heading {
+  margin-bottom: 18px;
+}
+.tenant-shell .search-spotlight-heading .eyebrow {
+  display: none;
+}
+.tenant-shell .search-spotlight-heading h2 {
+  font-size: 21px;
+  letter-spacing: -0.3px;
+  margin: 0 0 6px;
+}
+.tenant-shell .search-spotlight-heading p {
+  font-size: 13px;
+  color: #65717e;
+}
+.tenant-shell .search-spotlight .hero-search {
+  background: #f7f9fb;
+  border: 1px solid #e3e9ee;
+  box-shadow: none;
+  border-radius: 7px;
+  padding: 16px;
+  color: #344354;
+}
+.tenant-shell .search-spotlight .hero-search > label > span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #536171;
+}
+.tenant-shell .search-spotlight .hero-search select {
+  font-size: 13px;
+  color: #25374a;
+  min-height: 32px;
+}
+.tenant-shell .search-spotlight .hero-search > .button {
+  background: #245b82;
+  font-size: 13px;
+  padding: 14px 18px;
+}
+.tenant-shell .search-spotlight .quick-search {
+  color: #6d7781;
+  font-size: 12px;
+  gap: 10px;
+}
+.tenant-shell .search-spotlight .quick-search a {
+  border: 0;
+  background: #f1f4f7;
+  color: #536476;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.tenant-shell .search-spotlight .quick-search a:hover {
+  color: #245b82;
+  background: #e9f0f6;
+}
+.tenant-shell .section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.tenant-shell .section-heading {
+  margin-bottom: 23px;
+  align-items: center;
+}
+.tenant-shell .section-heading .eyebrow {
+  display: none;
+}
+.tenant-shell .section-heading h2 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+.tenant-shell .section-heading p {
+  font-size: 13px;
+  color: #65717e;
+}
+.tenant-shell .room-grid {
+  gap: 24px;
+}
+.tenant-shell .room-card {
+  border: 1px solid #e0e5eb;
+  border-radius: 9px;
+  background: white;
+  box-shadow: none;
+  overflow: hidden;
+}
+.tenant-shell .room-card:hover {
+  transform: none;
+  border-color: #9db4c6;
+  box-shadow: 0 4px 15px #2030400c;
+}
+.tenant-shell .room-photo {
+  height: 225px;
+  border-radius: 0;
+}
+.tenant-shell .room-card:hover .room-photo img {
+  transform: none;
+}
+.tenant-shell .room-card-body {
+  padding: 17px;
+}
+.tenant-shell .room-location {
+  font-size: 12px;
+  color: #64717f;
+}
+.tenant-shell .room-location > span {
+  background: #f1f4f7;
+  color: #5c6c7b;
+  font-size: 10px;
+  border-radius: 4px;
+}
+.tenant-shell .room-card h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 12px 0;
+}
+.tenant-shell .room-meta {
+  font-size: 12px;
+  color: #65717e;
+}
+.tenant-shell .room-card-bottom {
+  margin-top: 16px;
+  border-top: 1px solid #edf0f3;
+  padding-top: 14px;
+}
+.tenant-shell .price {
+  font-size: 21px;
+  color: #245b82;
+  font-weight: 700;
+}
+.tenant-shell .price > span {
+  font-size: 11px;
+  color: #7a8490;
+  font-weight: 400;
+}
+.tenant-shell .card-arrow {
+  background: #f1f5f8;
+  color: #245b82;
+  border-radius: 6px;
+}
+.tenant-shell .photo-tag {
+  background: #fff;
+  color: #33495d;
+  font-size: 11px;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px #0001;
+}
+.tenant-shell .heart-button {
+  color: #647583;
+}
+.tenant-shell .heart-button.saved {
+  color: #b55c58;
+}
+.tenant-shell .campus-section {
+  padding-bottom: 15px;
+}
+.tenant-shell .campus-card {
+  border-radius: 7px;
+  padding: 17px;
+  border-color: #e0e6eb;
+}
+.tenant-shell .campus-card:hover {
+  transform: none;
+  background: #f6f9fb;
+}
+.tenant-shell .campus-monogram {
+  background: #eff4f8;
+  color: #245b82;
+  border-radius: 6px;
+}
+.tenant-shell .campus-card h3 {
+  font-size: 14px;
+}
+.tenant-shell .campus-card p {
+  color: #697582;
+  font-size: 12px;
+}
+.tenant-shell .editorial-banner {
+  background: #edf3f7;
+  color: #263b4d;
+  border-radius: 10px;
+  grid-template-columns: 1.1fr 1fr;
+}
+.tenant-shell .editorial-copy {
+  padding: 34px;
+}
+.tenant-shell .editorial-copy .eyebrow {
+  color: #647887;
+}
+.tenant-shell .editorial-copy h2 {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+.tenant-shell .editorial-copy p {
+  font-size: 14px;
+  color: #5c6e7d;
+}
+.tenant-shell .editorial-banner > img {
+  min-height: 280px;
+  max-height: 320px;
+}
+.tenant-shell .editorial-copy .button {
+  background: #245b82;
+  color: white;
+}
+.tenant-shell .home-district-collection {
+  background: white;
+  border-top: 1px solid #edf0f3;
+  border-bottom: 1px solid #edf0f3;
+}
+.tenant-shell .budget-banner {
+  margin-top: 32px;
+  background: #f1f5f8;
+  border: 1px solid #e0e7ed;
+  padding: 28px 32px;
+  border-radius: 9px;
+}
+.tenant-shell .budget-banner h2 {
+  font-size: 24px;
+}
+.tenant-shell .budget-banner p {
+  color: #637280;
+}
+.tenant-shell .budget-banner .eyebrow {
+  display: none;
+}
+.tenant-shell .neighborhood-section {
+  background: #f7f9fa;
+}
+.tenant-shell .neighborhood-card {
+  background: white;
+  border: 1px solid #e0e6eb;
+  border-radius: 8px;
+  padding: 22px;
+}
+.tenant-shell .neighborhood-card:hover {
+  transform: none;
+  border-color: #a5b8c8;
+}
+.tenant-shell .neighborhood-art {
+  display: none;
+}
+.tenant-shell .neighborhood-card h3 {
+  font-size: 20px;
+  margin: 28px 0 9px;
+}
+.tenant-shell .neighborhood-card p {
+  font-size: 12px;
+  color: #6a7783;
+}
+.tenant-shell .neighborhood-top {
+  color: #708294;
+}
+.tenant-shell .how-intro h2 {
+  font-size: 27px;
+}
+.tenant-shell .how-intro p,
+.tenant-shell .step-card p {
+  font-size: 13px;
+  color: #65717e;
+}
+.tenant-shell .step-top {
+  color: #245b82;
+}
+.tenant-shell .home-cta {
+  background: #edf3f7;
+  color: #263b4d;
+  border-radius: 9px;
+  padding: 30px;
+  margin-top: 10px;
+}
+.tenant-shell .home-cta h2 {
+  font-size: 25px;
+}
+.tenant-shell .home-cta .eyebrow {
+  color: #6a7a89;
+}
+.tenant-shell .home-cta .button {
+  background: #245b82;
+  color: white;
+}
+.tenant-shell .site-footer {
+  background: #f7f9fb;
+  color: #536171;
+  border-top: 1px solid #e0e6eb;
+  margin-top: 50px;
+}
+.tenant-shell .site-footer .logo {
+  color: #245b82;
+}
+.tenant-shell .footer-brand p,
+.tenant-shell .footer-note p {
+  color: #536171;
+}
+.tenant-shell .footer-brand > span,
+.tenant-shell .footer-bottom,
+.tenant-shell .footer-note .eyebrow {
+  color: #71808d;
+}
+.tenant-shell .footer-grid h4 {
+  color: #283d50;
+}
+.tenant-shell .footer-grid a {
+  color: #536171;
+}
+.tenant-shell .footer-bottom {
+  border-color: #e0e6eb;
+}
+.tenant-shell .page-intro {
+  background: #f5f7f9;
+  padding: 28px 0;
+}
+.tenant-shell .page-intro h1 {
+  font-size: 32px;
+}
+.tenant-shell .page-intro .eyebrow {
+  display: none;
+}
+.tenant-shell .page-intro > div > p {
+  font-size: 14px;
+  color: #65717e;
+}
+.tenant-shell .search-page-bar {
+  border: 1px solid #dbe3ea;
+  box-shadow: none;
+  border-radius: 7px;
+}
+.tenant-shell .search-page-bar input {
+  font-size: 14px;
+}
+.tenant-shell .filter-sidebar {
+  background: white;
+  border: 1px solid #e0e6eb;
+  border-radius: 8px;
+}
+.tenant-shell .filter-tip {
+  background: #f1f5f8;
+  color: #536d82;
+}
+.tenant-shell .filter-group label,
+.tenant-shell .filter-group h4 {
+  font-size: 13px;
+}
+.tenant-shell .filter-group select {
+  font-size: 13px;
+}
+.tenant-shell .results-heading h2 {
+  font-size: 22px;
+}
+.tenant-shell .results-heading p {
+  font-size: 13px;
+}
+.tenant-shell .active-filters button {
+  border-radius: 5px;
+  background: #edf3f8;
+  color: #34546d;
+}
+.tenant-shell .search-room-grid .room-photo {
+  height: 205px;
+}
+.tenant-shell .detail-title-row h1 {
+  font-size: 29px;
+}
+.tenant-shell .detail-section h2 {
+  font-size: 21px;
+}
+.tenant-shell .detail-section > p {
+  font-size: 14px;
+  color: #52616f;
+  line-height: 1.9;
+}
+.tenant-shell .booking-box {
+  border: 1px solid #dce4eb;
+  box-shadow: 0 3px 14px #20304009;
+  border-radius: 9px;
+}
+.tenant-shell .detail-price {
+  color: #245b82;
+}
+.tenant-shell .detail-highlight,
+.tenant-shell .room-facts {
+  background: #f3f6f9;
+}
+.tenant-shell .room-facts strong {
+  color: #273d50;
+}
+.tenant-shell .booking-form,
+.tenant-shell .appointment-card,
+.tenant-shell .appointment-info,
+.tenant-shell .summary-card {
+  border-color: #e0e6eb;
+  border-radius: 9px;
+  box-shadow: none;
+}
+.tenant-shell .appointment-content h3 {
+  font-size: 16px;
+}
+.tenant-shell .appointment-content > p {
+  font-size: 13px;
+  color: #63717e;
+}
+.tenant-shell .appointment-stats > div {
+  background: #f5f7fa;
+  border-radius: 8px;
+}
+.tenant-shell .field input,
+.tenant-shell .field textarea,
+.auth-page .field input {
+  font-size: 14px;
+  border-color: #d8e1e8;
+  border-radius: 6px;
+}
+.tenant-shell .map-page-heading h1 {
+  font-size: 30px;
+}
+.tenant-shell .map-page-heading p {
+  color: #63717e;
+  font-size: 14px;
+}
+.auth-page .auth-story {
+  background: #edf3f7;
+  color: #263b4d;
+}
+.auth-page .auth-story-copy p {
+  color: #607382;
+}
+.auth-page .auth-story-copy h2 {
+  font-size: 35px;
+  letter-spacing: -0.7px;
+}
+.auth-page .auth-story-copy .eyebrow {
+  color: #687d8c;
+}
+.auth-page .auth-form-wrap h1 {
+  font-size: 30px;
+}
+.auth-page .auth-description {
+  font-size: 14px;
+  color: #65717e;
+}
+.auth-page .auth-photo {
+  transform: none;
+  border-radius: 9px;
+}
+.auth-page .auth-photo > span {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .tenant-shell .hero-grid {
+    gap: 30px;
+  }
+  .tenant-shell .hero h1 {
+    font-size: 35px;
+  }
+  .tenant-shell .hero-visual {
+    height: 290px;
+  }
+  .tenant-shell .room-photo {
+    height: 190px;
+  }
+}
+@media (max-width: 600px) {
+  .tenant-shell .hero {
+    padding: 27px 0 40px;
+  }
+  .tenant-shell .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .tenant-shell .hero h1 {
+    font-size: 31px;
+    letter-spacing: -0.7px;
+  }
+  .tenant-shell .hero-copy > p {
+    font-size: 14px;
+  }
+  .tenant-shell .hero-visual {
+    display: none;
+  }
+  .tenant-shell .hero-checks {
+    gap: 12px;
+    font-size: 11px;
+  }
+  .tenant-shell .search-lift {
+    margin-top: -16px;
+  }
+  .tenant-shell .search-spotlight {
+    padding: 18px;
+  }
+  .tenant-shell .search-spotlight-heading h2 {
+    font-size: 19px;
+  }
+  .tenant-shell .search-spotlight .hero-search {
+    padding: 14px;
+  }
+  .tenant-shell .section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .tenant-shell .section-heading h2 {
+    font-size: 22px;
+  }
+  .tenant-shell .room-photo,
+  .tenant-shell .search-room-grid .room-photo {
+    height: 220px;
+  }
+  .tenant-shell .room-card h3 {
+    font-size: 16px;
+  }
+  .tenant-shell .editorial-banner {
+    grid-template-columns: 1fr;
+  }
+  .tenant-shell .editorial-copy {
+    padding: 24px;
+  }
+  .tenant-shell .editorial-copy h2 {
+    font-size: 24px;
+  }
+  .tenant-shell .editorial-banner > img {
+    height: 180px;
+    min-height: 0;
+  }
+  .tenant-shell .budget-banner {
+    padding: 22px;
+  }
+  .tenant-shell .budget-banner h2 {
+    font-size: 22px;
+  }
+  .tenant-shell .home-cta {
+    padding: 25px;
+  }
+  .tenant-shell .home-cta h2 {
+    font-size: 22px;
+  }
+  .tenant-shell .page-intro h1 {
+    font-size: 27px;
+  }
+  .tenant-shell .detail-title-row h1 {
+    font-size: 24px;
+  }
+  .tenant-shell .desktop-nav {
+    gap: 14px;
+  }
+  .tenant-shell .site-footer {
+    margin-top: 30px;
+  }
+}
+.home-banner-section {
+  background: #f5f7f9;
+  padding: 26px 0 54px;
+}
+.home-banner {
+  position: relative;
+  min-height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #263b4d;
+  color: white;
+}
+.home-banner-images,
+.home-banner-shade {
+  position: absolute;
+  inset: 0;
+}
+.home-banner-images img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+  opacity: 0;
+  transition: opacity 0.65s ease;
+}
+.home-banner-images img.current {
+  opacity: 1;
+}
+.home-banner-shade {
+  background: linear-gradient(
+    90deg,
+    rgba(14, 27, 37, 0.85) 0%,
+    rgba(14, 27, 37, 0.63) 42%,
+    rgba(14, 27, 37, 0.08) 85%
+  );
+}
+.home-banner-copy {
+  position: relative;
+  max-width: 640px;
+  padding: 48px 52px 88px;
+}
+.home-banner-copy > span {
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  color: #dbe4eb;
+}
+.tenant-shell .home-banner-copy h1 {
+  font-size: 38px;
+  line-height: 1.25;
+  letter-spacing: -0.8px;
+  color: white;
+  margin: 18px 0;
+}
+.home-banner-copy p {
+  font-size: 14px;
+  color: #e3e8ed;
+  line-height: 1.8;
+  max-width: 440px;
+}
+.home-banner-copy .button {
+  margin-top: 8px;
+}
+.home-banner-controls {
+  position: absolute;
+  bottom: 22px;
+  left: 52px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-banner-dots,
+.home-banner-arrows {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.home-banner-controls button {
+  display: grid;
+  place-items: center;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ffffff55;
+  border-radius: 50%;
+  background: #15293555;
+}
+.home-banner-controls button:hover {
+  background: #152935aa;
+}
+.home-banner-dots button {
+  border: 0;
+  background: none;
+  width: 26px;
+}
+.home-banner-dots button span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 5px;
+  background: #ffffff77;
+}
+.home-banner-dots button[aria-pressed='true'] span {
+  width: 23px;
+  background: white;
+}
+.home-banner-arrows > span {
+  font-size: 11px;
+  margin-right: 8px;
+  color: #e0e8ef;
+}
+@media (max-width: 600px) {
+  .home-banner-section {
+    padding: 16px 0 36px;
+  }
+  .home-banner {
+    min-height: 380px;
+    border-radius: 9px;
+  }
+  .home-banner-copy {
+    padding: 32px 23px 94px;
+    max-width: 100%;
+  }
+  .tenant-shell .home-banner-copy h1 {
+    font-size: 29px;
+  }
+  .home-banner-copy > span {
+    font-size: 9px;
+    letter-spacing: 0.7px;
+  }
+  .home-banner-copy p {
+    font-size: 13px;
+  }
+  .home-banner-shade {
+    background: linear-gradient(90deg, #142330dd, #14233066);
+  }
+  .home-banner-controls {
+    left: 20px;
+    right: 18px;
+    bottom: 18px;
+  }
+  .home-banner-arrows {
+    gap: 5px;
+  }
+  .home-banner-arrows > span {
+    display: none;
+  }
+  .home-banner-controls button {
+    width: 33px;
+    height: 33px;
+  }
+  .home-banner-dots button {
+    width: 23px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-banner-images img {
+    transition: none;
+  }
+}
+/* Listing hierarchy and browsing rhythm */
+.tenant-shell .home-browse-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 25px;
+  padding-bottom: 8px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.home-browse-nav > span {
+  font-size: 12px;
+  color: #697581;
+  margin-right: 14px;
+  white-space: nowrap;
+}
+.home-browse-nav > a {
+  white-space: nowrap;
+  font-size: 13px;
+  padding: 9px 15px;
+  border: 1px solid #dde5ec;
+  border-radius: 6px;
+  color: #415669;
+  background: white;
+}
+.home-browse-nav > a:hover {
+  background: #edf4f9;
+  border-color: #9bb4c8;
+  color: #245b82;
+}
+.tenant-shell section[id] {
+  scroll-margin-top: 105px;
+}
+.tenant-shell .room-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.tenant-shell .room-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px;
+}
+.tenant-shell .room-card h3 {
+  min-height: 48px;
+  margin: 12px 0 10px;
+  font-weight: 600;
+}
+.tenant-shell .room-meta {
+  font-size: 13px;
+  gap: 8px;
+  line-height: 1.6;
+  flex-wrap: wrap;
+}
+.tenant-shell .room-location {
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.tenant-shell .room-location > span {
+  margin-left: auto;
+  padding: 3px 7px;
+  font-size: 11px;
+}
+.tenant-shell .card-campus {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 13px;
+  padding: 10px 0 0;
+  border-top: 1px dashed #e4e9ef;
+  font-size: 12px;
+  color: #425f76;
+  flex-wrap: wrap;
+}
+.tenant-shell .card-campus > span {
+  flex: 1;
+}
+.tenant-shell .card-campus small {
+  font-size: 10px;
+  color: #697785;
+  white-space: nowrap;
+}
+.tenant-shell .room-card-bottom {
+  margin-top: auto;
+  padding-top: 17px;
+  border: 0;
+  gap: 10px;
+}
+.tenant-shell .price {
+  font-size: 23px;
+  line-height: 1.4;
+  margin-top: 15px;
+  white-space: nowrap;
+}
+.tenant-shell .price > span {
+  display: block;
+  font-size: 12px;
+  color: #6b7782;
+}
+.tenant-shell .card-arrow {
+  width: auto;
+  height: 36px;
+  padding: 0 10px;
+  display: flex;
+  gap: 4px;
+  font-size: 11px;
+  white-space: nowrap;
+  margin-top: 15px;
+}
+.tenant-shell .card-arrow svg {
+  width: 15px;
+}
+.tenant-shell .room-card:hover .card-arrow {
+  background: #245b82;
+  color: white;
+}
+.tenant-shell .heart-button {
+  width: 38px;
+  height: 38px;
+  background: white;
+  box-shadow: 0 1px 7px #0002;
+}
+.tenant-shell .section-heading > div {
+  max-width: 75%;
+}
+.tenant-shell .section-heading h2 {
+  font-size: 26px;
+}
+.tenant-shell .section-heading p {
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+.tenant-shell .section-heading > .text-link {
+  white-space: nowrap;
+  padding: 7px 0;
+}
+.tenant-shell .campus-grid {
+  gap: 12px;
+}
+.tenant-shell .campus-card {
+  background: #f7f9fb;
+  border-color: transparent;
+}
+.tenant-shell .campus-card:hover {
+  border-color: #b4c5d3;
+  background: #f0f5f9;
+}
+.tenant-shell .campus-monogram {
+  background: white;
+  border: 1px solid #e2e9ef;
+}
+.tenant-shell .neighborhood-grid {
+  gap: 16px;
+}
+.tenant-shell .neighborhood-card {
+  min-height: 0;
+}
+.tenant-shell .neighborhood-top > span {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.tenant-shell .budget-banner {
+  background: #edf4f8;
+  border: 0;
+}
+.tenant-shell .browse-map-callout {
+  margin-top: 35px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid #dce5ed;
+  border-radius: 9px;
+  background: #f7f9fb;
+}
+.browse-map-callout > div {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.browse-map-callout > div > svg {
+  flex-shrink: 0;
+  color: #245b82;
+}
+.tenant-shell .browse-map-callout h2 {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.browse-map-callout p {
+  font-size: 13px;
+  color: #647381;
+  margin: 0;
+}
+.browse-map-callout .button {
+  white-space: nowrap;
+}
+.tenant-shell .filter-group .radio-row {
+  min-height: 32px;
+}
+.tenant-shell .breadcrumb {
+  font-size: 12px;
+}
+.tenant-shell .detail-title-row > div > p {
+  font-size: 14px;
+}
+.tenant-shell .booking-hint {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.tenant-shell .detail-tools .button {
+  min-height: 40px;
+}
+.tenant-shell .booking-box > p {
+  font-size: 13px;
+}
+.tenant-shell .school-distance {
+  font-size: 12px;
+}
+.tenant-shell .results-end {
+  font-size: 12px;
+}
+.tenant-shell .site-footer .footer-grid {
+  padding-top: 34px;
+  padding-bottom: 30px;
+}
+.tenant-shell .footer-grid a {
+  font-size: 13px;
+}
+.tenant-shell .footer-grid h4 {
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .tenant-shell .card-arrow > span {
+    display: none;
+  }
+  .tenant-shell .browse-map-callout {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .tenant-shell .room-card h3 {
+    font-size: 15px;
+  }
+  .tenant-shell .price {
+    font-size: 21px;
+  }
+}
+@media (max-width: 600px) {
+  .tenant-shell .home-browse-nav {
+    padding-top: 20px;
+    padding-bottom: 6px;
+    gap: 7px;
+  }
+  .home-browse-nav > span {
+    display: none;
+  }
+  .home-browse-nav > a {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  .tenant-shell .section-heading h2 {
+    font-size: 22px;
+  }
+  .tenant-shell .section-heading > div {
+    max-width: 74%;
+  }
+  .tenant-shell .section-heading > .text-link {
+    font-size: 11px;
+    gap: 3px;
+  }
+  .tenant-shell .section-heading > .text-link svg {
+    width: 13px;
+  }
+  .tenant-shell .room-card h3 {
+    font-size: 17px;
+    min-height: 0;
+  }
+  .tenant-shell .card-arrow > span {
+    display: inline;
+  }
+  .tenant-shell .room-card-body {
+    padding: 17px;
+  }
+  .tenant-shell .card-campus {
+    font-size: 12px;
+  }
+  .tenant-shell .browse-map-callout {
+    margin: 25px 20px 0;
+    padding: 23px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tenant-shell .browse-map-callout h2 {
+    font-size: 20px;
+  }
+  .browse-map-callout > div {
+    align-items: flex-start;
+  }
+  .tenant-shell .browse-map-callout .button {
+    width: 100%;
+  }
+  .tenant-shell .room-photo {
+    height: 230px;
+  }
+  .tenant-shell .price {
+    font-size: 23px;
+  }
+  .tenant-shell .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
