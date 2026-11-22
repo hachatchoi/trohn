@@ -1214,6 +1214,15 @@
 .tenant-shell .booking-box > p {
   font-size: 13px;
 }
+.search-room-result {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.tenant-shell .search-room-result > .room-card {
+  height: auto;
+  flex: 1;
+}
 .tenant-shell .school-distance {
   font-size: 12px;
 }

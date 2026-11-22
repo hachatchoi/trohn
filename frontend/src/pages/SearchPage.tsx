@@ -314,7 +314,7 @@ export function SearchPage() {
             <>
               <div className="room-grid search-room-grid">
                 {visibleRooms.map((room) => (
-                  <div key={room.id}>
+                  <div className="search-room-result" key={room.id}>
                     <RoomCard room={room} />
                     {selectedUniversity && (
                       <p className="school-distance">
