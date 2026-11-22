@@ -15,6 +15,7 @@ import { Logo, EmptyState, Modal } from '../components/UI'
 import { Navigate } from 'react-router-dom'
 import { usePreview } from '../hooks/usePreview'
 import type { Room } from '../types'
+import ListingLocation from '../components/ListingLocation'
 
 type Listing = Room & { status: string; description: string; reason?: string; images?: string[] }
 type Visit = {
@@ -422,7 +423,7 @@ export function OwnerListingDetail() {
 export function OwnerListingForm() {
   const { id } = useParams()
   const { listings } = useOwner()
-  const { mutate } = usePreview()
+  const { mutate, rooms } = usePreview()
   const existing = listings.find((x) => x.id === id)
   const navigate = useNavigate()
   const [images, setImages] = useState<string[]>(
@@ -571,14 +572,6 @@ export function OwnerListingForm() {
               <input name="ward" required defaultValue={existing?.ward} />
             </label>
             <label>
-              Vĩ độ (tùy chọn)
-              <input type="number" step="any" name="lat" defaultValue={existing?.lat ?? ''} />
-            </label>
-            <label>
-              Kinh độ (tùy chọn)
-              <input type="number" step="any" name="lng" defaultValue={existing?.lng ?? ''} />
-            </label>
-            <label>
               Giá thuê (triệu đồng / tháng)
               <input
                 name="price"
@@ -602,15 +595,7 @@ export function OwnerListingForm() {
               />
             </label>
           </div>
-          <label>
-            Địa chỉ cụ thể
-            <input
-              name="address"
-              required
-              defaultValue={existing?.address}
-              placeholder="Số nhà, ngõ, đường, phường…"
-            />
-          </label>
+          <ListingLocation key={id || 'new'} existing={existing} rooms={rooms} />
           <label>
             Mô tả và các chi phí
             <textarea

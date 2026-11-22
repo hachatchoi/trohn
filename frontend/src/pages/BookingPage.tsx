@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import {
-  ArrowLeft,
   ArrowRight,
   CalendarDays,
   Check,
@@ -22,7 +21,10 @@ export function BookingPage() {
   const room = rooms.find((item) => item.id === id)
   const { addAppointment, user, account } = usePreview()
   const navigate = useNavigate()
-  const [date, setDate] = useState(futureDate(1))
+  const [dateText, setDateText] = useState(() => formatDate(futureDate(1)))
+  const date = /^\d{2}\/\d{2}\/\d{4}$/.test(dateText) ? dateText.split('/').reverse().join('-') : ''
+  const parsedDay = new Date(date + 'T00:00:00Z')
+  const validDay = Number.isFinite(parsedDay.getTime()) && parsedDay.toISOString().startsWith(date + 'T')
   const [time, setTime] = useState('09:00')
   const name = user || ''
   const [phone, setPhone] = useState(account?.phone || '')
@@ -55,15 +57,10 @@ export function BookingPage() {
         <ChevronRight size={13} />
         <span>Đặt lịch xem</span>
       </div>
-      <Link className="text-link" to={`/phong/${room.id}`}>
-        <ArrowLeft size={16} />
-        Quay lại căn phòng
-      </Link>
       <div className="page-title-row">
         <div>
-          <span className="eyebrow">GẦN HƠN VỚI CHỐN VỀ MỚI</span>
-          <h1>Hẹn một buổi xem phòng.</h1>
-          <p>Chọn thời gian phù hợp. Chủ trọ sẽ xác nhận lịch hẹn của bạn.</p>
+          <h1>Đặt lịch xem phòng</h1>
+          <p>Chủ trọ sẽ xác nhận sau khi nhận lịch.</p>
         </div>
       </div>
       <div className="booking-layout">
@@ -71,7 +68,11 @@ export function BookingPage() {
           className="booking-form panel"
           onSubmit={async (event) => {
             event.preventDefault()
-            if (new Date(`${date}T${time}`) <= new Date()) {
+            if (!validDay || date < futureDate(0) || date > futureDate(30)) {
+              setError('Nhập ngày theo dạng dd/mm/yyyy trong vòng 30 ngày tới.')
+              return
+            }
+            if (new Date(`${date}T${time}:00+07:00`) <= new Date()) {
               setError('Hãy chọn thời gian xem phòng ở tương lai.')
               return
             }
@@ -100,19 +101,22 @@ export function BookingPage() {
         >
           <div className="form-section">
             <h2>
-              <span className="step-number">01</span>Chọn thời gian xem phòng
+              Chọn thời gian xem phòng
             </h2>
-            <label className="field">
-              Ngày bạn muốn đến xem
-              <input
-                type="date"
-                required
-                min={futureDate(0)}
-                max={futureDate(30)}
-                value={date}
-                onChange={(event) => setDate(event.target.value)}
-              />
-            </label>
+            <div className="field">
+              <label htmlFor="visit-day">Ngày xem phòng</label>
+              <div className="visit-day-control">
+                <input id="visit-day" required placeholder="dd/mm/yyyy" maxLength={10}
+                  value={dateText} onChange={(event) => setDateText(event.target.value)} />
+                <span className="visit-day-picker">
+                  <CalendarDays size={19} aria-hidden="true" />
+                  <input type="date" aria-label="Chọn ngày trên lịch" min={futureDate(0)}
+                    max={futureDate(30)} value={validDay ? date : ''}
+                    onClick={(event) => event.currentTarget.showPicker?.()}
+                    onChange={(event) => setDateText(formatDate(event.target.value))} />
+                </span>
+              </div>
+            </div>
             <fieldset className="time-fieldset">
               <legend>Khung giờ phù hợp</legend>
               <div className="time-slots">
@@ -134,7 +138,7 @@ export function BookingPage() {
           </div>
           <div className="form-section">
             <h2>
-              <span className="step-number">02</span>Thông tin liên hệ
+              Thông tin liên hệ
             </h2>
             <div className="form-grid">
               <label className="field">
@@ -207,7 +211,7 @@ export function BookingPage() {
                 <CalendarDays size={19} />
                 <div>
                   <span>Ngày xem phòng</span>
-                  <strong>{date ? formatDate(date) : 'Chưa chọn ngày'}</strong>
+                  <strong>{validDay ? dateText : 'Chưa chọn ngày'}</strong>
                 </div>
               </div>
               <div className="summary-row">
@@ -261,9 +265,8 @@ export function BookingSuccessPage() {
       <div className="success-icon">
         <CheckCircle2 size={48} strokeWidth={1.4} />
       </div>
-      <span className="eyebrow">MỘT BƯỚC GẦN HƠN</span>
-      <h1>Lịch xem phòng đã sẵn sàng!</h1>
-      <p>Lịch xem phòng đã được gửi đến chủ trọ.</p>
+      <h1>Đã gửi yêu cầu xem phòng</h1>
+      <p>Vui lòng chờ chủ trọ xác nhận.</p>
       <div className="success-card">
         <img src={room.image} alt={room.title} />
         <div>

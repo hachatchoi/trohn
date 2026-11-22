@@ -829,3 +829,9 @@
     margin-left: 57px;
   }
 }
+.listing-location { margin-block: 18px; }
+.listing-location > button { margin: 4px 8px 4px 0; }
+.listing-location > p, .listing-location > small { color: #425d66; }
+.listing-location details { margin: 12px 0; }
+.listing-location summary { cursor: pointer; }
+.listing-location .owner-form-grid { margin-top: 12px; }

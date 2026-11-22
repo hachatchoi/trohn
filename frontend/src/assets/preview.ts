@@ -1,7 +1,6 @@
 export function futureDate(days: number) {
-  const date = new Date()
-  date.setDate(date.getDate() + days)
-  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`
+  const date = new Date(Date.now() + (7 + days * 24) * 3600000)
+  return date.toISOString().slice(0, 10)
 }
 export const statusLabels = {
   rejected: 'Đã từ chối',
@@ -11,9 +10,4 @@ export const statusLabels = {
 }
 export const formatPrice = (value: number) =>
   value.toLocaleString('vi-VN', { maximumFractionDigits: 1 })
-export const formatDate = (value: string) =>
-  new Date(`${value}T12:00:00`).toLocaleDateString('vi-VN', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-  })
+export const formatDate = (value: string) => value.split('-').reverse().join('/')

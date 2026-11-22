@@ -22,7 +22,7 @@ import type { Appointment, AppointmentStatus } from '../types'
 function canCancel(item: Appointment) {
   return (
     ['confirmed', 'pending'].includes(item.status) &&
-    new Date(`${item.date}T${item.time}`) > new Date()
+    new Date(`${item.date}T${item.time}:00+07:00`) > new Date()
   )
 }
 function CancelDialog({ appointment, close }: { appointment: Appointment; close: () => void }) {

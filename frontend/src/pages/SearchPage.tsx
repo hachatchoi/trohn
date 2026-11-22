@@ -1,15 +1,17 @@
 import { usePreview } from '../hooks/usePreview'
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { ChevronRight, MapPin, RotateCcw, Search, SlidersHorizontal, X } from 'lucide-react'
+import { ArrowLeft, ArrowRight, ChevronRight, MapPin, RotateCcw, Search, SlidersHorizontal, X } from 'lucide-react'
 
 import { EmptyState, Modal, RoomCard } from '../components/UI'
+
+const PAGE_SIZE = 6
 
 export function SearchPage() {
   const { districts, rooms, universities, roomCampuses } = usePreview()
   const [params, setParams] = useSearchParams()
   const [query, setQuery] = useState(params.get('q') || '')
-  const [sort, setSort] = useState('suggested')
+  const sort = params.get('sort') || 'suggested'
   const [mobileFilters, setMobileFilters] = useState(false)
   const district = params.get('district') || ''
   const max = params.get('max') || ''
@@ -21,6 +23,7 @@ export function SearchPage() {
   const selectedUniversity = universities.find((item) => item.id === university)
   const setFilter = (key: string, value: string) => {
     const next = new URLSearchParams(params)
+    next.delete('page')
     if (value) next.set(key, value)
     else next.delete(key)
     setParams(next)
@@ -61,6 +64,18 @@ export function SearchPage() {
             : 0,
     )
   }, [rooms, roomCampuses, district, max, type, area, amenity, params, sort, university, radius])
+  const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
+  const requestedPage = Number(params.get('page'))
+  const page = Number.isInteger(requestedPage) ? Math.min(pages, Math.max(1, requestedPage)) : 1
+  const visibleRooms = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
+  const activeFilters = Array.from(params.entries()).filter(([key]) => key !== 'page' && key !== 'sort')
+  const changePage = (number: number) => {
+    const next = new URLSearchParams(params)
+    if (number === 1) next.delete('page')
+    else next.set('page', String(number))
+    setParams(next)
+    document.getElementById('room-results')?.scrollIntoView({ block: 'start' })
+  }
   const reset = () => {
     setParams({})
     setQuery('')
@@ -82,6 +97,7 @@ export function SearchPage() {
           value={university}
           onChange={(event) => {
             const next = new URLSearchParams(params)
+            next.delete('page')
             if (event.target.value) {
               next.set('university', event.target.value)
               next.set('radius', radius)
@@ -192,14 +208,6 @@ export function SearchPage() {
           ))}
         </select>
       </div>
-      <div className="filter-tip">
-        <MapPin size={22} />
-        <p>
-          Gần giảng đường hơn,
-          <br />
-          thêm thời gian cho bản thân.
-        </p>
-      </div>
     </>
   )
   return (
@@ -211,9 +219,7 @@ export function SearchPage() {
             <ChevronRight size={13} />
             <span>Tìm phòng</span>
           </div>
-          <span className="eyebrow">CHỐN VỀ TIẾP THEO CỦA BẠN</span>
           <h1>Tìm phòng trọ tại Hà Nội</h1>
-          <p>Phòng trọ, studio và những không gian vừa vặn tại Hà Nội.</p>
           <form
             className="search-page-bar"
             onSubmit={(event) => {
@@ -236,7 +242,7 @@ export function SearchPage() {
       </section>
       <div className="container search-layout">
         <aside className="filter-sidebar">{filters('desktop')}</aside>
-        <div className="results-panel">
+        <div className="results-panel" id="room-results">
           <div className="results-heading">
             <div>
               <h2>
@@ -247,7 +253,7 @@ export function SearchPage() {
                     : 'Phòng dành cho bạn'}
               </h2>
               <p>
-                <strong>{filtered.length}</strong> không gian phù hợp
+                <strong>{filtered.length}</strong> phòng phù hợp
               </p>
             </div>
             <div className="results-actions">
@@ -262,7 +268,7 @@ export function SearchPage() {
                 aria-label="Sắp xếp kết quả"
                 className="sort-select"
                 value={sort}
-                onChange={(event) => setSort(event.target.value)}
+                onChange={(event) => setFilter('sort', event.target.value)}
               >
                 <option value="suggested">Gợi ý cho bạn</option>
                 <option value="price-asc">Giá thấp đến cao</option>
@@ -271,9 +277,9 @@ export function SearchPage() {
               </select>
             </div>
           </div>
-          {params.size > 0 && (
+          {activeFilters.length > 0 && (
             <div className="active-filters">
-              {Array.from(params.entries()).map(([key, value]) => (
+              {activeFilters.map(([key, value]) => (
                 <button
                   key={key}
                   onClick={() => {
@@ -281,6 +287,7 @@ export function SearchPage() {
                       const next = new URLSearchParams(params)
                       next.delete('university')
                       next.delete('radius')
+                      next.delete('page')
                       setParams(next)
                     } else setFilter(key, '')
                     if (key === 'q') setQuery('')
@@ -306,7 +313,7 @@ export function SearchPage() {
           {filtered.length ? (
             <>
               <div className="room-grid search-room-grid">
-                {filtered.map((room) => (
+                {visibleRooms.map((room) => (
                   <div key={room.id}>
                     <RoomCard room={room} />
                     {selectedUniversity && (
@@ -321,7 +328,17 @@ export function SearchPage() {
                   </div>
                 ))}
               </div>
-              <p className="results-end">Bạn đã xem hết các phòng phù hợp.</p>
+              {pages > 1 && (
+                <nav className="search-pagination" aria-label="Phân trang kết quả">
+                  <button className="button button-outline" aria-label="Trang trước" disabled={page === 1} onClick={() => changePage(page - 1)}>
+                    <ArrowLeft size={20} aria-hidden="true" />
+                  </button>
+                  <span aria-live="polite">Trang {page} / {pages}</span>
+                  <button className="button button-outline" aria-label="Trang sau" disabled={page === pages} onClick={() => changePage(page + 1)}>
+                    <ArrowRight size={20} aria-hidden="true" />
+                  </button>
+                </nav>
+              )}
             </>
           ) : (
             <>

@@ -27,9 +27,7 @@ export function HomePage() {
         <div className="search-spotlight">
           <div className="search-spotlight-heading">
             <div>
-              <span className="eyebrow">BẮT ĐẦU TỪ ĐIỀU BẠN CẦN</span>
               <h2>Bạn muốn tìm phòng ở đâu?</h2>
-              <p>Gần giảng đường, vừa ngân sách, đúng không gian bạn thích.</p>
             </div>
             <span className="search-emblem" aria-hidden="true">
               <GraduationCap size={38} />
@@ -123,7 +121,7 @@ export function HomePage() {
         <a href="#nhom-gia-tot">Đến 3 triệu</a>
       </nav>
       <section className="container section" id="phong-noi-bat">
-        <SectionTitle eyebrow="MỘT CHÚT GỢI Ý" title="Phòng có thể bạn quan tâm" to="/tim-phong">
+        <SectionTitle title="Phòng có thể bạn quan tâm" to="/tim-phong">
           So sánh giá thuê, diện tích và vị trí trước khi chọn phòng.
         </SectionTitle>
         <div className="room-grid">
@@ -134,7 +132,7 @@ export function HomePage() {
         </div>
       </section>
       <section className="container campus-section" id="truong-dai-hoc">
-        <SectionTitle eyebrow="THÊM VÀI PHÚT NGỦ NƯỚNG" title="Tìm theo trường đại học">
+        <SectionTitle title="Tìm theo trường đại học">
           Chọn nơi bạn học, khám phá những căn phòng xung quanh.
         </SectionTitle>
         <div className="campus-grid">
@@ -156,14 +154,12 @@ export function HomePage() {
       </section>
       <HomeCollection
         title="Phòng studio"
-        eyebrow="Ở MỘT MÌNH CŨNG THẬT VUI"
         description="Không gian riêng, phù hợp ở một người hoặc hai người."
         to="/tim-phong?type=Studio"
         items={rooms.filter((room) => room.type === 'Studio')}
       />
       <section className="container editorial-banner">
         <div className="editorial-copy">
-          <span className="eyebrow">CHỐN VỀ CHO HAI</span>
           <h2>
             Tìm phòng ở cùng bạn.
             <br />
@@ -183,7 +179,6 @@ export function HomePage() {
       </section>
       <HomeCollection
         title="Chung cư mini"
-        eyebrow="THÊM KHÔNG GIAN, THÊM THOẢI MÁI"
         description="Những căn hộ nhỏ cho bạn và người bạn cùng nhà."
         to="/tim-phong?type=Chung+cư+mini"
         items={rooms.filter((room) => room.type === 'Chung cư mini')}
@@ -191,15 +186,13 @@ export function HomePage() {
       <div className="home-district-collection">
         <HomeCollection
           title="Phòng trọ tại Cầu Giấy"
-          eyebrow="DẠO MỘT VÒNG KHU PHỐ"
           description="Các lựa chọn phòng trọ và căn hộ trong khu vực Cầu Giấy."
           to="/tim-phong?district=Cầu+Giấy"
-          items={rooms.filter((room) => room.district === 'Cầu Giấy').slice(0, 3)}
+          items={rooms.filter((room) => room.district === 'Cầu Giấy')}
         />
       </div>
       <section className="container budget-banner">
         <div>
-          <span className="eyebrow">NHẸ TIỀN PHÒNG, RỘNG TRẢI NGHIỆM</span>
           <h2>Tìm phòng trong ngân sách của bạn.</h2>
           <p>Khám phá những căn phòng đến 3 triệu mỗi tháng.</p>
         </div>
@@ -209,14 +202,13 @@ export function HomePage() {
       </section>
       <HomeCollection
         title="Phòng đến 3 triệu / tháng"
-        eyebrow="ĐẾN 3 TRIỆU / THÁNG"
         description="Giá thuê cơ bản đến 3 triệu; xem chi phí chi tiết trong từng tin."
         to="/tim-phong?max=3"
         items={rooms.filter((room) => room.price <= 3)}
       />
       <section className="neighborhood-section section">
         <div className="container">
-          <SectionTitle eyebrow="GẦN TRƯỜNG, GẦN MỌI ĐIỀU" title="Khám phá theo khu vực">
+          <SectionTitle title="Khám phá theo khu vực">
             Khám phá những khu vực quen thuộc của sinh viên Hà Nội.
           </SectionTitle>
           <div className="neighborhood-grid">
@@ -272,13 +264,11 @@ export function HomePage() {
 
 function HomeCollection({
   title,
-  eyebrow,
   description,
   to,
   items,
 }: {
   title: string
-  eyebrow: string
   description: string
   to: string
   items: import('../types').Room[]
@@ -297,11 +287,11 @@ function HomeCollection({
               : 'nhom-gia-tot'
       }
     >
-      <SectionTitle eyebrow={eyebrow} title={title} to={to}>
+      <SectionTitle title={title} to={to}>
         {description}
       </SectionTitle>
       <div className="room-grid">
-        {items.map((room) => (
+        {items.slice(0, 3).map((room) => (
           <RoomCard key={room.id} room={room} />
         ))}
       </div>

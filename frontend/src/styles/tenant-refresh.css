@@ -465,7 +465,7 @@
   border-color: #e0e6eb;
 }
 .tenant-shell .page-intro {
-  background: #f5f7f9;
+  background: linear-gradient(115deg, #e1f3ee, #f8f4e8);
   padding: 28px 0;
 }
 .tenant-shell .page-intro h1 {
@@ -490,6 +490,45 @@
   background: white;
   border: 1px solid #e0e6eb;
   border-radius: 8px;
+  position: sticky;
+  top: 97px;
+  max-height: calc(100dvh - 109px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.tenant-shell {
+  --green: #167268;
+  --orange: #b35426;
+  --pale: #e8f5ef;
+}
+.tenant-shell .button-primary { background: #176d65; }
+.tenant-shell .button-primary:hover { background: #10584f; }
+.tenant-shell .desktop-nav > a.active, .tenant-shell .logo-dot { color: #13736b; }
+.tenant-shell .desktop-nav > a.active:after { background: #168378; }
+.tenant-shell .booking-form { border-top: 3px solid #298377; }
+.tenant-shell .time-slots > button { color: #385e60; border-color: #bbcfc9; }
+.tenant-shell .time-slots > button.selected { background: #dff4eb; color: #10584f; border-color: #18776a; }
+.tenant-shell .visit-day-control { position: relative; }
+.tenant-shell .visit-day-control > input { width: 100%; padding-right: 52px; }
+.visit-day-picker {
+  position: absolute;
+  inset: 2px 2px 2px auto;
+  width: 44px;
+  display: grid;
+  place-items: center;
+  color: #176d65;
+}
+.visit-day-picker input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+.visit-day-picker:focus-within { outline: 2px solid #176d65; border-radius: 5px; }
+@media (max-width: 680px) {
+  .tenant-shell .search-layout .results-heading {
+    position: sticky;
+    top: 70px;
+    z-index: 8;
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #d6e7df;
+  }
 }
 .tenant-shell .filter-tip {
   background: #f1f5f8;
@@ -505,6 +544,18 @@
 .tenant-shell .results-heading h2 {
   font-size: 22px;
 }
+#room-results { scroll-margin-top: 98px; }
+.search-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+  font-size: 14px;
+}
+.search-pagination .button { width: 44px; height: 44px; padding: 0; }
+.search-pagination button:disabled { opacity: .45; cursor: default; }
 .tenant-shell .results-heading p {
   font-size: 13px;
 }

@@ -46,6 +46,8 @@ Mở [Trohn](http://127.0.0.1:5176/). Vite chuyển yêu cầu `/api` tới cổ
 
 ## Cấu hình MySQL khác
 
+Danh mục demo dùng 25 địa chỉ có số nhà làm mốc bản đồ và 14 cơ sở thuộc 13 trường. Tin đăng và ảnh là dữ liệu minh họa. Khoảng cách được tính theo đường chim bay từ mốc của phòng tới điểm đại diện của cơ sở. Các quận dùng cách phân vùng của bộ lọc TROHN. Nguồn từng điểm được ghi trong [SQL dữ liệu vị trí](Database/SQL/08_demo_locations.sql). Dữ liệu bản đồ © [OpenStreetMap contributors, ODbL](https://www.openstreetmap.org/copyright); điểm Phú Đô lấy từ [WorldPlaces](https://hanoi.worldplaces.me/vi/review/157084315-tiem-banh-gato-ht.html).
+
 Trên schema trống, chạy các script `01_create_tables.sql`, `02_create_indexes.sql` và `05_photo_content.sql` trong thư mục `Database/SQL` của workspace. Script `03_sample_data.sql` dành riêng cho minh họa. Backend đọc `DB_URL`, `DB_USER` và `DB_PASSWORD` từ môi trường hoặc `backend/.env`. Tài khoản ứng dụng cần SELECT, INSERT, UPDATE, DELETE trên schema. File cấu hình cục bộ và dữ liệu MySQL được Git bỏ qua.
 
 ## Tài khoản và tin đầu tiên
