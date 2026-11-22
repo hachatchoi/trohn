@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import { ArrowLeft, ArrowRight, CheckCircle2, Eye, EyeOff, Heart, Mail } from 'lucide-react'
+import { ArrowLeft, ArrowRight, CheckCircle2, Eye, EyeOff, Mail } from 'lucide-react'
 import { Logo } from '../components/UI'
 import { usePreview } from '../hooks/usePreview'
 
@@ -24,34 +24,11 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' | 'forgot' }) {
       {mode === 'login' ? (
         <aside className="login-room">
           <Logo light />
-          <h2>Một nơi để ở.<br /><em>Một góc để là mình.</em></h2>
         </aside>
       ) : <aside className="auth-story">
         <Logo light />
-        <div className="auth-story-copy">
-          <span className="eyebrow">CHỐN VỀ CỦA SINH VIÊN HÀ NỘI</span>
-          <h2>
-            Một nơi để ở.
-            <br />
-            Một góc để là mình.
-          </h2>
-          <p>
-            Hành trình mới bắt đầu từ một căn phòng
-            <br />
-            mà bạn muốn trở về mỗi ngày.
-          </p>
-        </div>
         <div className="auth-photo">
           <img src="/images/room-sunlight.jpg" alt="Không gian phòng yên bình, đầy ánh sáng" />
-          <span>
-            <Heart size={19} />
-            find a room. feel at home.
-          </span>
-        </div>
-        <div className="auth-story-bottom">
-          <span>HÀ NỘI, VIỆT NAM</span>
-          <span>✳</span>
-          <span>YOUR NEXT CHAPTER</span>
         </div>
       </aside>}
       <div className="auth-main">
@@ -77,23 +54,10 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' | 'forgot' }) {
             </div>
           ) : (
             <>
-              {mode !== 'login' && <span className="eyebrow">
-                {register
-                  ? 'BẮT ĐẦU HÀNH TRÌNH CỦA BẠN'
-                  : forgot
-                    ? 'ĐỪNG LO, CHÚNG MÌNH Ở ĐÂY'
-                    : 'RẤT VUI ĐƯỢC GẶP LẠI BẠN'}
-              </span>}
               <h1>
-                {register ? 'Tìm trọ cùng TROHN.' : forgot ? 'Quên mật khẩu?' : 'Đăng nhập'}
+                {register ? 'Đăng ký tài khoản' : forgot ? 'Quên mật khẩu?' : 'Đăng nhập'}
               </h1>
-              <p className="auth-description">
-                {register
-                  ? 'Tạo tài khoản để lưu phòng yêu thích và dễ dàng đặt lịch xem.'
-                  : forgot
-                    ? 'Liên hệ quản trị viên để được hỗ trợ.'
-                    : 'Chào bạn trở lại với TROHN.'}
-              </p>
+              {forgot && <p className="auth-description">Liên hệ quản trị viên để được hỗ trợ.</p>}
               {!register && !forgot && params.has('registered') && (
                 <div className="form-success">
                   <CheckCircle2 size={19} />
@@ -264,7 +228,7 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' | 'forgot' }) {
           )}
         </div>
         <p className="auth-copyright">
-          © {new Date().getFullYear()} TROHN · Chốn về của bạn ở Hà Nội.
+          © {new Date().getFullYear()} TROHN
         </p>
       </div>
     </div>

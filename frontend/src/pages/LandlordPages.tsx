@@ -68,9 +68,7 @@ export function LandlordLayout() {
           <Plus size={17} /> Đăng tin mới
         </Link>
         <div className="owner-sidebar-note">
-          <span className="owner-overline">TÀI KHOẢN CHỦ TRỌ</span>
           <strong>{account.name}</strong>
-          <p>Quản lý không gian cho thuê của bạn tại Hà Nội.</p>
         </div>
         <Link to="/">↗ Xem giao diện khách thuê</Link>
         <button onClick={signOut}>Đăng xuất</button>
@@ -100,15 +98,14 @@ function Heading({
   action = false,
 }: {
   title: string
-  text: string
+  text?: string
   action?: boolean
 }) {
   return (
     <div className="owner-heading">
       <div>
-        <span className="eyebrow">KHÔNG GIAN CỦA BẠN</span>
         <h1>{title}</h1>
-        <p>{text}</p>
+        {text && <p>{text}</p>}
       </div>
       {action && (
         <Link className="button button-primary" to="/chu-tro/tin-dang/them">
@@ -129,7 +126,6 @@ export function OwnerDashboard() {
     <>
       <Heading
         title="Tổng quan quản lý"
-        text="Tin đăng, yêu cầu xem phòng và những việc cần xử lý."
         action
       />
       <div className="owner-stats">
@@ -161,7 +157,6 @@ export function OwnerDashboard() {
         <section className="owner-work-panel">
           <div className="work-panel-heading">
             <div>
-              <span className="owner-overline">ƯU TIÊN HÔM NAY</span>
               <h2>
                 Cần bạn xử lý <b>{waiting.length + rejected.length}</b>
               </h2>
@@ -230,7 +225,6 @@ export function OwnerDashboard() {
       <section className="owner-work-panel owner-agenda">
         <div className="work-panel-heading">
           <div>
-            <span className="owner-overline">LỊCH TRÌNH</span>
             <h2>Các buổi xem phòng sắp tới</h2>
           </div>
           <Link className="text-link" to="/chu-tro/lich-hen">
@@ -274,7 +268,6 @@ export function OwnerListings() {
     <>
       <Heading
         title="Tin đăng của tôi."
-        text="Theo dõi trạng thái và cập nhật thông tin những căn phòng của bạn."
         action
       />
       <div className="owner-status-tabs" aria-label="Lọc tin đăng">
@@ -491,7 +484,6 @@ export function OwnerListingForm() {
       </Link>
       <Heading
         title={id ? 'Chỉnh sửa tin đăng.' : 'Tạo tin đăng'}
-        text="Thông tin rõ ràng giúp người thuê dễ tìm thấy không gian phù hợp."
       />
       <form
         className="owner-form"
@@ -533,14 +525,8 @@ export function OwnerListingForm() {
           }
         }}
       >
-        <div className="owner-form-guide">
-          <strong>Chuẩn bị trước khi đăng</strong>
-          <span>Thông tin phòng chính xác</span>
-          <span>Giá thuê và các chi phí</span>
-          <span>Ít nhất 1 ảnh thực tế</span>
-        </div>
         <section className="owner-panel">
-          <h2>01. Thông tin căn phòng</h2>
+          <h2>Thông tin căn phòng</h2>
           <label>
             Tiêu đề tin đăng
             <input
@@ -608,7 +594,7 @@ export function OwnerListingForm() {
           </label>
         </section>
         <section className="owner-panel">
-          <h2>02. Tiện ích & hình ảnh</h2>
+          <h2>Tiện ích và hình ảnh</h2>
           <div className="owner-amenities">
             {[
               'Điều hòa',
@@ -703,7 +689,6 @@ export function OwnerVisits() {
     <>
       <Heading
         title="Lịch xem phòng."
-        text="Theo dõi yêu cầu và sắp xếp những cuộc hẹn với người thuê."
       />
       <div className="owner-tools">
         <select

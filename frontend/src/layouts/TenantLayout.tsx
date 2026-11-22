@@ -57,7 +57,6 @@ export function TenantLayout() {
                 </button>
                 {account && (
                   <div className="account-menu">
-                    <p>Chào bạn, {user}!</p>
                     <Link to="/yeu-thich">
                       <Heart size={16} /> Phòng đã lưu
                     </Link>
@@ -115,12 +114,6 @@ export function TenantLayout() {
         <div className="container footer-grid">
           <div className="footer-brand">
             <Logo light />
-            <p>
-              Một nơi ở phù hợp.
-              <br />
-              Một khởi đầu thật tốt.
-            </p>
-            <span>Dành cho sinh viên tại Hà Nội.</span>
           </div>
           <div>
             <h4>Khám phá</h4>
@@ -135,18 +128,9 @@ export function TenantLayout() {
             <Link to="/lich-hen">Lịch xem phòng</Link>
             <Link to="/dang-ky">Tạo tài khoản</Link>
           </div>
-          <div className="footer-note">
-            <span className="eyebrow">HÀ NỘI, MỘT KHỞI ĐẦU MỚI</span>
-            <p>
-              Đường đến giảng đường
-              <br />
-              bắt đầu từ một chốn về.
-            </p>
-            <span className="footer-spark">✳</span>
-          </div>
         </div>
         <div className="container footer-bottom">
-          <span>© {new Date().getFullYear()} TROHN. Made for your next chapter.</span>
+          <span>© {new Date().getFullYear()} TROHN</span>
         </div>
       </footer>
       <div className={`toast ${toast ? 'toast-visible' : ''}`} role="status" aria-live="polite">

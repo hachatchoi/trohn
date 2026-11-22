@@ -6,31 +6,27 @@ const slides = [
     image: '/images/room-sunlight.jpg',
     alt: 'Không gian ở sáng thoáng với cửa sổ lớn',
     title: 'Tìm phòng trọ phù hợp, gần trường bạn học.',
-    text: 'Khám phá phòng trọ, studio và căn hộ mini tại Hà Nội.',
     link: '/tim-phong',
     action: 'Khám phá phòng trọ',
   },
   {
     image: '/images/room-cozy.jpg',
     alt: 'Phòng ngủ ấm áp với giường và cửa sổ',
-    title: 'Một căn phòng vừa với ngân sách.',
-    text: 'Các lựa chọn đến 3 triệu mỗi tháng cho sinh viên.',
+    title: 'Phòng trọ đến 3 triệu/tháng',
     link: '/tim-phong?max=3',
     action: 'Xem phòng đến 3 triệu',
   },
   {
     image: '/images/room-studio.jpg',
     alt: 'Căn hộ studio có không gian sinh hoạt riêng',
-    title: 'Studio cho nhịp sống của riêng bạn.',
-    text: 'Tìm không gian riêng để nghỉ ngơi, học tập và sinh hoạt.',
+    title: 'Phòng studio tại Hà Nội',
     link: '/tim-phong?type=Studio',
     action: 'Xem phòng studio',
   },
   {
     image: '/images/room-kitchen.jpg',
     alt: 'Góc bếp sáng thoáng trong căn hộ',
-    title: 'Thêm không gian để ở cùng bạn.',
-    text: 'Khám phá căn hộ mini với bếp riêng và các tiện ích sinh hoạt.',
+    title: 'Chung cư mini tại Hà Nội',
     link: '/tim-phong?type=Chung+cư+mini',
     action: 'Xem chung cư mini',
   },
@@ -91,9 +87,7 @@ export function HomeBanner() {
             aria-roledescription="ảnh"
             aria-label={`${index + 1} / ${slides.length}: ${slide.alt}`}
           >
-            <span>TROHN · PHÒNG TRỌ SINH VIÊN HÀ NỘI</span>
             <h1>{slide.title}</h1>
-            <p>{slide.text}</p>
             <Link className="button button-primary" to={slide.link}>
               {slide.action}
               <ArrowUpRight size={17} />

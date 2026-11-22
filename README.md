@@ -18,6 +18,19 @@ Lần khởi tạo đầu tiên, MySQL nạp schema, 25 tin phòng và 125 ảnh
 
 Khi chia sẻ qua Git, giữ cùng cấp `compose.yaml`, `backend/`, `frontend/` và `Database/SQL/`. Các tệp SQL tái tạo bộ dữ liệu mẫu trên máy của bạn học. Dữ liệu của bản chạy Windows và volume Docker hiện tại nằm riêng trên máy người dùng.
 
+### Cập nhật máy đã chạy demo
+
+Trong thư mục gốc `trohn`, chạy:
+
+```powershell
+git pull --ff-only
+docker compose up -d --build
+```
+
+Compose chạy tác vụ `locations` để bổ sung trường và cơ sở còn thiếu vào cả volume cũ trước khi khởi động API. Mở [Tìm phòng](http://127.0.0.1:5175/tim-phong) và kiểm tra bộ lọc **Trường đại học / cơ sở**. Danh mục demo có 14 cơ sở thuộc 13 trường.
+
+Nếu chạy MySQL trực tiếp trên Windows, mở `Database/SQL/08_demo_locations.sql` trong MySQL Workbench, chọn schema mà API đang dùng và chạy toàn bộ tệp. Tệp chỉ thêm các trường, cơ sở còn thiếu và cập nhật các địa chỉ phòng còn khớp với mẫu cũ.
+
 ## Chạy bản chính trên máy Windows (25 phòng, 125 ảnh)
 
 Database `trohn` dùng cổng 33317. Dữ liệu nằm trong `backend/mysql-data`. MySQL trên Windows dùng liên kết `%LOCALAPPDATA%\TrohnMySQLData` để đọc được đường dẫn có dấu. Khi khởi động lại máy, chạy lần lượt trong ba cửa sổ PowerShell, bắt đầu từ thư mục `trohn`.

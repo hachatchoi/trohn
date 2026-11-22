@@ -121,11 +121,9 @@ export function AppointmentsPage() {
       </div>
       <div className="page-title-row">
         <div>
-          <span className="eyebrow">SẮP XẾP MỘT CUỘC HẸN</span>
           <h1>
-            Hẹn gặp chốn về mới<span className="title-dot">.</span>
+            Lịch xem phòng
           </h1>
-          <p>Theo dõi lịch xem phòng và dành thời gian cho những nơi bạn thích.</p>
         </div>
         <Link className="button button-primary" to="/tim-phong">
           <Plus size={18} />

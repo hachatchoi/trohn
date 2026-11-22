@@ -13,7 +13,6 @@ services:
       - ./Database/SQL/02_create_indexes.sql:/docker-entrypoint-initdb.d/02.sql:ro
       - ./Database/SQL/06_demo_catalog.sql.gz:/docker-entrypoint-initdb.d/06.sql.gz:ro
       - ./Database/SQL/07_demo_logins.sql:/docker-entrypoint-initdb.d/07.sql:ro
-      - ./Database/SQL/08_demo_locations.sql:/docker-entrypoint-initdb.d/08.sql:ro
       - ./Database/SQL/05_photo_content.sql:/docker-entrypoint-initdb.d/05.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_PASSWORD mysql --protocol=tcp -h 127.0.0.1 -u $$MYSQL_USER trohn -e 'SELECT 1 FROM NoiDungAnh LIMIT 1'"]
@@ -21,6 +20,16 @@ services:
       timeout: 5s
       retries: 30
       start_period: 30s
+  locations:
+    image: mysql:8.0
+    environment:
+      MYSQL_PWD: ${TROHN_DEMO_DB_PASSWORD:-trohn-local-demo}
+    volumes:
+      - ./Database/SQL/08_demo_locations.sql:/locations.sql:ro
+    entrypoint: ["sh", "-ec", "mysql --host=db --user=trohn_app --default-character-set=utf8mb4 trohn < /locations.sql"]
+    depends_on:
+      db:
+        condition: service_healthy
   api:
     build: ./backend
     environment:
@@ -29,8 +38,8 @@ services:
       DB_USER: trohn_app
       DB_PASSWORD: ${TROHN_DEMO_DB_PASSWORD:-trohn-local-demo}
     depends_on:
-      db:
-        condition: service_healthy
+      locations:
+        condition: service_completed_successfully
   web:
     build: ./frontend
     ports:

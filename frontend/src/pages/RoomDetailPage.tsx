@@ -5,7 +5,6 @@ import {
   ArrowRight,
   ArrowUpRight,
   CalendarDays,
-  Check,
   ChevronLeft,
   ChevronRight,
   Expand,
@@ -186,20 +185,8 @@ export function RoomDetailPage() {
         </div>
         <aside className="booking-aside">
           <div className="booking-box">
-            <span className="eyebrow">KHÔNG GIAN DÀNH CHO BẠN</span>
             <div className="detail-price">
               {formatPrice(room.price)} triệu <span>/ tháng</span>
-            </div>
-            <p className="muted">Một căn phòng mới, nhiều điều để mong chờ.</p>
-            <div className="booking-benefits">
-              <span>
-                <Check size={16} />
-                Xem phòng trước khi quyết định
-              </span>
-              <span>
-                <Check size={16} />
-                Chủ động chọn thời gian phù hợp
-              </span>
             </div>
             <Link className="button button-primary full-width" to={`/dat-lich/${room.id}`}>
               <CalendarDays size={18} />
@@ -223,18 +210,10 @@ export function RoomDetailPage() {
               <ShieldCheck size={21} />
             </div>
           </div>
-          <div className="viewing-tip">
-            <span>✳</span>
-            <p>
-              <strong>Đi xem phòng, nhớ nhé!</strong>
-              <br />
-              Kiểm tra ánh sáng, thiết bị và hỏi rõ những chi phí hàng tháng.
-            </p>
-          </div>
         </aside>
       </div>
       <section className="section">
-        <SectionTitle title="Thêm vài nơi bạn có thể thích" to="/tim-phong" />
+        <SectionTitle title="Phòng khác" to="/tim-phong" />
         <div className="room-grid">
           {rooms
             .filter((item) => item.id !== room.id)

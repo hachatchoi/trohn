@@ -103,8 +103,7 @@ export function MapPage() {
     <section className="map-page container">
       <div className="map-page-heading">
         <div>
-          <span className="eyebrow">NHÌN HÀ NỘI THEO CÁCH CỦA BẠN</span>
-          <h1>Tìm chốn về trên bản đồ.</h1>
+          <h1>Bản đồ phòng trọ</h1>
           <p>Kéo bản đồ, phóng to và chạm vào giá phòng để khám phá.</p>
         </div>
         <Link className="text-link" to="/tim-phong">

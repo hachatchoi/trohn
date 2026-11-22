@@ -121,9 +121,7 @@ export function HomePage() {
         <a href="#nhom-gia-tot">Đến 3 triệu</a>
       </nav>
       <section className="container section" id="phong-noi-bat">
-        <SectionTitle title="Phòng có thể bạn quan tâm" to="/tim-phong">
-          So sánh giá thuê, diện tích và vị trí trước khi chọn phòng.
-        </SectionTitle>
+        <SectionTitle title="Phòng có thể bạn quan tâm" to="/tim-phong" />
         <div className="room-grid">
           {!rooms.length && <p>Chưa có phòng nào được duyệt đăng.</p>}
           {rooms.slice(0, 3).map((room) => (
@@ -131,30 +129,8 @@ export function HomePage() {
           ))}
         </div>
       </section>
-      <section className="container campus-section" id="truong-dai-hoc">
-        <SectionTitle title="Tìm theo trường đại học">
-          Chọn nơi bạn học, khám phá những căn phòng xung quanh.
-        </SectionTitle>
-        <div className="campus-grid">
-          {universities.map((item) => (
-            <Link
-              className="campus-card"
-              key={item.id}
-              to={`/tim-phong?university=${item.id}&radius=3`}
-            >
-              <span className="campus-monogram">{item.short}</span>
-              <div>
-                <h3>{item.name}</h3>
-                <p>{item.campus}</p>
-              </div>
-              <ArrowUpRight size={18} />
-            </Link>
-          ))}
-        </div>
-      </section>
       <HomeCollection
         title="Phòng studio"
-        description="Không gian riêng, phù hợp ở một người hoặc hai người."
         to="/tim-phong?type=Studio"
         items={rooms.filter((room) => room.type === 'Studio')}
       />
@@ -165,36 +141,27 @@ export function HomePage() {
             <br />
             Rộng hơn, tiện nghi hơn.
           </h2>
-          <p>Một căn hộ nhỏ, đủ riêng tư và đủ chỗ cho những buổi tối cùng nhau nấu ăn.</p>
           <Link className="button button-cream" to="/tim-phong?type=Chung+cư+mini">
             Khám phá căn hộ mini <ArrowUpRight size={18} />
           </Link>
         </div>
         <img src="/images/room-kitchen.jpg" alt="Góc bếp sáng trong căn hộ" loading="lazy" />
-        <span className="banner-sticker">
-          Ở cùng nhau,
-          <br />
-          vui hơn một chút.
-        </span>
       </section>
       <HomeCollection
         title="Chung cư mini"
-        description="Những căn hộ nhỏ cho bạn và người bạn cùng nhà."
         to="/tim-phong?type=Chung+cư+mini"
         items={rooms.filter((room) => room.type === 'Chung cư mini')}
       />
       <div className="home-district-collection">
         <HomeCollection
           title="Phòng trọ tại Cầu Giấy"
-          description="Các lựa chọn phòng trọ và căn hộ trong khu vực Cầu Giấy."
           to="/tim-phong?district=Cầu+Giấy"
           items={rooms.filter((room) => room.district === 'Cầu Giấy')}
         />
       </div>
       <section className="container budget-banner">
         <div>
-          <h2>Tìm phòng trong ngân sách của bạn.</h2>
-          <p>Khám phá những căn phòng đến 3 triệu mỗi tháng.</p>
+          <h2>Phòng đến 3 triệu/tháng</h2>
         </div>
         <Link className="button button-primary" to="/tim-phong?max=3">
           Xem phòng vừa túi tiền <ArrowRight size={18} />
@@ -202,20 +169,16 @@ export function HomePage() {
       </section>
       <HomeCollection
         title="Phòng đến 3 triệu / tháng"
-        description="Giá thuê cơ bản đến 3 triệu; xem chi phí chi tiết trong từng tin."
         to="/tim-phong?max=3"
         items={rooms.filter((room) => room.price <= 3)}
       />
       <section className="neighborhood-section section">
         <div className="container">
-          <SectionTitle title="Khám phá theo khu vực">
-            Khám phá những khu vực quen thuộc của sinh viên Hà Nội.
-          </SectionTitle>
+          <SectionTitle title="Khám phá theo khu vực" />
           <div className="neighborhood-grid">
             {districts
               .map((name, i) => ({
                 name,
-                code: String(i + 1).padStart(2, '0'),
                 icon: ['cg', 'tx', 'dd', 'hbt'][i % 4],
                 text: rooms.filter((r) => r.district === name).length + ' phòng',
               }))
@@ -226,7 +189,6 @@ export function HomePage() {
                   key={item.name}
                 >
                   <div className="neighborhood-top">
-                    <span>HÀ NỘI / {item.code}</span>
                     <ArrowUpRight size={20} />
                   </div>
                   <div className="neighborhood-art" aria-hidden="true">
@@ -246,12 +208,30 @@ export function HomePage() {
           </div>
         </div>
       </section>
+      <section className="container campus-section" id="truong-dai-hoc">
+        <SectionTitle title="Tìm theo trường đại học" />
+        <div className="campus-grid">
+          {universities.map((item) => (
+            <Link
+              className="campus-card"
+              key={item.id}
+              to={`/tim-phong?university=${item.id}&radius=3`}
+            >
+              <span className="campus-monogram">{item.short}</span>
+              <div>
+                <h3>{item.name}</h3>
+                <p>{item.campus}</p>
+              </div>
+              <ArrowUpRight size={18} />
+            </Link>
+          ))}
+        </div>
+      </section>
       <section className="container browse-map-callout">
         <div>
           <MapPin size={28} />
           <div>
             <h2>Chưa quen khu vực? Xem trên bản đồ.</h2>
-            <p>Xác định vị trí các phòng để chọn khu vực thuận tiện cho việc đi học.</p>
           </div>
         </div>
         <Link className="button button-primary" to="/ban-do">
@@ -264,12 +244,10 @@ export function HomePage() {
 
 function HomeCollection({
   title,
-  description,
   to,
   items,
 }: {
   title: string
-  description: string
   to: string
   items: import('../types').Room[]
 }) {
@@ -287,9 +265,7 @@ function HomeCollection({
               : 'nhom-gia-tot'
       }
     >
-      <SectionTitle title={title} to={to}>
-        {description}
-      </SectionTitle>
+      <SectionTitle title={title} to={to} />
       <div className="room-grid">
         {items.slice(0, 3).map((room) => (
           <RoomCard key={room.id} room={room} />

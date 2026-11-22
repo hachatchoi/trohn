@@ -60,7 +60,6 @@ export function BookingPage() {
       <div className="page-title-row">
         <div>
           <h1>Đặt lịch xem phòng</h1>
-          <p>Chủ trọ sẽ xác nhận sau khi nhận lịch.</p>
         </div>
       </div>
       <div className="booking-layout">

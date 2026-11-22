@@ -45,13 +45,12 @@ function Badge({ status }: { status: string }) {
     </span>
   )
 }
-function Heading({ title, text }: { title: string; text: string }) {
+function Heading({ title, text }: { title: string; text?: string }) {
   return (
     <div className="admin-heading">
       <div>
-        <span className="admin-overline">TRUNG TÂM QUẢN TRỊ</span>
         <h1>{title}</h1>
-        <p>{text}</p>
+        {text && <p>{text}</p>}
       </div>
     </div>
   )
@@ -83,7 +82,6 @@ export function AdminLayout() {
       )}
       <aside className="admin-sidebar">
         <Logo admin />
-        <span className="admin-overline">VẬN HÀNH HỆ THỐNG</span>
         <nav>
           <NavLink end to="/admin">
             <LayoutDashboard size={18} />
@@ -105,7 +103,6 @@ export function AdminLayout() {
         <div className="admin-side-bottom">
           <ShieldCheck size={24} />
           <strong>Quản trị viên TROHN</strong>
-          <small>Không gian làm việc nội bộ</small>
           <Link to="/chu-tro">↗ Giao diện chủ trọ</Link>
           <button onClick={signOut}>Đăng xuất</button>
         </div>
@@ -135,7 +132,6 @@ export function AdminDashboard() {
     <>
       <Heading
         title="Tổng quan vận hành"
-        text="Ưu tiên xử lý tin chờ duyệt và theo dõi trạng thái tài khoản."
       />
       <div className="admin-metrics">
         {[
@@ -159,7 +155,6 @@ export function AdminDashboard() {
               <ArrowUpRight size={15} />
             </span>
             <strong>{value}</strong>
-            <small>Xem danh sách</small>
           </Link>
         ))}
       </div>
@@ -167,7 +162,6 @@ export function AdminDashboard() {
         <section className="admin-panel">
           <div className="admin-panel-title">
             <div>
-              <span className="admin-overline">CẦN XỬ LÝ</span>
               <h2>
                 Hàng chờ kiểm duyệt <b>{waiting.length}</b>
               </h2>
@@ -245,7 +239,6 @@ export function AdminPosts() {
     <>
       <Heading
         title="Kiểm duyệt tin đăng"
-        text="Xem xét nội dung trước khi công khai và xử lý những tin cần ẩn."
       />
       <div className="admin-tabs">
         {['Tất cả', ...postStatuses].map((s) => (
@@ -409,7 +402,6 @@ export function AdminPostDetail() {
       </Link>
       <Heading
         title="Chi tiết kiểm duyệt"
-        text="Xem đầy đủ nội dung và thông tin người đăng trước khi quyết định."
       />
       <div className="admin-detail-grid">
         <article className="admin-panel admin-post-detail">
@@ -534,7 +526,6 @@ export function AdminUsers() {
     <>
       <Heading
         title="Quản lý tài khoản"
-        text="Tra cứu người dùng và kiểm soát trạng thái truy cập hệ thống."
       />
       <div className="admin-toolbar admin-user-toolbar">
         <label>
@@ -675,7 +666,6 @@ export function AdminUserDetail() {
         </section>
         <aside className="admin-panel admin-review-box">
           <h3>Trạng thái truy cập</h3>
-          <p>Quản lý quyền truy cập của tài khoản.</p>
           <button
             className={`button ${user.status === 'Đã khóa' ? 'button-primary' : 'button-outline'}`}
             disabled={user.role === 'Admin'}

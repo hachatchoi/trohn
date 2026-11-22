@@ -1310,3 +1310,8 @@
     padding-bottom: 30px;
   }
 }
+
+@media (min-width: 681px) {
+  .tenant-shell .site-footer .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+}
+.auth-page h1 + form { margin-top: 24px; }
